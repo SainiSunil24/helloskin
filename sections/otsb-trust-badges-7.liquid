@@ -1,0 +1,849 @@
+{% render 'otsb-trust-badges-base' %}
+{% schema %}
+{
+  "name": "OT: Trust badges #7",
+  "class": "otsb__root section section-multicolumn x-section",
+  "tag": "section",
+  "disabled_on": {
+    "groups": ["footer", "aside"]
+  },
+  "settings": [
+    {
+      "type": "paragraph",
+      "content": "Remove Trademark Free? [Chat with us](https:\/\/go.crisp.chat\/chat\/embed\/?website_id=5e366ec4-30b5-4074-abce-ef95ae74b337)"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Heading"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 50,
+      "max": 200,
+      "step": 10,
+      "unit": "%",
+      "label": "Heading size",
+      "default": 140
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "default": "h2",
+      "label": "Heading tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        },
+        {
+          "value": "h6",
+          "label": "H6"
+        },
+        {
+          "value": "p",
+          "label": "p"
+        }
+      ]
+    },
+    {
+      "type": "range",
+      "id": "corner_image",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Corner radius",
+      "default": 0
+    },
+    {
+      "type": "select",
+      "id": "border_column",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "column",
+          "label": "Column"
+        },
+        {
+          "value": "line_vertical",
+          "label": "Vertical line"
+        }
+      ],
+      "default": "none",
+      "label": "Line and border"
+    },
+    {
+      "type": "select",
+      "id": "border_style",
+      "options": [
+        {
+          "value": "dashed",
+          "label": "Dashed"
+        },
+        {
+          "value": "solid",
+          "label": "Solid"
+        },
+        {
+          "value": "dotted",
+          "label": "Dotted"
+        }
+      ],
+      "default": "solid",
+      "label": "Border style"
+    },
+    {
+      "type": "select",
+      "id": "column_content_alignment",
+      "options": [
+        {
+          "value": "start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "end",
+          "label": "Right"
+        }
+      ],
+      "default": "start",
+      "label": "Column content alignment"
+    },
+    {
+      "type": "select",
+      "id": "icon_position",
+      "options": [
+        {
+          "value": "above",
+          "label": "Above text"
+        },
+        {
+          "value": "next",
+          "label": "Next to text"
+        }
+      ],
+      "default": "next",
+      "label": "Icon position"
+    },
+    {
+      "type": "range",
+      "id": "icon_size",
+      "min": 20,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Icon size",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "icon_thickness",
+      "min": 1,
+      "max": 5,
+      "step": 0.5,
+      "unit": "px",
+      "label": "Icon thickness",
+      "default": 1
+    },
+    {
+      "type": "header",
+      "content": "Carousel"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_desktop_slider",
+      "label": "Enable carousel on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "swiper_on_mobile",
+      "default": true,
+      "label": "Enable swipe on mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "auto_play",
+      "label": "Auto play",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_navigation",
+      "label": "Show navigation on desktop",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_navigation_mobile",
+      "label": "Show navigation on mobile",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "change_bar_every",
+      "min": 3,
+      "max": 10,
+      "step": 1,
+      "unit": "s",
+      "label": "Change bar every",
+      "default": 5
+    },
+    {
+      "type": "header",
+      "content": "Colors"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#F6F6F0"
+    },
+    {
+      "type": "color",
+      "id": "background_column_color",
+      "label": "Background column",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "heading_column_color",
+      "label": "Heading column",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text",
+      "default": "#4b4b4b"
+    },
+    {
+      "type": "color",
+      "id": "color_text_link",
+      "label": "Text link",
+      "default": "rgba(0,0,0,0)"
+    },
+    {
+      "type": "color",
+      "id": "line_border_color",
+      "label": "Line and border",
+      "default": "#EEEEEE"
+    },
+    {
+      "type": "color",
+      "id": "color_icon",
+      "label": "Icon",
+      "default": "#154326"
+    },
+    {
+      "type": "color",
+      "id": "slider_button_color",
+      "default": "#242424",
+      "label": "Slider button"
+    },
+    {
+      "type": "color",
+      "id": "slider_button_hover_color",
+      "default": "#000000",
+      "label": "Slider button hover"
+    },
+    {
+      "type": "color",
+      "id": "slider_button_hover_text_color",
+      "default": "#FFFFFF",
+      "label": "Slider button hover text"
+    },
+    {
+      "type": "header",
+      "content": "Desktop layout"
+    },
+    {
+      "type": "select",
+      "id": "column_layout_desktop",
+      "options": [
+        {
+          "value": "lg:w-full",
+          "label": "1 column"
+        },
+        {
+          "value": "lg:w-1/2",
+          "label": "2 columns"
+        },
+        {
+          "value": "lg:w-1/3",
+          "label": "3 columns"
+        },
+        {
+          "value": "lg:w-1/4",
+          "label": "4 columns"
+        },
+        {
+          "value": "lg:w-1/5",
+          "label": "5 columns"
+        }
+      ],
+      "default": "lg:w-1/4",
+      "label": "Column layout"
+    },
+    {
+      "type": "select",
+      "id": "section_height_desktop",
+      "options": [
+        {
+          "value": "md:py-0",
+          "label": "Small"
+        },
+        {
+          "value": "md:py-7",
+          "label": "Medium"
+        },
+        {
+          "value": "md:py-10",
+          "label": "Large"
+        }
+      ],
+      "default": "md:py-0",
+      "label": "Section height"
+    },
+    {
+      "type": "range",
+      "id": "spacing_desktop",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Block spacing",
+      "default": 28
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "default": true,
+      "label": "Make section full width"
+    },
+    {
+      "type": "checkbox",
+      "id": "padding_full_width",
+      "default": false,
+      "label": "Enable side padding",
+      "info": "Add left and right padding when section is full-width."
+    },
+    {
+      "type": "checkbox",
+      "id": "show_section_divider",
+      "default": false,
+      "label": "Show section divider"
+    },
+    {
+      "type": "range",
+      "id": "padding_left_right",
+      "min": 0,
+      "max": 300,
+      "step": 4,
+      "unit": "px",
+      "label": "Left and right padding",
+      "default": 20,
+      "info": "Applied when enable side padding"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 0
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Mobile layout"
+    },
+    {
+      "type": "select",
+      "id": "column_layout_mobile",
+      "options": [
+        {
+          "value": "w-full",
+          "label": "1 column"
+        },
+        {
+          "value": "w-1/2",
+          "label": "2 columns"
+        }
+      ],
+      "default": "w-full",
+      "label": "Column layout"
+    },
+    {
+      "type": "select",
+      "id": "section_height_mobile",
+      "options": [
+        {
+          "value": "py-0",
+          "label": "Small"
+        },
+        {
+          "value": "py-5",
+          "label": "Medium"
+        },
+        {
+          "value": "py-7",
+          "label": "Large"
+        }
+      ],
+      "default": "py-5",
+      "label": "Section height"
+    },
+    {
+      "type": "range",
+      "id": "spacing_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "label": "Block spacing",
+      "default": 16
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width_mobile",
+      "default": false,
+      "label": "Make section full width"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_section_divider_mobile",
+      "default": false,
+      "label": "Show section divider"
+    },
+    {
+      "type": "range",
+      "id": "padding_top_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom_mobile",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 20
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "Column",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "options": [
+            {
+              "value": "none",
+              "label": "None"
+            },
+            {
+              "value": "activity",
+              "label": "Activity"
+            },
+            {
+              "value": "archive",
+              "label": "Archive"
+            },
+            {
+              "value": "arrow-down-cricle",
+              "label": "Arrow down circle"
+            },
+            {
+              "value": "arrow-left",
+              "label": "Arrow left"
+            },
+            {
+              "value": "arrow-left-circle",
+              "label": "Arrow left circle"
+            },
+            {
+              "value": "arrow-right",
+              "label": "Arrow right"
+            },
+            {
+              "value": "arrow-right-circle",
+              "label": "Arrow right circle"
+            },
+            {
+              "value": "arrow-up-circle",
+              "label": "Arrow up circle"
+            },
+            {
+              "value": "chevron-left",
+              "label": "Chevron left"
+            },
+            {
+              "value": "trending-down",
+              "label": "Trending down"
+            },
+            {
+              "value": "tv",
+              "label": "TV"
+            },
+            {
+              "value": "trending-up",
+              "label": "Trending up"
+            },
+            {
+              "value": "zap",
+              "label": "Zap"
+            },
+            {
+              "value": "1st-medal",
+              "label": "1st medal"
+            },
+            {
+              "value": "award",
+              "label": "Award"
+            },
+            {
+              "value": "bicycle",
+              "label": "Bicycle"
+            },
+            {
+              "value": "box",
+              "label": "Box"
+            },
+            {
+              "value": "briefcase",
+              "label": "Briefcase"
+            },
+            {
+              "value": "calendar",
+              "label": "Calendar"
+            },
+            {
+              "value": "camera",
+              "label": "Camera"
+            },
+            {
+              "value": "chat-bubble",
+              "label": "Chat bubble"
+            },
+            {
+              "value": "check-mark",
+              "label": "Check mark"
+            },
+            {
+              "value": "clock",
+              "label": "Clock"
+            },
+            {
+              "value": "cloud-rain",
+              "label": "Cloud rain"
+            },
+            {
+              "value": "coffee",
+              "label": "Coffee"
+            },
+            {
+              "value": "coin",
+              "label": "Coin"
+            },
+            {
+              "value": "credit-card",
+              "label": "Credit card"
+            },
+            {
+              "value": "delivery-truck",
+              "label": "Delivery truck"
+            },
+            {
+              "value": "dollar-sign",
+              "label": "Dollar sign"
+            },
+            {
+              "value": "earth",
+              "label": "Earth"
+            },
+            {
+              "value": "eye",
+              "label": "Eye"
+            },
+            {
+              "value": "feather",
+              "label": "Feather"
+            },
+            {
+              "value": "fire",
+              "label": "Fire"
+            },
+            {
+              "value": "flower",
+              "label": "Flower"
+            },
+            {
+              "value": "gift",
+              "label": "Gift"
+            },
+            {
+              "value": "globe",
+              "label": "Globe"
+            },
+            {
+              "value": "heart",
+              "label": "Heart"
+            },
+            {
+              "value": "iron",
+              "label": "Iron"
+            },
+            {
+              "value": "leaf",
+              "label": "Leaf"
+            },
+            {
+              "value": "lock",
+              "label": "Lock"
+            },
+            {
+              "value": "map-pin",
+              "label": "Map pin"
+            },
+            {
+              "value": "megaphone",
+              "label": "Megaphone"
+            },
+            {
+              "value": "message-text",
+              "label": "Message text"
+            },
+            {
+              "value": "music",
+              "label": "Music"
+            },
+            {
+              "value": "packages",
+              "label": "Packages"
+            },
+            {
+              "value": "pants",
+              "label": "Pants"
+            },
+            {
+              "value": "percent",
+              "label": "Percent"
+            },
+            {
+              "value": "piggy-bank",
+              "label": "Piggy bank"
+            },
+            {
+              "value": "plane",
+              "label": "Plane"
+            },
+            {
+              "value": "planet",
+              "label": "Planet"
+            },
+            {
+              "value": "question-mark",
+              "label": "Question mark"
+            },
+            {
+              "value": "rocket",
+              "label": "Rocket"
+            },
+            {
+              "value": "scissors",
+              "label": "Scissors"
+            },
+            {
+              "value": "settings",
+              "label": "Settings"
+            },
+            {
+              "value": "shirt",
+              "label": "Shirt"
+            },
+            {
+              "value": "shop-alt",
+              "label": "Shop"
+            },
+            {
+              "value": "shopping-bag",
+              "label": "Shopping bag"
+            },
+            {
+              "value": "shopping-cart",
+              "label": "Shopping cart"
+            },
+            {
+              "value": "smile",
+              "label": "Smile"
+            },
+            {
+              "value": "star",
+              "label": "Star"
+            },
+            {
+              "value": "sun",
+              "label": "Sun"
+            },
+            {
+              "value": "tag",
+              "label": "Tag"
+            },
+            {
+              "value": "truck",
+              "label": "Truck"
+            },
+            {
+              "value": "wallet",
+              "label": "Wallet"
+            },
+            {
+              "value": "washing",
+              "label": "Washing"
+            },
+            {
+              "value": "yoga",
+              "label": "Yoga"
+            }
+          ],
+          "default": "truck",
+          "label": "Icon"
+        },
+        {
+          "type": "image_picker",
+          "id": "custom_image",
+          "label": "Custom icon image"
+        },
+        {
+          "type": "html",
+          "id": "custom_icon",
+          "label": "Custom icon (SVG code)",
+          "info": "For assistance with custom SVG code or fixing issues that arise from custom SVG code, please [contact our support](https://omnithemes.com/contact/)"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Column",
+          "label": "Heading"
+        },
+        {
+          "type": "url",
+          "id": "title_link",
+          "label": "Heading link"
+        },
+        {
+          "type": "checkbox",
+          "id": "open_new_window",
+          "default": false,
+          "label": "Open this link in a new window"
+        },
+        {
+          "type": "range",
+          "id": "heading_size",
+          "min": 50,
+          "max": 200,
+          "step": 10,
+          "unit": "%",
+          "label": "Heading size",
+          "default": 100
+        },
+        {
+          "type": "richtext",
+          "id": "text",
+          "default": "<p>Add details on availability, style, or even provide a review.</p>",
+          "label": "Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "OT: Trust badges #7",
+      "blocks": [
+        {
+          "type": "column",
+          "settings": {
+            "icon": "gift",
+            "title": "",
+            "text": "<p>Freeship for orders over $100</p>"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "icon": "leaf",
+            "title": "",
+            "text": "<p>30 days health guarantee</p>"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "icon": "check-mark",
+            "title": "",
+            "text": "<p>4.6/5 out of 15.000+ reviews</p>"
+          }
+        },
+        {
+          "type": "column",
+          "settings": {
+            "icon": "truck",
+            "title": "",
+            "text": "<p>Ship locally within the day</p>"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

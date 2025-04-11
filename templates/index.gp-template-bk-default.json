@@ -1,0 +1,1491 @@
+{
+  "sections": {
+    "ss_scrolling_announcement_bar_3_LfJV64": {
+      "type": "ss-scrolling-announcement-bar-3",
+      "blocks": {
+        "review_item_WRzmFE": {
+          "type": "review_item",
+          "settings": {
+            "stars_count": 5,
+            "stars_size": 16,
+            "stars_size_mobile": 17,
+            "text": "4.7 out of 5 | 6,000+ reviews",
+            "url": "",
+            "text_custom": false,
+            "text_font": "josefin_sans_n4",
+            "text_size": 14,
+            "text_size_mobile": 14,
+            "text_height": 100,
+            "stars_bg_color": "#00b67a",
+            "stars_color": "#ffffff",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "review_item_WRzmFE"
+      ],
+      "settings": {
+        "insert_css_class_target": "",
+        "show_right_mobile": false,
+        "animate_speed": 0,
+        "animate_speed_mobile": 0,
+        "animate_direction": "left",
+        "animate_pause": true,
+        "items_gap": 20,
+        "items_gap_mobile": 20,
+        "item_gap": 10,
+        "item_gap_mobile": 10,
+        "icon_size": 20,
+        "icon_size_mobile": 20,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 12,
+        "text_size_mobile": 12,
+        "text_height": 100,
+        "icon_color": "#000000",
+        "text_color": "#000000",
+        "background_color": "#f7f7f7",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_horizontal": 2,
+        "padding_horizontal_mobile": 5,
+        "full_width": true,
+        "content_width": 1200,
+        "border_thickness": 0
+      }
+    },
+    "ss_circle_menu_GPNhB9": {
+      "type": "ss-circle-menu",
+      "blocks": {
+        "image_UdezUY": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/25_d6c454ff-c16f-4768-8d61-6da15c27ede4.jpg",
+            "bubble_text": "Shop All",
+            "bubble_link": "shopify:\/\/collections\/all-products"
+          }
+        },
+        "image_KY7kT8": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/Hello_Skin_21_June_2998-Edit_80b40fb2-e5b0-4e9d-9ded-a053af6f34ca.jpg",
+            "bubble_text": "Skincare",
+            "bubble_link": "shopify:\/\/collections\/skincare"
+          }
+        },
+        "image_ckWnqy": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/emh.jpg",
+            "bubble_text": "Skincare Bundles",
+            "bubble_link": "shopify:\/\/collections\/skincare-bundles"
+          }
+        },
+        "image_Q84a7H": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/Screenshot_2024-12-27_at_10.35.13_pm.png",
+            "bubble_text": "Skincare Devices",
+            "bubble_link": "shopify:\/\/collections\/skincare-devices"
+          }
+        },
+        "image_Xpgwfj": {
+          "type": "Image",
+          "settings": {
+            "bubble_img": "shopify:\/\/shop_images\/scalp-scrubber-product_dad0e776-0a7e-4daa-aab5-9ef0a6972c80.png",
+            "bubble_text": "Clearance Sale",
+            "bubble_link": "shopify:\/\/collections\/clearance"
+          }
+        }
+      },
+      "block_order": [
+        "image_UdezUY",
+        "image_KY7kT8",
+        "image_ckWnqy",
+        "image_Q84a7H",
+        "image_Xpgwfj"
+      ],
+      "settings": {
+        "slider_width": 100,
+        "slider_gap": 16,
+        "slider_gap_mobile": 16,
+        "icon_size": 58,
+        "icon_size_mobile": 54,
+        "icon_space": 0,
+        "icon_space_mobile": 0,
+        "icon_border_thickness": 1,
+        "icon_square": false,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 12,
+        "text_size_mobile": 10,
+        "text_height": 130,
+        "text_mt": 8,
+        "icon_border_color": "#000000",
+        "icon_border_gradient": "",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "border_gradient": "",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 12,
+        "padding_bottom": 12,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 150,
+        "border_thickness": 0,
+        "lazy": true,
+        "hide_mobile": false,
+        "hide_desktop": false
+      }
+    },
+    "slideshow_q3U4Jn": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_JhU8hg": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "background": "shopify:\/\/shop_images\/build-your-bundle-and-desktop.webp",
+            "background_mobile": "shopify:\/\/shop_images\/build-your-bundle-and-save.webp",
+            "image_overlay_opacity": 0,
+            "content_position": "middle-left",
+            "text_alignment": "center",
+            "title": "",
+            "heading_size": "hd1",
+            "subheading": "",
+            "description": "",
+            "description_size": "text-base",
+            "button_label": "",
+            "button_link": "https:\/\/helloskin.com.au\/apps\/bundles\/bundle\/139313",
+            "button_style": "btn--primary"
+          }
+        },
+        "slide_U9bPyj": {
+          "type": "slide",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "background": "shopify:\/\/shop_images\/FREE_SERUM_ON_ORDERS.webp",
+            "background_mobile": "shopify:\/\/shop_images\/FREE_SERUM_ON_ORDERS_mobile_1.webp",
+            "image_overlay_opacity": 0,
+            "content_position": "middle-right",
+            "text_alignment": "center",
+            "title": "",
+            "heading_size": "hd1",
+            "subheading": "",
+            "description": "",
+            "description_size": "text-base",
+            "button_label": "",
+            "button_link": "shopify:\/\/collections\/shop-all",
+            "button_style": "btn--primary"
+          }
+        },
+        "slide_pEkPxY": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "color_scheme": "scheme-1",
+            "background": "shopify:\/\/shop_images\/Purple_Blue_Playful_Geometric_Skincare_Product_Promotion_Instagram_Story_900_x_520_px_1_e09c43dc-8ab8-4ddc-9b11-cbd9254a9b84.png",
+            "background_mobile": "shopify:\/\/shop_images\/Purple_Blue_Playful_Geometric_Skincare_Product_Promotion_Instagram_Story_900_x_520_px_900_x_1300_px.png",
+            "image_overlay_opacity": 0,
+            "content_position": "middle-left",
+            "text_alignment": "center",
+            "title": "",
+            "heading_size": "hd1",
+            "subheading": "",
+            "description": "",
+            "description_size": "text-base",
+            "button_label": "",
+            "button_link": "",
+            "button_style": "btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "slide_JhU8hg",
+        "slide_U9bPyj",
+        "slide_pEkPxY"
+      ],
+      "settings": {
+        "container": "full",
+        "layout": "centered",
+        "slide_height": "adapt",
+        "show_dots": false,
+        "autoplay": true,
+        "autoplay_delay": 5,
+        "controls_position": "bottom",
+        "show_text_below": true,
+        "text_alignment_mobile": "center",
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "ss_scrolling_logo_cloud_2_7dLbRp": {
+      "type": "ss-scrolling-logo-cloud-2",
+      "blocks": {
+        "slide_rmkLJU": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9ea4f088-b020-4000-85a9-ebb5a49de0f0.png",
+            "link": ""
+          }
+        },
+        "slide_kX6Xjt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/marie-claire-logo.png",
+            "link": ""
+          }
+        },
+        "slide_nYJjHb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/news.com.au-logo.png",
+            "link": ""
+          }
+        },
+        "slide_fU77rp": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/womens-health-logo.png",
+            "link": ""
+          }
+        },
+        "slide_XxGTfT": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/elle-logo.png",
+            "link": ""
+          }
+        },
+        "slide_a69AX4": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/InStyle-logo-1.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_rmkLJU",
+        "slide_kX6Xjt",
+        "slide_nYJjHb",
+        "slide_fU77rp",
+        "slide_XxGTfT",
+        "slide_a69AX4"
+      ],
+      "settings": {
+        "ss-title": "Featured in",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "header_size": 22,
+        "header_align": "center",
+        "scrolling_velocity": 80,
+        "pause_hover": false,
+        "shadow": false,
+        "sliders_mt": 14,
+        "logo_padding_top": 4,
+        "logo_padding_bottom": 4,
+        "slider_gap": 72,
+        "slider_gap_mobile": 30,
+        "slider_direction": "left",
+        "slider_rotate": 0,
+        "slider_rotate_mobile": 0,
+        "slider_mb": 0,
+        "slider_mb_mobile": 0,
+        "second_slider": false,
+        "second_slider_direction": "right",
+        "second_slider_rotate": -5,
+        "second_slider_rotate_mobile": -15,
+        "second_slider_mt": -32,
+        "second_slider_mt_mobile": -32,
+        "icon_width": 200,
+        "header_color": "#121212",
+        "border_color": "#ffffff",
+        "background_color": "#ffffff",
+        "slider_background_color": "#ffffff",
+        "second_slider_background_color": "#be9573",
+        "margin_top": 16,
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 16,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0
+      }
+    },
+    "17333978281b5b03cc": {
+      "type": "apps",
+      "blocks": {
+        "tolstoy_shoppable_video_ugc_carousel_block_cNbpRG": {
+          "type": "shopify:\/\/apps\/tolstoy-shoppable-video-ugc\/blocks\/carousel-block\/06fa8282-42ff-403e-b67c-1936776aed11",
+          "settings": {
+            "publishId": "pepzmei1sk30r"
+          }
+        }
+      },
+      "block_order": [
+        "tolstoy_shoppable_video_ugc_carousel_block_cNbpRG"
+      ],
+      "settings": {
+        "include_margins": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "ss_feature_13_8BNxab": {
+      "type": "ss-feature-13",
+      "blocks": {
+        "item_emc6Ry": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icons8-power.svg",
+            "icon": "heart",
+            "title": "Powered by Science",
+            "text": "Our products, from skincare to devices, use research-driven formulas and advanced technology for real results."
+          }
+        },
+        "item_CnHXnM": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icons8-polymer.svg",
+            "icon": "plant",
+            "title": "Highly Concentrated Formulas",
+            "text": "Packed with potent actives, our highly concentrated formulas deliver maximum results with every drop."
+          }
+        },
+        "item_efVhGx": {
+          "type": "item",
+          "settings": {
+            "icon": "love",
+            "title": "Skin-Loving Formulas",
+            "text": "Gentle on all skin types, our products deliver results without irritation—perfect for even the most sensitive skin."
+          }
+        },
+        "item_tihgAE": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icons8-light.svg",
+            "icon": "gift",
+            "title": "Advanced Technology",
+            "text": "Our innovative devices, like the V3.0 LED handset, are engineered to address a range of skin concerns with superior performance."
+          }
+        },
+        "item_JBGYgM": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icons8-money-back-guarantee-128_7625a18e-6c57-4354-9bf0-99e62ba1e29c.png",
+            "icon": "bi-ecology",
+            "title": "Australian Made",
+            "text": "Skincare by helloskin is proudly Australian-made, with locally and ethically sourced ingredients to ensure quality and transparency."
+          }
+        },
+        "item_J6b4xa": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icons8-best-seller.svg",
+            "icon": "truck",
+            "title": "No Shortcuts, Ever",
+            "text": "Crafted without compromise, our skincare takes no shortcuts—focused on quality, not the bottom line"
+          }
+        },
+        "item_TGQANi": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icons8-cruelty-free.svg",
+            "icon": "plant",
+            "title": "Ethical and Compassionate",
+            "text": "We’re proudly cruelty-free, ensuring no animal testing across any of our products or processes."
+          }
+        },
+        "item_a8UWQ8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/icons8-cross.svg",
+            "icon": "phone",
+            "title": "Free From Nasties",
+            "text": "Paraben-free, sulphate-free, and free of harsh chemicals—our formulas work in harmony with your skin, not against it."
+          }
+        }
+      },
+      "block_order": [
+        "item_emc6Ry",
+        "item_CnHXnM",
+        "item_efVhGx",
+        "item_tihgAE",
+        "item_JBGYgM",
+        "item_J6b4xa",
+        "item_TGQANi",
+        "item_a8UWQ8"
+      ],
+      "settings": {
+        "heading": "<h2>What makes us different amidst the hundreds of skincare options?<\/h2>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 42,
+        "heading_size_mobile": 32,
+        "heading_height": 150,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "body_gap": 80,
+        "items_gap": 50,
+        "items_gap_mobile": 30,
+        "items_mt": 24,
+        "items_mt_mobile": 22,
+        "image": "shopify:\/\/shop_images\/Hello_Skin_21_June_2535-Edit_4dbb2d41-61b6-4684-a987-812381c109b7.jpg",
+        "image_position": "center",
+        "image_position_mobile": "first",
+        "image_ratio": "portrait",
+        "image_ratio_mobile": "portrait",
+        "image_radius": 0,
+        "image_border_thickness": 0,
+        "content_align": "center",
+        "content_align_mobile": "center",
+        "icon_size": 50,
+        "icon_size_mobile": 40,
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 22,
+        "title_size_mobile": 16,
+        "title_height": 130,
+        "title_mt": 16,
+        "title_mt_mobile": 8,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 16,
+        "text_size_mobile": 16,
+        "text_height": 150,
+        "text_mt": 10,
+        "text_mt_mobile": 6,
+        "text_hide_mobile": true,
+        "button": "",
+        "button_url": "",
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 16,
+        "button_size_mobile": 16,
+        "button_height": 100,
+        "button_width": 200,
+        "button_width_mobile": 200,
+        "button_mt": 16,
+        "button_mt_mobile": 16,
+        "button_padding_vertical": 16,
+        "button_padding_vertical_mobile": 16,
+        "button_padding_horizontal": 24,
+        "button_padding_horizontal_mobile": 24,
+        "button_radius": 4,
+        "button_border_thickness": 1,
+        "button_align": "left",
+        "button_align_mobile": "left",
+        "button_style": "non_outline",
+        "button_position": "bottom",
+        "button_color": "#ffffff",
+        "button_hover_color": "#ffffff",
+        "button_bg_color": "#000000",
+        "button_bg_hover_color": "#000000",
+        "button_border_color": "#000000",
+        "button_border_hover_color": "#000000",
+        "icon_color": "#131313",
+        "title_color": "#131313",
+        "text_color": "#131313",
+        "heading_color": "#131313",
+        "image_border_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 160,
+        "section_radius": 0,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "feature_list_cW3d9c": {
+      "type": "feature-list",
+      "blocks": {
+        "feature_item_NzxQGa": {
+          "type": "feature_item",
+          "settings": {
+            "color_scheme": "",
+            "icon": "check",
+            "icon_style": "btn--secondary",
+            "text": "30 Day Money Back Guarantee"
+          }
+        },
+        "feature_item_VbCwL3": {
+          "type": "feature_item",
+          "settings": {
+            "color_scheme": "",
+            "icon": "check",
+            "icon_style": "btn--secondary",
+            "text": "Free Shipping Over $80"
+          }
+        },
+        "feature_item_yyNV9A": {
+          "type": "feature_item",
+          "settings": {
+            "color_scheme": "",
+            "icon": "check",
+            "icon_style": "btn--secondary",
+            "text": "Free & Easy Returns"
+          }
+        },
+        "feature_item_gBgLft": {
+          "type": "feature_item",
+          "settings": {
+            "color_scheme": "",
+            "icon": "check",
+            "icon_style": "btn--secondary",
+            "text": "Cruelty Free & Sustainable Products"
+          }
+        },
+        "feature_item_R8A8eX": {
+          "type": "feature_item",
+          "settings": {
+            "color_scheme": "",
+            "icon": "check",
+            "icon_style": "btn--secondary",
+            "text": "Australian Made"
+          }
+        }
+      },
+      "block_order": [
+        "feature_item_NzxQGa",
+        "feature_item_VbCwL3",
+        "feature_item_yyNV9A",
+        "feature_item_gBgLft",
+        "feature_item_R8A8eX"
+      ],
+      "settings": {
+        "color_scheme": "scheme-7",
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h2",
+        "heading_highlight_style": "none",
+        "description": "",
+        "text_size": "text-base",
+        "item_alignment": "center",
+        "icon_size": "extra-medium",
+        "swipe_on_mobile": true,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "ss_testimonial_8_9BVYbk": {
+      "type": "ss-testimonial-8",
+      "blocks": {
+        "slide_FkH3RH": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "An Amazing Handset",
+            "text": "This is an amazing handset. I love that you can use the modes with different light settings depending on what my skin needs. Defintiely a must have for anyone looking to improve their skin health and keep aging at bay!",
+            "author_date": "Bailey"
+          }
+        },
+        "slide_4xGBhB": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Absolute Life Changer",
+            "text": "I bought this kit and had a chat to staff on live chat about how to use it, they were extremely helpful. My sons acne is 98% gone. I've never written a single review in my life but this hit home, my son is feeling extraordinary. For my situation this kit has been an absolute life changer.",
+            "author_date": "Louis"
+          }
+        },
+        "slide_74mabr": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Worth Every Cent",
+            "text": "Bought for my teenage daughter who was getting teased for her acne and worth every cent. Her skin feels smoother, and her breakouts are starting to calm down since using it. Love that it’s all made here too. Support local, I say!",
+            "author_date": "Kathryn"
+          }
+        },
+        "slide_BNHebR": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Great For Anti-aging",
+            "text": "I have tried many other retinol serums but the helloskin retinol is great for anitaging - it has really tighten my skin and soften my fine lines around my forehead.",
+            "author_date": "Daisy"
+          }
+        },
+        "slide_eAqAYi": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Obsessed!",
+            "text": "I bought this two weeks ago not really knowing what to expect as everything i've tried so far on my acne has done very little or nothing to help. Ive now just come back and bought another 4 bottles + the full anti acne kit as well. Obsessed!",
+            "author_date": "Cathrine"
+          }
+        },
+        "slide_m8xPef": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "A Must!",
+            "text": "Theres no doubt this moisturiser is a must! I saw this online on instagram and just really liked the packaging so i bought it to try it out. It smells like heaven and is so gentle but works amazingly to keep my face soft and moisturised.",
+            "author_date": "Sally"
+          }
+        },
+        "slide_gfqQF7": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Totally Love It!",
+            "text": "I use this every night and it last the whole next day without needing to reapply in the morning. I go to bed feeling so calm and relaxed with the refreshing smell. I totally love it!",
+            "author_date": "Chloe"
+          }
+        },
+        "slide_xb7jAk": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Thanks Helloskin!",
+            "text": "The best body care product combo i've ever purchased. My boyfriend can't stop commenting on how smooth my skin feels! Thanks helloskin!",
+            "author_date": "Katrina"
+          }
+        },
+        "slide_BVCnCN": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Love It So Much!",
+            "text": "Longtime fan of helloskin products. I bought the complete skincare kit when it launched and I love it so much I came back to buy 3 more for my daughter for their Xmas gift. Keep them coming helloskin!",
+            "author_date": "Annette"
+          }
+        },
+        "slide_yqfrkU": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "Wow!",
+            "text": "Wow!I am obsessed with these. I wasn't sure at first because they aren't as expensive as other serums i've tried but i'm convinced now and will be back to top up.",
+            "author_date": "Jennifer"
+          }
+        }
+      },
+      "block_order": [
+        "slide_FkH3RH",
+        "slide_4xGBhB",
+        "slide_74mabr",
+        "slide_BNHebR",
+        "slide_eAqAYi",
+        "slide_m8xPef",
+        "slide_gfqQF7",
+        "slide_xb7jAk",
+        "slide_BVCnCN",
+        "slide_yqfrkU"
+      ],
+      "settings": {
+        "heading": "Our customers tell it better than we do!",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 40,
+        "heading_size_mobile": 24,
+        "heading_height": 130,
+        "heading_align": "center",
+        "rating_text": "Excellent",
+        "rating_text_custom": false,
+        "rating_text_font": "josefin_sans_n4",
+        "rating_text_size": 24,
+        "rating_text_size_mobile": 20,
+        "rating_text_height": 130,
+        "rating_text_mt": 16,
+        "rating": 4.7,
+        "rating_hide": false,
+        "rating_text_hide": false,
+        "rating_align": "center",
+        "stars_count": 5,
+        "stars_size": 28,
+        "stars_size_mobile": 24,
+        "stars_align": "center",
+        "text": "<p>based on <strong>6000+<\/strong> reviews<\/p>",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 20,
+        "text_size_mobile": 16,
+        "text_height": 130,
+        "text_align": "center",
+        "text_mt": 16,
+        "slider_width": 80,
+        "slider_view": 3,
+        "slider_view_mobile": 1.2,
+        "slider_gap": 20,
+        "slider_gap_mobile": 20,
+        "slider_mt": 36,
+        "card_padding_vertical": 32,
+        "card_padding_vertical_mobile": 24,
+        "card_padding_horizontal": 40,
+        "card_padding_horizontal_mobile": 24,
+        "card_radius": 16,
+        "card_border_thickness": 0,
+        "card_shadow": true,
+        "card_heading_custom": false,
+        "card_heading_font": "josefin_sans_n4",
+        "card_heading_size": 24,
+        "card_heading_size_mobile": 20,
+        "card_heading_height": 130,
+        "card_heading_align": "center",
+        "card_heading_mt": 16,
+        "card_text_custom": false,
+        "card_text_font": "josefin_sans_n4",
+        "card_text_size": 14,
+        "card_text_size_mobile": 14,
+        "card_text_height": 150,
+        "card_text_align": "center",
+        "card_text_mt": 16,
+        "card_text_more": "View More",
+        "card_text_less": "View Less",
+        "card_count_words": 20,
+        "card_author_date_text_custom": false,
+        "card_author_date_text_font": "josefin_sans_n4",
+        "card_author_date_text_size": 16,
+        "card_author_date_text_size_mobile": 16,
+        "card_author_date_text_height": 130,
+        "card_author_date_text_align": "center",
+        "card_author_date_text_mt": 16,
+        "arrow_size": 50,
+        "arrow_size_mobile": 50,
+        "arrow_icon_size": 28,
+        "arrow_icon_size_mobile": 28,
+        "arrow_border_thickness": 0,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "dots_size": 12,
+        "dots_size_mobile": 12,
+        "dots_show_desktop": false,
+        "dots_show_mobile": false,
+        "button": "",
+        "button_url": "",
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 16,
+        "button_size_mobile": 14,
+        "button_height": 100,
+        "button_align": "center",
+        "button_mt": 16,
+        "button_padding_vertical": 20,
+        "button_padding_horizontal": 16,
+        "button_radius": 8,
+        "button_border_thickness": 0,
+        "button_color": "#ffffff",
+        "button_hover_color": "#ffffff",
+        "button_bg_color": "#000000",
+        "button_bg_hover_color": "#000000",
+        "button_border_color": "#000000",
+        "button_border_hover_color": "#000000",
+        "card_bg_color": "#ffffff",
+        "card_border_color": "#000000",
+        "card_shadow_color": "#00b67a",
+        "card_heading_color": "#000000",
+        "card_text_color": "#000000",
+        "card_author_date_text_color": "#000000",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#ffffff",
+        "arrow_border_hover_color": "#ffffff",
+        "dots_color": "#000000",
+        "heading_color": "#000000",
+        "rating_text_color": "#000000",
+        "stars_bg_color": "#00b67a",
+        "stars_color": "#ffffff",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "linear-gradient(180deg, rgba(239, 199, 233, 1), rgba(255, 255, 255, 1) 100%)",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "ss_scrolling_text_4_9fRbfE": {
+      "type": "ss-scrolling-text-4",
+      "settings": {
+        "scrolling_velocity": 150,
+        "scrolling_velocity_mobile": 150,
+        "scrolling_gap": 16,
+        "scrolling_gap_mobile": 16,
+        "reverse_direction": false,
+        "text": "Eco-Friendly ✦ Australian Made ✦ Sustainable ✦ 30-Day Guarantee ✦ Cruelty Free ✦",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 72,
+        "text_size_mobile": 40,
+        "text_height": 150,
+        "icon_size": 32,
+        "icon_size_mobile": 32,
+        "animate_icon": "none",
+        "hide_icon": true,
+        "text_color": "#000000",
+        "text_gradient": "",
+        "icon_color": "#67645e",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": true
+      }
+    },
+    "ss_before_after_image_3_trAUDy": {
+      "type": "ss-before-after-image-3",
+      "blocks": {
+        "slide_P8RGUX": {
+          "type": "slide",
+          "settings": {
+            "before_image": "shopify:\/\/shop_images\/gempages_541166679116219322-39a52aca-2e42-4cb0-b422-cf9d1ad84644.webp",
+            "after_image": "shopify:\/\/shop_images\/gempages_541166679116219322-7ad1f15f-9add-4d27-94cf-da7333faf7bf.webp",
+            "customer": "Augusta \/ Trial Participant",
+            "text": "<p>\"I'm going to let my before and afters do the talking. Can I give 10 stars? This really soothed my redness, making my skin look calmer and feel more balanced\"<\/p>",
+            "product_label": "Augusta C.",
+            "product": "",
+            "bottom_title": "96%",
+            "bottom_text": "<p><strong>Of users noticed smoother, clearer skin and fewer breakouts with regular use of the helloskin Anti-Acne Serum. <\/strong><\/p><p>This powerful formula has become a go-to for achieving a more balanced, blemish-free complexion.<\/p>"
+          }
+        },
+        "slide_wTrHbH": {
+          "type": "slide",
+          "settings": {
+            "before_image": "shopify:\/\/shop_images\/gempages_541166679116219322-b6cff2c0-9d6d-47b2-8539-5b0989217835.png",
+            "after_image": "shopify:\/\/shop_images\/gempages_541166679116219322-01892c4b-cf17-4d6a-bd6d-e2f4a1f5ca5b.png",
+            "customer": "Yana\/Trial Participant",
+            "text": "<p>“I've never used retinol before and when i was asked to participate in the trial i thought it would be a good time to try it out. This is my third week, applying only at night with the moisturiser and my fine lines are really disappearing. It's still an amazement to me!\"<\/p>",
+            "product_label": "Yana K.",
+            "product": "",
+            "bottom_title": "94%",
+            "bottom_text": "<p><strong>Of users noticed smoother skin texture and visibly reduced fine lines with regular use of the helloskin Retinol Serum. <\/strong><\/p><p>Paired with the advanced V3.0 LED Handset, this powerhouse duo elevates your skincare routine for glowing, rejuvenated skin.<\/p>"
+          }
+        },
+        "slide_bkYEHp": {
+          "type": "slide",
+          "settings": {
+            "before_image": "shopify:\/\/shop_images\/before-21.webp",
+            "after_image": "shopify:\/\/shop_images\/before-22.webp",
+            "customer": "Leanne\/Trial Participant",
+            "text": "<p>\"this was a God send. I didn't think it was going to work if I'm being honest because skincare in the past hasn't been my best friend but this did so well. I have no hesitation in recommending this produxt to people.\"<\/p>",
+            "product_label": "Leanne M.",
+            "product": "",
+            "bottom_title": "95%",
+            "bottom_text": "<p><strong>95% of users saw a significant reduction in breakouts and redness with the combined use of the helloskin Anti-Acne Serum and V3.0 LED Handset.<\/strong><\/p><p>Together, they target acne-causing bacteria and calm inflammation, leaving skin visibly clearer and balanced.<\/p>"
+          }
+        },
+        "slide_jAN9dG": {
+          "type": "slide",
+          "settings": {
+            "before_image": "shopify:\/\/shop_images\/Screenshot_2025-01-10_at_2.36.12_PM.png",
+            "after_image": "shopify:\/\/shop_images\/Screenshot_2025-01-10_at_2.36.37_PM.png",
+            "customer": "Raniya",
+            "text": "<p>\"It’s amazing how this product works! Thank you Hello Skin, been having such bad adult acne and it literally cleared up my pumps in 4 days that is some incredible result which I never expected. Love love love and I highly recommend Hello Skin Anti Acne serum\"<\/p>",
+            "product_label": "Raniya M.",
+            "product": "",
+            "bottom_title": "96%",
+            "bottom_text": "<p><strong>Users experienced fewer breakouts and visibly calmer, clearer skin with regular use of the helloskin Anti-Acne Serum. <\/strong><\/p><p>This targeted formula is a game-changer for tackling blemishes and restoring balance.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "slide_P8RGUX",
+        "slide_wTrHbH",
+        "slide_bkYEHp",
+        "slide_jAN9dG"
+      ],
+      "settings": {
+        "heading": "<h2>SEEING IS BELIEVING<\/h2>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 12,
+        "heading_size_mobile": 12,
+        "heading_height": 150,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "sub_heading": "<p>Real People. Real Results<\/p>",
+        "sub_heading_custom": false,
+        "sub_heading_font": "josefin_sans_n4",
+        "sub_heading_size": 32,
+        "sub_heading_size_mobile": 26,
+        "sub_heading_height": 150,
+        "sub_heading_align": "center",
+        "sub_heading_align_mobile": "center",
+        "sub_heading_mt": 12,
+        "slider_mt": 54,
+        "slider_mt_mobile": 20,
+        "images_gap": 16,
+        "images_gap_mobile": 16,
+        "image_radius": 0,
+        "image_border_thickness": 0,
+        "image_ratio": "portrait",
+        "image_ratio_mobile": "portrait",
+        "badge_before": "BEFORE",
+        "badge_after": "AFTER",
+        "badge_custom": false,
+        "badge_font": "josefin_sans_n4",
+        "badge_size": 12,
+        "badge_size_mobile": 10,
+        "badge_height": 100,
+        "badge_padding_vertical": 10,
+        "badge_padding_vertical_mobile": 4,
+        "badge_padding_horizontal": 30,
+        "badge_padding_horizontal_mobile": 16,
+        "badge_radius": 0,
+        "badge_border_thickness": 0,
+        "content_padding_vertical": 0,
+        "content_padding_vertical_mobile": 0,
+        "content_padding_horizontal": 80,
+        "content_padding_horizontal_mobile": 0,
+        "customer_custom": false,
+        "customer_font": "josefin_sans_n4",
+        "customer_size": 32,
+        "customer_size_mobile": 20,
+        "customer_height": 100,
+        "customer_align": "left",
+        "customer_align_mobile": "center",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 14,
+        "text_size_mobile": 14,
+        "text_height": 150,
+        "text_align": "left",
+        "text_align_mobile": "center",
+        "text_mt": 8,
+        "product_label_custom": false,
+        "product_label_font": "josefin_sans_n4",
+        "product_label_size": 14,
+        "product_label_size_mobile": 14,
+        "product_label_height": 100,
+        "product_label_align": "left",
+        "product_label_align_mobile": "center",
+        "product_label_mt": 40,
+        "product_custom": false,
+        "product_font": "josefin_sans_n4",
+        "product_size": 14,
+        "product_size_mobile": 14,
+        "product_height": 100,
+        "product_align": "left",
+        "product_align_mobile": "center",
+        "product_mt": 6,
+        "arrow_size": 50,
+        "arrow_size_mobile": 50,
+        "arrow_icon_size": 50,
+        "arrow_icon_size_mobile": 50,
+        "arrow_border_thickness": 0,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "dots_size": 15,
+        "dots_size_mobile": 15,
+        "dots_mt": 25,
+        "dots_show_desktop": true,
+        "dots_show_mobile": true,
+        "bottom_mt": 28,
+        "bottom_align": "center",
+        "bottom_align_mobile": "center",
+        "bottom_border_thickness": 2,
+        "bottom_title_custom": false,
+        "bottom_title_font": "josefin_sans_n4",
+        "bottom_title_size": 30,
+        "bottom_title_size_mobile": 30,
+        "bottom_title_height": 100,
+        "bottom_text_custom": false,
+        "bottom_text_font": "josefin_sans_n4",
+        "bottom_text_size": 14,
+        "bottom_text_size_mobile": 14,
+        "bottom_text_height": 150,
+        "image_border_color": "#111010",
+        "badge_color": "#000000",
+        "badge_bg_color": "#ffffff",
+        "badge_border_color": "#111010",
+        "customer_color": "#111010",
+        "text_color": "#2e2e2e",
+        "product_label_color": "#2e2e2e",
+        "product_color": "#573c2a",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#525252",
+        "arrow_bg_color": "",
+        "arrow_bg_hover_color": "",
+        "arrow_border_color": "#ffffff",
+        "arrow_border_hover_color": "#ffffff",
+        "dots_color": "#573c2a",
+        "bottom_border_color": "#8f8e8e",
+        "bottom_title_color": "#573c2a",
+        "bottom_text_color": "#2f1b13",
+        "heading_color": "#000000",
+        "sub_heading_color": "#111010",
+        "background_color": "#f7f7f7",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 140,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "collection_list_Pr36qH": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_VHfaMD": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "skincare",
+            "image": "shopify:\/\/shop_images\/gempages_541166679116219322-99723682-47b0-4356-8184-6d6f75d70520.jpg",
+            "title": "",
+            "description": ""
+          }
+        },
+        "featured_collection_H3VHEr": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "skincare-bundles",
+            "image": "shopify:\/\/shop_images\/Hello_Skin_21_June_2506-Edit.jpg",
+            "title": "",
+            "description": ""
+          }
+        },
+        "featured_collection_ytHAXL": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "skincare-tools",
+            "image": "shopify:\/\/shop_images\/Hello_Skin_21_June_2601-Edit_3cc25c5c-828a-4285-a4a9-851a72138959.jpg",
+            "title": "",
+            "description": ""
+          }
+        },
+        "featured_collection_inyzwk": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "pre-made-bundles",
+            "image": "shopify:\/\/shop_images\/Hello_Skin_21_June_2535-Edit_4dbb2d41-61b6-4684-a987-812381c109b7.jpg",
+            "title": "",
+            "description": ""
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_VHfaMD",
+        "featured_collection_H3VHEr",
+        "featured_collection_ytHAXL",
+        "featured_collection_inyzwk"
+      ],
+      "settings": {
+        "color_scheme": "scheme-f135f57d-69f6-4c1d-bd3a-40361420ed42",
+        "layout": "split",
+        "subheading": "Helloskin",
+        "heading": "High-performance skincare",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "description": "<p>Skincare designed to deliver real results with clinically proven ingredients. Experience the difference with formulations that truly perform.<\/p>",
+        "text_size": "text-base",
+        "card_color_inherited": true,
+        "show_product_count": false,
+        "show_icon": true,
+        "card_style": "",
+        "card_image_ratio": "adapt",
+        "content_alignment": "left",
+        "columns_desktop": 3,
+        "column_gap": "medium",
+        "row_gap": "medium",
+        "enable_slider": true,
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "multicolumn_mQAQbW": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_bRpkxq": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/cropped-logo-1.png",
+            "image_width": "full",
+            "title": "",
+            "heading_size": "h4",
+            "text": "<p>\"Treat your skin to a detox like no other with helloskin’s Hibiscus Clay Mask – the brand also offers a range of additional skincare products to elevate your skincare routine for a true beauty indulgence!<\/p>",
+            "text_size": "text-lg",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "https:\/\/luxnomade.com\/shop\/lux-list-january-2025\/",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_DrXPMd": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/7NEWS_Logo_RED_RGB.c265c20f.svg",
+            "image_width": "full",
+            "title": "",
+            "heading_size": "h4",
+            "text": "<p>\"Popular exfoliating glove back in stock for a fourth time after Aussie brand sold 20,000 units. You’ll want to deeply exfoliate your skin so you’re working with a perfectly smooth base.\"<\/p>",
+            "text_size": "text-lg",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_6be7nJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9ea4f088-b020-4000-85a9-ebb5a49de0f0.png",
+            "image_width": "extra-large",
+            "title": "",
+            "heading_size": "h4",
+            "text": "<p>\"As self-proclaimed skincare fanatics, we’ve tried it all. But it’s rare—almost unheard of—to find a brand that delivers results so undeniably effective they replace staples we’ve sworn by for years. <em>HelloSkin <\/em>is that brand.\"<\/p>",
+            "text_size": "text-lg",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "https:\/\/www.withsuede.com\/hello-skin",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_m4RcYP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2025-01-10_at_3.09.02_PM.png",
+            "image_width": "full",
+            "title": "",
+            "heading_size": "h4",
+            "text": "<p>\"Helloskin Anti-Acne Serum with Azelaic Acid  is making headlines for its powerful, skin-transforming formula. Helloskin new skincare range targets acne, hydration and vitality.\"<\/p>",
+            "text_size": "text-lg",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "https:\/\/australianmade.com.au\/resources\/aussie-made-features\/2411-helloskin\/",
+            "mobile_layout": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "column_bRpkxq",
+        "column_DrXPMd",
+        "column_6be7nJ",
+        "column_m4RcYP"
+      ],
+      "settings": {
+        "addClass": "",
+        "color_scheme": "",
+        "heading": "Featured in",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "column_alignment": "center",
+        "columns_desktop": 4,
+        "column_gap": "extra-large",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "double_image_with_text_GYdHgr": {
+      "type": "double-image-with-text",
+      "blocks": {
+        "heading_wYK4Pe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Founder Story: A Journey from Breakouts to Breakthroughs",
+            "heading_size": "hd3",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_D93HBB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A Journey from Breakouts to Breakthroughs reflects the real story behind Helloskin. Born from personal battles with acne and the frustration of ineffective products, we set out to create a skincare line that truly works. Our mission is to empower everyone to feel confident in their skin, no matter their journey.<\/p>",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_wYK4Pe",
+        "text_D93HBB"
+      ],
+      "settings": {
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image": "shopify:\/\/shop_images\/468451842_10160798777382400_6517012998476901570_n.jpg",
+        "image_second": "shopify:\/\/shop_images\/souraya-new.png",
+        "image_height": "adapt",
+        "layout": "image_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 90,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "rich_text_zbfiL4": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xd6crF": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>Some of Our Customers’ Favourites<\/strong>",
+            "heading_size": "h1",
+            "heading_highlight_style": "none"
+          }
+        }
+      },
+      "block_order": [
+        "heading_xd6crF"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "content_alignment": "center",
+        "padding_top": 34,
+        "padding_bottom": 26,
+        "show_section_divider": true,
+        "divider_width": "fixed"
+      }
+    },
+    "product_tabs_iJHLzK": {
+      "type": "product-tabs",
+      "blocks": {
+        "tab_Yz8Mnz": {
+          "type": "tab",
+          "settings": {
+            "title": "Skincare",
+            "collection": "skincare"
+          }
+        },
+        "tab_9cGBUe": {
+          "type": "tab",
+          "settings": {
+            "title": "Skincare Bundles",
+            "collection": "skincare-bundles"
+          }
+        },
+        "tab_AfgNn8": {
+          "type": "tab",
+          "disabled": true,
+          "settings": {
+            "title": "Skin Devices",
+            "collection": "skincare-devices"
+          }
+        }
+      },
+      "block_order": [
+        "tab_Yz8Mnz",
+        "tab_9cGBUe",
+        "tab_AfgNn8"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "header_layout": "horizontal",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "limit": 8,
+        "columns": 4,
+        "column_gap": "extra-small",
+        "row_gap": "inherit",
+        "grid_layout": "standard",
+        "pcard_image_ratio": "",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "show_all_button_on_top": false,
+        "button_label": "",
+        "button_link": "",
+        "button_style": "btn--underline",
+        "tabs_nav_style": "design-2",
+        "padding_top": 48,
+        "padding_bottom": 36,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "highlight_text_with_image_9KLzcX": {
+      "type": "highlight-text-with-image",
+      "blocks": {
+        "image_URaWGC": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gempages_541166679116219322-a27ab183-3eec-4f74-915d-395226f47812.png",
+            "image_link": "",
+            "image_width": 162,
+            "image_width_mobile": 110
+          }
+        },
+        "image_DyKWHM": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/gempages_541166679116219322-de0aa15a-9b7f-48f9-812c-52970aac933c.png",
+            "image_link": "",
+            "image_width": 162,
+            "image_width_mobile": 110
+          }
+        },
+        "image_NGQQmW": {
+          "type": "image",
+          "settings": {
+            "image_link": "",
+            "image_width": 220,
+            "image_width_mobile": 110
+          }
+        }
+      },
+      "block_order": [
+        "image_URaWGC",
+        "image_DyKWHM",
+        "image_NGQQmW"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "text": "Clear your acne, [img1] feel the glow,  [img2] and shine bright [img3]",
+        "heading_size": "hd2",
+        "alignment": "center",
+        "padding_top": 100,
+        "padding_bottom": 100,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "products_bundle_cFjE73": {
+      "type": "products-bundle",
+      "blocks": {
+        "product_tNmVzg": {
+          "type": "product",
+          "settings": {
+            "product": "face-cleanser-100ml",
+            "color_scheme": "",
+            "horizontal_position": 18,
+            "vertical_position": 54
+          }
+        },
+        "product_63XUQd": {
+          "type": "product",
+          "settings": {
+            "product": "anti-acne-azelaic-acid-20-w-w-niacinamide-30ml",
+            "color_scheme": "",
+            "horizontal_position": 60,
+            "vertical_position": 25
+          }
+        },
+        "product_bNtrwr": {
+          "type": "product",
+          "settings": {
+            "product": "face-moisturiser-multiex-bsasm-shea-butter-50ml",
+            "color_scheme": "",
+            "horizontal_position": 45,
+            "vertical_position": 17
+          }
+        }
+      },
+      "block_order": [
+        "product_tNmVzg",
+        "product_63XUQd",
+        "product_bNtrwr"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "image": "shopify:\/\/shop_images\/76.jpg",
+        "heading": "Level up your skincare game with these must have essentials",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "Bundle essentials",
+        "description": "",
+        "padding_top": 100,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "1733400883e5ed890e": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_CiGcVE": {
+          "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "Follow us on Instagram",
+            "title_color": "",
+            "alignment": "center",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_CiGcVE"
+      ],
+      "settings": {
+        "include_margins": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "ss_scrolling_announcement_bar_3_LfJV64",
+    "ss_circle_menu_GPNhB9",
+    "slideshow_q3U4Jn",
+    "ss_scrolling_logo_cloud_2_7dLbRp",
+    "17333978281b5b03cc",
+    "ss_feature_13_8BNxab",
+    "feature_list_cW3d9c",
+    "ss_testimonial_8_9BVYbk",
+    "ss_scrolling_text_4_9fRbfE",
+    "ss_before_after_image_3_trAUDy",
+    "collection_list_Pr36qH",
+    "multicolumn_mQAQbW",
+    "double_image_with_text_GYdHgr",
+    "rich_text_zbfiL4",
+    "product_tabs_iJHLzK",
+    "highlight_text_with_image_9KLzcX",
+    "products_bundle_cFjE73",
+    "1733400883e5ed890e"
+  ]
+}

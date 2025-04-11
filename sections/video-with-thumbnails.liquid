@@ -1,0 +1,140 @@
+<section class="product-video_review">
+<div class="review-content-item" id="video_review">
+  <div class="page-width">
+    <div class="upper_portion">
+     {% if section.settings.review_image != blank %} <div class="section_review"><img src="{{- settings.speedsize_url_pfx_https -}}{{ section.settings.review_image | img_url:"master" }}" alt="review star" width="auto" height="auto"><span>{{ section.settings.review_txt }}</span></div>{% endif %}
+     {% if section.settings.heading != blank %}<div class="heading SectionHeader__Heading Heading u-h3">{{ section.settings.heading }}</div>{% endif %}
+     {% if section.settings.content != blank %} <div class="content">{{ section.settings.content | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}</div>{% endif %}
+    </div>
+      <div class="review-videos-inner slider-nav">
+        {% for block in section.blocks %}
+          <div class="real-review-item">
+                <div class="video-item">
+                  <div class="video-show">
+                    <div class="popup-video">
+                     {% if block.settings.video != blank %}
+                        <div class="popup-video-inner">
+                           {{ block.settings.video | video_tag: image_size: '500px', class : "video lazy" , preload:"none" , autoplay: false  , controls: false, loop:true , muted:true | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}
+                           <div class="video-control">
+                            <img width="70" height="70" class="playbtn playicon" src="https://cdn.shopify.com/s/files/1/0719/8611/8943/files/play-pink.svg?v=1742382722" alt="">
+                           <!--  <img loading="lazy" width="70" height="70" class="playbtn pauseicon" src="https://sfycdn.speedsize.com/28b778cb-f97a-4493-94e1-2d825129ba3c/cdn.shopify.com/s/files/1/0616/9146/1853/files/icon--pause.webp?v=1735216575" alt=""> -->
+                          </div>
+                        </div>
+                       {% if block.settings.custom_txt != blank %} <div class="custom-video-text">{{ block.settings.custom_txt }}</div>{% endif %}
+                      {% endif %}
+                    </div>
+                  </div>
+                </div>
+              </div>
+        {% endfor %}
+      </div>
+   </div>
+   <div class="popup__overlay">
+      <div class="videos-main-popup">
+         <div class="model-controls">
+            <div class="model-close">
+               <svg width="50px" height="50px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#fff"></path>
+                </svg>
+            </div>
+           </div>
+        <div class="pop-up-slider-main">
+         <div class="popup-slider-videos-thumbnails">
+         {% for block in section.blocks %}
+          <div class="popup-real-review-item">
+               <div class="popup-video-show">
+                    <div class="model-video">
+                     {% if block.settings.video != blank %}
+                        <div class="model-video-inner">
+                         {{ block.settings.video | video_tag: image_size: '500px', class : "model-video lazy" , preload:"none" , autoplay: false  , controls: false, loop:true , muted:true | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}
+                         </div>
+                      {% endif %}
+                    </div>
+                  </div>
+              </div>
+          {% endfor %}
+        </div>
+        
+        <div class="popup-slider-videos slider-single">
+         {% for block in section.blocks %}
+          <div class="popup-real-review-item">
+                 <div class="popup-video-show">
+                    <div class="model-video">
+                     {% if block.settings.video != blank %}
+                        <div class="model-video-inner">
+                          {{ block.settings.video | video_tag: image_size: '500px', class : "model-video lazy" , preload:"none" , autoplay: false  , controls: false, loop:true , muted:true | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}
+                         </div>
+                     {% endif %}
+                    </div>
+                  </div>
+            </div>
+          {% endfor %}
+        </div>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+
+<script>
+   let videos = document.querySelectorAll('.product-video_review video');
+        videos.forEach(item=>{
+            let newThumbnail = item.getAttribute('poster'); 
+            if (newThumbnail.includes('_small')){ 
+                newThumbnail = newThumbnail.replace('_small',''); 
+                item.setAttribute('poster', newThumbnail)
+            }
+        })
+</script>
+{% schema %}
+  {
+    "name": "Video with thumbnails",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "review_image",
+        "label":"Review Image"
+      },
+      {
+        "type":"text",
+        "id": "review_txt",
+        "label":"Review text"
+      },
+      {
+        "type": "richtext",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Content"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "review_video",
+        "name":"Video",
+        "settings": [
+          
+          {
+            "type": "video",
+            "id": "video",
+            "label": "Video"
+          },
+          {
+            "type": "richtext",
+            "id": "custom_txt",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Video with thumbnails"
+      }
+    ]
+    
+  }
+{% endschema %}

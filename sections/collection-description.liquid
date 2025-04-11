@@ -1,0 +1,26 @@
+<style>
+  .collection #a10_kronos a{
+	color: #FF2277
+  }
+</style>
+
+{% if collection.description != blank %}
+  <div class="custom_collection_description">
+    <div class="page-width">
+     <div class="custom_des">{{ collection.description | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}</div>
+    </div>
+  
+  </div>
+  {% endif %}
+{% schema %}
+  {
+    "name": "Collection Description",
+     "class": "custom_description",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Collection Description"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,1352 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1742981710f2fad5ff": {
+      "type": "apps",
+      "blocks": {
+        "ph_breadcrumbs_app_block_YBbQqi": {
+          "type": "shopify://apps/ph-breadcrumbs/blocks/app-block/457dc635-4337-4779-8f31-361dd27778c8",
+          "settings": {
+            "show_breadcrumbs": true,
+            "color": "#000000",
+            "horizontal_alignment": "left",
+            "fontsize": 8,
+            "breadcrumb_font": "sans-serif",
+            "marginleft": 0,
+            "margintop": 15,
+            "marginright": 0,
+            "marginbottom": 15,
+            "show_home_link": true,
+            "show_last_crumb": true,
+            "home_page": "Home",
+            "home_url": "/",
+            "all_uppercase": false,
+            "use_slider": false,
+            "article_use_tag": true,
+            "separator": "<span> › </span>",
+            "css_tablet": "/* font-family: Helvetica; */",
+            "css_mobile": "/* font-family: Helvetica; */",
+            "custom_css": "/* font-family: Helvetica; */",
+            "css_last_crumb": "/* font-weight: medium; */",
+            "css_hover": "/* text-decoration-line: underline; */",
+            "menus": "*"
+          }
+        }
+      },
+      "block_order": [
+        "ph_breadcrumbs_app_block_YBbQqi"
+      ],
+      "settings": {
+        "include_margins": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "badges": {
+          "type": "badges",
+          "disabled": true,
+          "settings": {
+            "show_soldout_badge": true,
+            "show_sale_badge": true,
+            "sale_badge_type": "percentage"
+          }
+        },
+        "loox_reviews_loox_rating_jBUCGH": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-rating/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "disabled": true,
+          "settings": {
+            "contentSize": 16,
+            "pattern": "",
+            "hideText": false,
+            "alignment": "",
+            "layout": "",
+            "textColor": "",
+            "starColor": "",
+            "showAllReviews": false,
+            "looxOpenFloatingWidget": false,
+            "emptyRatingWidget": false
+          }
+        },
+        "custom_review_9KCfRV": {
+          "type": "custom_review",
+          "settings": {
+            "review_icons": "shopify://shop_images/stars-4.5_1.png",
+            "review_content": "<p>4.5/5 | 6000+ reviews</p>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h2"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {}
+        },
+        "inventory": {
+          "type": "inventory",
+          "disabled": true,
+          "settings": {
+            "text_style": "body",
+            "inventory_threshold": 20,
+            "show_inventory_quantity": false
+          }
+        },
+        "text_cGKN36": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "addClass": "",
+            "text": "🧴 Bottle Size: 30ml",
+            "text_style": "body"
+          }
+        },
+        "meta_icon_text_8PQNEp": {
+          "type": "meta_icon_text",
+          "settings": {}
+        },
+        "text_qhKAR3": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "addClass": "",
+            "text": "Take control of your skin with the helloskin Acne Attack Kit—your ultimate defense against breakouts. This powerhouse bundle includes the gentle yet effective helloskin Cleanser to purify and refresh, the targeted Anti-Acne Serum to zap blemishes and calm redness, and the nourishing Face Moisturiser to hydrate and restore balance. Plus, you’ll get a free set of 3 Original Makeup Remover Puffs to effortlessly cleanse and prep your skin for a flawless routine. Everything you need for clearer, happier skin in one perfect kit!",
+            "text_style": "body"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_type": "color_swatch",
+            "button_style": "standard",
+            "button_size": 40,
+            "size_title": "Size",
+            "size_chart_from_page": ""
+          }
+        },
+        "text_YjMkyV": {
+          "type": "text",
+          "settings": {
+            "addClass": "custom_order_date_text",
+            "text": "📦 Orders are typically delivered within 1-3 business days",
+            "text_style": "body"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": false,
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
+          }
+        },
+        "text_TmG9gN": {
+          "type": "text",
+          "settings": {
+            "addClass": "custom_money_back_text",
+            "text": "✅ 30-days money back guarantee",
+            "text_style": "body"
+          }
+        },
+        "shipping_method_tgxyWk": {
+          "type": "shipping_method",
+          "settings": {
+            "shipping_heading": "",
+            "heading_size": 32,
+            "store_shipping_method": false,
+            "custom_shipping_method": true,
+            "icon1": "shopify://shop_images/Group_1479.svg",
+            "icon2": "shopify://shop_images/zip-img.svg",
+            "icon3": "shopify://shop_images/Klarna_Payment_Badge_svg.png",
+            "icon4": "shopify://shop_images/paypal-svgrepo-com_975fbfcc-fa1a-4a0a-9dde-e14ddced562d.svg",
+            "content": "",
+            "shop_head": ""
+          }
+        },
+        "tolstoy_shoppable_video_ugc_stories_block_qkXHx4": {
+          "type": "shopify://apps/tolstoy-shoppable-video-quiz/blocks/stories-block/06fa8282-42ff-403e-b67c-1936776aed11",
+          "settings": {
+            "publishId": "sys01dbn9zmth"
+          }
+        },
+        "icon_with_content_kJcjWh": {
+          "type": "icon_with_content",
+          "disabled": true,
+          "settings": {}
+        },
+        "collapsible_tab_zLXN4A": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Why Helloskin?",
+            "icon": "none",
+            "content": "",
+            "page": "",
+            "default_open": false
+          }
+        },
+        "pickup_availability": {
+          "type": "pickup_availability",
+          "disabled": true,
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {}
+        },
+        "complementary": {
+          "type": "complementary",
+          "disabled": true,
+          "settings": {
+            "block_heading": "Pairs well with",
+            "make_collapsible_row": false,
+            "icon": "tag",
+            "product_list_limit": 4,
+            "products_per_page": 1,
+            "image_ratio": "adapt",
+            "enable_quick_add": true
+          }
+        },
+        "collapsible-row-1": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible tab heading",
+            "icon": "none",
+            "content": "<p>Fill in the text content of the collapsible item here. You can provide details and explanation for the question here.</p>",
+            "page": "",
+            "default_open": false
+          }
+        },
+        "collapsible-row-2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible tab heading",
+            "icon": "none",
+            "content": "<p>Fill in the text content of the collapsible item here. You can provide details and explanation for the question here.</p>",
+            "page": "",
+            "default_open": false
+          }
+        },
+        "collapsible-row-3": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Collapsible tab heading",
+            "icon": "none",
+            "content": "<p>Fill in the text content of the collapsible item here. You can provide details and explanation for the question here.</p>",
+            "page": "",
+            "default_open": false
+          }
+        },
+        "bundle_include_h4Ew7Q": {
+          "type": "bundle_include",
+          "settings": {}
+        },
+        "meta_accordions_QFJeWt": {
+          "type": "meta-accordions",
+          "settings": {
+            "default_open": false,
+            "default_open_use": false,
+            "default_open_care": false
+          }
+        },
+        "why_helloskin_8yr76c": {
+          "type": "why-helloskin",
+          "settings": {
+            "content_heading": "Trusted by Over 25,000 Customers",
+            "content": "<p>With a proven track record of delivering exceptional products, our business has earned the trust of over 25,000 satisfied customers.</p>",
+            "logo": "shopify://shop_images/trust_cbf61f12-491f-4d9b-bafc-071d69837bb2.png"
+          }
+        },
+        "why_helloskin_PdkrDc": {
+          "type": "why-helloskin",
+          "settings": {
+            "content_heading": "30 Day Returns & They're Free",
+            "content": "<p>We stand behind the quality of our products, which is why we offer a hassle-free 30-day return policy! & They are completely free.</p>",
+            "logo": "shopify://shop_images/30day-guarantee.png"
+          }
+        },
+        "why_helloskin_BtUmrQ": {
+          "type": "why-helloskin",
+          "settings": {
+            "content_heading": "Fast & Free Shipping Over $60 (Shipped from Australia)",
+            "content": "<p>All orders placed before 2PM are picked and packed from our Australian warehouse. Orders over $60 are free of charge. $5 Shipping for orders under $60.</p>",
+            "logo": "shopify://shop_images/free-shipping_e1a4f525-5224-4cb5-b553-01e5a37a4a55.png"
+          }
+        },
+        "why_helloskin_PkYffF": {
+          "type": "why-helloskin",
+          "settings": {
+            "content_heading": "Eco-Friendly",
+            "content": "<p>We are committed to sustainability and reducing our environmental impact. That's why where we can, we strive to offer eco-friendly products that are responsibly sourced, made with sustainable materials, and designed to minimise waste.</p>",
+            "logo": "shopify://shop_images/eco-friendly.png"
+          }
+        },
+        "why_helloskin_GVAfTE": {
+          "type": "why-helloskin",
+          "settings": {
+            "content_heading": "Free Returns",
+            "content": "<p>We want you to be completely satisfied with your purchase, which is why we offer hassle-free returns for added convenience. Your satisfaction is our top priority.</p>",
+            "logo": "shopify://shop_images/free-returns_7a41ee6a-4262-4060-9a32-df34a98065ac.png"
+          }
+        },
+        "icon_with_text_PBE6bg": {
+          "type": "icon-with-text",
+          "settings": {
+            "addClass": "mobile_icon_with_text",
+            "layout": "horizontal",
+            "title_font": "heading",
+            "title_size": "h5",
+            "icon_1": "heart",
+            "image_1": "shopify://shop_images/icons8-cruelty-free-128_857f6226-a03a-4a02-a52f-d90c8b729786.png",
+            "heading_1": "cruelty  free",
+            "content_1": "",
+            "icon_2": "gift",
+            "image_2": "shopify://shop_images/icons8-no-sulfates-100.png",
+            "heading_2": "no sulfates",
+            "content_2": "",
+            "icon_3": "package",
+            "image_3": "shopify://shop_images/icons8-no-150.png",
+            "heading_3": "no silicones",
+            "content_3": "",
+            "icon_4": "package",
+            "image_4": "shopify://shop_images/icons8-no-parabens-100.png",
+            "heading_4": "no parabens",
+            "content_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "badges",
+        "loox_reviews_loox_rating_jBUCGH",
+        "custom_review_9KCfRV",
+        "title",
+        "price",
+        "inventory",
+        "text_cGKN36",
+        "meta_icon_text_8PQNEp",
+        "text_qhKAR3",
+        "variant_picker",
+        "text_YjMkyV",
+        "buy_buttons",
+        "text_TmG9gN",
+        "shipping_method_tgxyWk",
+        "tolstoy_shoppable_video_ugc_stories_block_qkXHx4",
+        "icon_with_content_kJcjWh",
+        "collapsible_tab_zLXN4A",
+        "pickup_availability",
+        "description",
+        "complementary",
+        "collapsible-row-1",
+        "collapsible-row-2",
+        "collapsible-row-3",
+        "bundle_include_h4Ew7Q",
+        "meta_accordions_QFJeWt",
+        "why_helloskin_8yr76c",
+        "why_helloskin_PdkrDc",
+        "why_helloskin_BtUmrQ",
+        "why_helloskin_PkYffF",
+        "why_helloskin_GVAfTE",
+        "icon_with_text_PBE6bg"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "enable_sticky_info": false,
+        "media_size": "medium",
+        "gallery_layout": "carousel",
+        "mobile_thumbnails": "show",
+        "enable_image_zoom": true,
+        "enable_video_looping": true,
+        "padding_top": 0,
+        "padding_bottom": 18
+      }
+    },
+    "ss_scrolling_text_4_HxKzPg": {
+      "type": "ss-scrolling-text-4",
+      "settings": {
+        "addClass": "",
+        "scrolling_velocity": 150,
+        "scrolling_velocity_mobile": 150,
+        "scrolling_gap": 12,
+        "scrolling_gap_mobile": 6,
+        "reverse_direction": false,
+        "text": "Eco-Friendly ✦ Australian Made ✦ Sustainable ✦ 30-Day Guarantee ✦ Cruelty Free ✦",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 38,
+        "text_size_mobile": 24,
+        "text_height": 150,
+        "icon_size": 32,
+        "icon_size_mobile": 32,
+        "animate_icon": "animate",
+        "hide_icon": true,
+        "text_color": "#ffffff",
+        "text_gradient": "",
+        "icon_color": "#67645e",
+        "background_color": "#f1f0ed",
+        "background_gradient": "linear-gradient(103deg, rgba(219, 149, 250, 1) 66%, rgba(148, 88, 255, 1) 100%)",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": false
+      }
+    },
+    "ss_feature_17_EnNray": {
+      "type": "ss-feature-17",
+      "blocks": {
+        "heading_RfzKAK": {
+          "type": "heading",
+          "settings": {
+            "heading": "<h2>Results</h2>",
+            "heading_custom": false,
+            "heading_font": "josefin_sans_n4",
+            "heading_size": 28,
+            "heading_size_mobile": 18,
+            "heading_height": 130,
+            "heading_mt": 0,
+            "heading_mt_mobile": 0,
+            "heading_align": "left",
+            "heading_align_mobile": "left",
+            "heading_color": "#000000"
+          }
+        },
+        "text_L8B3MW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our customers have experienced transformative results, from clearer skin to newfound confidence. Our products are designed to make a real difference, helping people feel their best every day.</p>",
+            "text_custom": false,
+            "text_font": "josefin_sans_n4",
+            "text_size": 16,
+            "text_size_mobile": 15,
+            "text_height": 150,
+            "text_mt": 24,
+            "text_mt_mobile": 24,
+            "text_color": "#000000"
+          }
+        },
+        "media_aTwYfB": {
+          "type": "media",
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/Screenshot_2025-01-06_at_7.37.45_PM.png",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "use_controls": false,
+            "media_width": 100,
+            "media_width_mobile": 100,
+            "media_mt": 24,
+            "media_mt_mobile": 24,
+            "media_radius": 0,
+            "media_border_thickness": 0,
+            "media_border_color": "#000000",
+            "media_ratio": "square",
+            "media_ratio_mobile": "square"
+          }
+        },
+        "item_QwJGX7": {
+          "type": "item",
+          "settings": {
+            "percent": 96,
+            "text": "Noticed visibly smoother skin after exfoliating with the gloves included in this bundle."
+          }
+        },
+        "item_NbUeWG": {
+          "type": "item",
+          "settings": {
+            "percent": 94,
+            "text": "Found their skincare absorbed more effectively after using the LED handset"
+          }
+        },
+        "item_V8cPJR": {
+          "type": "item",
+          "settings": {
+            "percent": 91,
+            "text": "Reported softer, hair free for longer skin after incorporating the crystal hair removers into their routine."
+          }
+        }
+      },
+      "block_order": [
+        "heading_RfzKAK",
+        "text_L8B3MW",
+        "media_aTwYfB",
+        "item_QwJGX7",
+        "item_NbUeWG",
+        "item_V8cPJR"
+      ],
+      "settings": {
+        "body_gap": 62,
+        "body_gap_mobile": 32,
+        "content_horizontal_align": "start",
+        "content_horizontal_align_mobile": "center",
+        "heading": "<h2>The results are in</h2>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 40,
+        "heading_size_mobile": 28,
+        "heading_height": 130,
+        "items_mt": 12,
+        "items_mt_mobile": 16,
+        "item_padding_vertical": 10,
+        "item_padding_vertical_mobile": 10,
+        "item_gap": 18,
+        "item_gap_mobile": 16,
+        "item_border_thickness": 2,
+        "circle_size": 132,
+        "circle_size_mobile": 70,
+        "percent_custom": false,
+        "percent_font": "josefin_sans_n4",
+        "percent_size": 29,
+        "percent_size_mobile": 18,
+        "percent_height": 100,
+        "item_text_custom": false,
+        "item_text_font": "josefin_sans_n4",
+        "item_text_size": 16,
+        "item_text_size_mobile": 16,
+        "item_text_height": 150,
+        "bottom_text": "",
+        "bottom_text_custom": false,
+        "bottom_text_font": "josefin_sans_n4",
+        "bottom_text_size": 12,
+        "bottom_text_size_mobile": 12,
+        "bottom_text_height": 130,
+        "bottom_text_mt": 16,
+        "bottom_text_mt_mobile": 16,
+        "bottom_text_align": "left",
+        "bottom_text_align_mobile": "left",
+        "item_border_color": "#f3f3f3",
+        "circle_bg_color": "#ffffff",
+        "circle_progress": "#fecfff",
+        "percent_color": "#000000",
+        "item_text_color": "#000000",
+        "heading_color": "#000000",
+        "bottom_text_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": false
+      }
+    },
+    "ss_testimonial_19_rjcAdm": {
+      "type": "ss-testimonial-19",
+      "blocks": {
+        "image_U9jKWK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/only-skincare.png",
+            "image_overlay": 0.1,
+            "text": "",
+            "text_color": "#ffffff",
+            "image_overlay_color": "#000000"
+          }
+        },
+        "review_qUAKWp": {
+          "type": "review",
+          "settings": {
+            "stars_count": 5,
+            "text": "<p>It makes everything feel like a spa day at home. Well worth it! And the handset is a special treat for my evening routine.</p>",
+            "image": "shopify://shop_images/h7_0cadc2db-f89e-40bf-8b42-a3773a8b07f5.jpg",
+            "author": "Skye E.",
+            "stars_color": "#b7b491",
+            "text_color": "#000000",
+            "author_color": "#87877c",
+            "image_border_color": "#b7b491",
+            "block_bg_color": "#f8f7f3"
+          }
+        },
+        "text_qbrNbc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As self-proclaimed skincare fanatics, we’ve tried it all. But it’s rare—almost unheard of—to find a brand that delivers results so undeniably effective they replace staples we’ve sworn by for years.<em>Hello Skin </em>is that brand.</p>",
+            "sub_text": "<p>By Editor of</p>",
+            "logo": "shopify://shop_images/9ea4f088-b020-4000-85a9-ebb5a49de0f0.png",
+            "logo_width": 40,
+            "logo_width_mobile": 40,
+            "logo_mt": 16,
+            "logo_mt_mobile": 16,
+            "text_color": "#000000",
+            "sub_text_color": "#000000",
+            "block_bg_color": "#f8f7f3"
+          }
+        },
+        "image_f8qaCK": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/468451842_10160798777382400_6517012998476901570_n.jpg",
+            "image_overlay": 0.1,
+            "text": "Founded by Acne Survivor",
+            "text_color": "#ffffff",
+            "image_overlay_color": "#000000"
+          }
+        },
+        "review_TJAMhF": {
+          "type": "review",
+          "settings": {
+            "stars_count": 5,
+            "text": "<p>I have been using the helloskin V3.0 LED handset for a few days now and I have to say that I totally believe now that it's a real game changer!</p>",
+            "image": "shopify://shop_images/Screenshot_2025-01-06_at_7.47.46_PM.png",
+            "author": "Chloe A.",
+            "stars_color": "#b7b491",
+            "text_color": "#000000",
+            "author_color": "#87877c",
+            "image_border_color": "#b7b491",
+            "block_bg_color": "#f8f7f3"
+          }
+        }
+      },
+      "block_order": [
+        "image_U9jKWK",
+        "review_qUAKWp",
+        "text_qbrNbc",
+        "image_f8qaCK",
+        "review_TJAMhF"
+      ],
+      "settings": {
+        "heading": "<h2>Join 40,000+ Happy Customers Worldwide</h2>",
+        "heading_custom": true,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 36,
+        "heading_size_mobile": 24,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "slider_view": 5,
+        "slider_view_mobile": 1.3,
+        "slider_gap": 20,
+        "slider_gap_mobile": 20,
+        "slider_mt": 40,
+        "slider_mt_mobile": 32,
+        "slide_padding_horizontal": 16,
+        "slide_padding_horizontal_mobile": 16,
+        "slide_padding_vertical": 32,
+        "slide_padding_vertical_mobile": 32,
+        "slide_radius": 12,
+        "slide_shadow": false,
+        "image_text_custom": false,
+        "image_text_font": "josefin_sans_n4",
+        "image_text_size": 20,
+        "image_text_size_mobile": 20,
+        "image_text_height": 130,
+        "stars_size": 20,
+        "stars_size_mobile": 20,
+        "review_text_custom": false,
+        "review_text_font": "josefin_sans_n4",
+        "review_text_size": 15,
+        "review_text_size_mobile": 15,
+        "review_text_height": 150,
+        "review_text_mt": 16,
+        "review_text_mt_mobile": 16,
+        "author_image_size": 52,
+        "author_image_size_mobile": 52,
+        "author_image_border_thickness": 0,
+        "author_image_mt": 16,
+        "author_image_mt_mobile": 16,
+        "review_author_custom": false,
+        "review_author_font": "josefin_sans_n4",
+        "review_author_size": 12,
+        "review_author_size_mobile": 12,
+        "review_author_height": 130,
+        "review_author_mt": 16,
+        "review_author_mt_mobile": 16,
+        "info_text_custom": false,
+        "info_text_font": "josefin_sans_n4",
+        "info_text_size": 15,
+        "info_text_size_mobile": 15,
+        "info_text_height": 150,
+        "info_subtext_custom": false,
+        "info_subtext_font": "josefin_sans_n4",
+        "info_subtext_size": 15,
+        "info_subtext_size_mobile": 15,
+        "info_subtext_height": 150,
+        "info_subtext_mt": 10,
+        "info_subtext_mt_mobile": 10,
+        "buttons_gap": 32,
+        "buttons_gap_mobile": 32,
+        "buttons_mt": 32,
+        "buttons_mt_mobile": 24,
+        "arrow_size": 48,
+        "arrow_size_mobile": 48,
+        "arrow_icon_size": 10,
+        "arrow_icon_size_mobile": 10,
+        "arrow_border_thickness": 0,
+        "arrow_radius": 100,
+        "arrow_hover_effect": "color",
+        "arrow_show_desktop": false,
+        "arrow_show_mobile": true,
+        "arrow_color": "#7b7b7b",
+        "arrow_hover_color": "#7b7b7b",
+        "arrow_bg_color": "#ebebeb",
+        "arrow_bg_hover_color": "#f5f5f5",
+        "arrow_border_color": "#c7c7c7",
+        "arrow_border_hover_color": "#c7c7c7",
+        "heading_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": false
+      }
+    },
+    "ss_scrolling_quotes_LVapYf": {
+      "type": "ss-scrolling-quotes",
+      "blocks": {
+        "item_wjRbQV": {
+          "type": "item",
+          "settings": {
+            "text": "\"Love!! Has significantly reduced my redness and texture of my skin whilst only using 3 times per week within just 4 weeks!\"",
+            "tag": "– ALISSA M."
+          }
+        },
+        "item_QA9kRD": {
+          "type": "item",
+          "settings": {
+            "text": "\"It is literally like getting a facial at home. It has so many features all in one. And its working wonders for my skin.\"",
+            "tag": "– JOSEPHINE V."
+          }
+        }
+      },
+      "block_order": [
+        "item_wjRbQV",
+        "item_QA9kRD"
+      ],
+      "settings": {
+        "scrolling_velocity": 92,
+        "scrolling_velocity_mobile": 74,
+        "scrolling_gap": 48,
+        "scrolling_gap_mobile": 48,
+        "reverse_direction": false,
+        "text_custom": true,
+        "text_font": "bodoni_moda_n4",
+        "text_size": 24,
+        "text_size_mobile": 22,
+        "text_height": 130,
+        "text_mr": 32,
+        "text_mr_mobile": 26,
+        "tag_custom": true,
+        "tag_font": "volkhov_n4",
+        "tag_size": 15,
+        "tag_size_mobile": 11,
+        "tag_height": 130,
+        "text_color": "#241f20",
+        "tag_color": "#241f20",
+        "background_color": "#f3d7ff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0
+      }
+    },
+    "image_with_text_gDrttX": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_qBHCNW": {
+          "type": "heading",
+          "settings": {
+            "heading": "So why choose our signature bundle?",
+            "heading_size": "hd3",
+            "heading_highlight_style": "underline"
+          }
+        },
+        "text_yatUBP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>1.\t<strong>Skin Transformation with the LED Handset 🌟</strong></p><p>The helloskin LED Handset V3.0 offers red, blue, and green light therapy, EMS mode, and hot and cold settings, making it your ultimate tool for tackling fine lines, breakouts, and dullness. Enjoy a personalised, professional-grade treatment in the comfort of your home.</p><p>2.\t<strong>Glow-Boosting Exfoliation 🌿</strong></p><p>The silk face exfoliating glove and exfoliating body gloves gently buff away dead skin cells, revealing a silky-smooth glow from head to toe. Say goodbye to dullness and hello to polished perfection!</p><p>3.\t<strong>Effortless Hair Removal ✨</strong></p><p>With the crystal hair removers, achieve smooth, irritation-free skin without chemicals or razors. Compact, reusable, and gentle—they’re your ultimate hair removal heroes.</p><p>4.\t<strong>Youthful Skin with EMS and Red Light Therapy 💡</strong></p><p>The LED handset’s EMS mode and red light therapy tone and rejuvenate your skin, reducing fine lines and improving elasticity for a youthful, radiant glow.</p><p>5.\t<strong>Multi-Tasking Extras ❤️</strong></p><p>From the pocket mirror in a leather case for on-the-go touch-ups to the reusable makeup remover puffs and dermablades, this bundle has every tool you need for a complete, luxe skincare routine.</p><p>6.\t<strong>All-in-One Glow-Up 🌟</strong></p><p>This bundle simplifies your routine without compromising on results. Cleanse, exfoliate, treat, and glow with ease—all while enjoying professional-grade tools and products.</p><p>7.\t<strong>Loved by Glow-Getters Everywhere 💖</strong></p><p>With rave reviews and unbeatable results, the helloskin signature bundle is your all-in-one solution to radiant, refreshed skin. Join the helloskin family and experience the magic for yourself! ✨</p>",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_qBHCNW",
+        "text_yatUBP"
+      ],
+      "settings": {
+        "section_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "image": "shopify://shop_images/Screenshot_2025-01-06_at_7.37.45_PM.png",
+        "image_height": "extra-small",
+        "layout": "text_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "ss_product_reviews_video_i9xTi8": {
+      "type": "ss-product-reviews-video",
+      "blocks": {
+        "review_gGwGVd": {
+          "type": "review",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-11-26_at_5.48.00_PM.png",
+            "video": "shopify://files/videos/video-output-C330F1BD-28BA-4A22-9D80-8C311A9231ED.mov",
+            "video_url": "",
+            "author": "Shelby",
+            "stars_count": 5,
+            "text": "I originally bought the V3.0 handset because I was curious about the cold therapy, and I have to say—it’s amazing! The cooling feature is so soothing after a long day, especially on puffy skin. But what really blew me away were the other settings. The hot therapy feels like a mini facial, and the cleanse function makes my skincare routine feel next-level. I wasn’t expecting to use it this much, but now part of my daily routine."
+          }
+        }
+      },
+      "block_order": [
+        "review_gGwGVd"
+      ],
+      "settings": {
+        "reviews_position": "above_buy",
+        "reviews_meta": "",
+        "reviews_radius": 0,
+        "review_padding_vertical": 8,
+        "review_padding_horizontal": 8,
+        "review_radius": 8,
+        "review_border_thickness": 0,
+        "image_width": 60,
+        "image_radius": 8,
+        "image_border_thickness": 0,
+        "image_ratio": "square",
+        "play_icon_size": 30,
+        "stars_size": 14,
+        "author_custom": false,
+        "author_font": "josefin_sans_n4",
+        "author_size": 14,
+        "author_size_mobile": 14,
+        "author_height": 130,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 12,
+        "text_size_mobile": 12,
+        "text_height": 130,
+        "text_mt": 4,
+        "arrow_size": 24,
+        "arrow_size_mobile": 24,
+        "arrow_icon_size": 16,
+        "arrow_icon_size_mobile": 16,
+        "arrow_border_thickness": 0,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": true,
+        "modal_width": 30,
+        "modal_width_mobile": 90,
+        "modal_padding_vertical": 16,
+        "modal_padding_horizontal": 16,
+        "modal_radius": 16,
+        "modal_border_thickness": 0,
+        "modal_overlay": 50,
+        "video_radius": 8,
+        "video_border_thickness": 0,
+        "video_ratio": "original",
+        "video_ratio_mobile": "original",
+        "review_bg_color": "#f3f3f3",
+        "review_border_color": "#000000",
+        "image_border_color": "#000000",
+        "video_border_color": "#000000",
+        "author_color": "#000000",
+        "text_color": "#000000",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#f3f3f3",
+        "arrow_bg_hover_color": "#dddddd",
+        "arrow_border_color": "#f3f3f3",
+        "arrow_border_hover_color": "#dddddd",
+        "modal_bg_color": "#ffffff",
+        "modal_border_color": "#000000",
+        "modal_close_bg_color": "#000000",
+        "modal_close_icon_color": "#ffffff",
+        "stars_color": "#000000",
+        "play_icon_color": "#ffffff",
+        "background_color": "#f3f3f3",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 10,
+        "margin_bottom": 10,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "border_thickness": 0,
+        "lazy": false
+      }
+    },
+    "ss_glow_faq_HGxQzh": {
+      "type": "ss-glow-faq",
+      "blocks": {
+        "card_nQd7dG": {
+          "type": "card",
+          "settings": {
+            "title": "Can I use all the products in this bundle on sensitive skin?",
+            "content": "Yes, the products in the helloskin signature bundle are designed to be gentle and suitable for most skin types, including sensitive skin. However, we recommend patch testing new products before full use to ensure compatibility with your skin."
+          }
+        },
+        "card_Tqdp4F": {
+          "type": "card",
+          "settings": {
+            "title": "How often should I use the LED handset?",
+            "content": "For best results, use the LED handset daily for at least 4-6 weeks. Be consistent with your sessions to target skin concerns like fine lines, breakouts, and dullness effectively."
+          }
+        },
+        "card_pFWX73": {
+          "type": "card",
+          "settings": {
+            "title": "Do I need to replace the gloves or makeup remover puffs?",
+            "content": "Yes, for hygiene purposes, we recommend replacing the exfoliating gloves every 6–12 weeks. They can be composted or responsibly recycled after use. For the makeup remover puffs, they are machine washable and reusable over 300 times but we recommend replacing yearly if necessary."
+          }
+        },
+        "card_LVFKnR": {
+          "type": "card",
+          "settings": {
+            "title": "Can the crystal hair removers be used on sensitive areas?",
+            "content": "The crystal hair removers are not recommended for use on sensitive areas such as underarms or the bikini line. For best results, use them on wet skin and always perform a patch test first, especially on sensitive skin. For detailed instructions, refer to the comprehensive guide on the product page or in our support centre."
+          }
+        },
+        "card_tW7PGU": {
+          "type": "card",
+          "settings": {
+            "title": "How fast do you deliver?",
+            "content": "All our products are stored in our warehouse and we ship all orders daily."
+          }
+        }
+      },
+      "block_order": [
+        "card_nQd7dG",
+        "card_Tqdp4F",
+        "card_pFWX73",
+        "card_LVFKnR",
+        "card_tW7PGU"
+      ],
+      "settings": {
+        "addClass": "",
+        "title": "<p><em>Frequently</em><strong> </strong> Asked Questions</p>",
+        "description": "",
+        "collapse_other": true,
+        "open_first": true,
+        "header_font_size": 26,
+        "header_mob_font_size": 28,
+        "question_color": "#dbd7f2",
+        "content_text_color": "#121212",
+        "blur_color": "#dbd7f2",
+        "gradient_color_1": "#4222de",
+        "gradient_color_2": "#659bff",
+        "gradient_color_3": "#7ff6e8"
+      }
+    },
+    "ss_scrolling_text_4_Mwf3J9": {
+      "type": "ss-scrolling-text-4",
+      "settings": {
+        "addClass": "",
+        "scrolling_velocity": 150,
+        "scrolling_velocity_mobile": 150,
+        "scrolling_gap": 12,
+        "scrolling_gap_mobile": 6,
+        "reverse_direction": false,
+        "text": "Eco-Friendly ✦ Australian Made ✦ Sustainable ✦ 30-Day Guarantee ✦ Cruelty Free ✦",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 38,
+        "text_size_mobile": 24,
+        "text_height": 150,
+        "icon_size": 32,
+        "icon_size_mobile": 32,
+        "animate_icon": "animate",
+        "hide_icon": true,
+        "text_color": "#ffffff",
+        "text_gradient": "",
+        "icon_color": "#67645e",
+        "background_color": "#f1f0ed",
+        "background_gradient": "linear-gradient(103deg, rgba(219, 149, 250, 1) 66%, rgba(148, 88, 255, 1) 100%)",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 24,
+        "padding_bottom": 24,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": false
+      }
+    },
+    "image_with_text_MgddA8": {
+      "type": "image-with-text",
+      "blocks": {
+        "subheading_XLgqVJ": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "It works or your money back."
+          }
+        },
+        "heading_J7mctK": {
+          "type": "heading",
+          "settings": {
+            "heading": "You’re backed by our 30-day guarantee: Try it, apply it, it works – or your money back!",
+            "heading_size": "h1",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_A3Dahr": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We know skin can be unpredictable, and what works for one might not work for all. That’s why we offer a 30-day money-back guarantee – so you’re always covered.</p>",
+            "text_size": "text-lg"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_XLgqVJ",
+        "heading_J7mctK",
+        "text_A3Dahr"
+      ],
+      "settings": {
+        "section_color_scheme": "",
+        "color_scheme": "scheme-2",
+        "image": "shopify://shop_images/helloskin-lounge-text.png",
+        "image_height": "adapt",
+        "layout": "text_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "center",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "center",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "ss_glow_testimonial_fbz6HT": {
+      "type": "ss-glow-testimonial",
+      "blocks": {
+        "item_km3NHM": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-01-06_at_7.47.46_PM.png",
+            "text": "It has made taking care of my skin my most favourite thing to do each day. Easy to use, very relaxing and my skin is definitely thanking me for it!",
+            "rating_number": 5
+          }
+        },
+        "item_HKWY7G": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-01-06_at_7.37.45_PM.png",
+            "text": "This is hands down the best thing I’ve added to my skincare routine. My skin’s looking fresher and healthier.",
+            "rating_number": 5
+          }
+        },
+        "item_Xcmmg8": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/h7_0cadc2db-f89e-40bf-8b42-a3773a8b07f5.jpg",
+            "text": "It definitely works. My skin felt instantly smooth and soft after each use. Highly recommend!",
+            "rating_number": 5
+          }
+        },
+        "item_eFPDxz": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-01-06_at_8.37.36_PM.png",
+            "text": "Can definitely tell a difference and very easy product to use, however i feel it doesn’t really get all of the hair but makes your skin super smooth.",
+            "rating_number": 5
+          }
+        },
+        "item_kxbUP3": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-01-06_at_8.38.35_PM.png",
+            "text": "This product works so much better than I expected. You just rub the hair and it’s gone and it’s so smooth too.",
+            "rating_number": 5
+          }
+        },
+        "item_xtntwN": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-01-06_at_8.39.39_PM.png",
+            "text": "Love!! Has significantly reduced my redness and texture of my skin whilst only using 3 times per week within just 4 weeks!",
+            "rating_number": 5
+          }
+        },
+        "item_zEr93Q": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2025-01-06_at_8.40.24_PM.png",
+            "text": "I've been using the HelloSkin Handset for two months now, mainly on the blue light setting to tackle my adult acne. The results have been amazing.",
+            "rating_number": 5
+          }
+        },
+        "item_8j9VQC": {
+          "type": "item",
+          "settings": {
+            "image": "shopify://shop_images/Screenshot_2024-11-26_at_5.48.00_PM.png",
+            "text": "I originally bought the V3.0 handset because I was curious about the cold therapy, and I have to say—it’s amazing! The cooling feature is so soothing after a long day, especially on puffy skin.",
+            "rating_number": 5
+          }
+        }
+      },
+      "block_order": [
+        "item_km3NHM",
+        "item_HKWY7G",
+        "item_Xcmmg8",
+        "item_eFPDxz",
+        "item_kxbUP3",
+        "item_xtntwN",
+        "item_zEr93Q",
+        "item_8j9VQC"
+      ],
+      "settings": {
+        "heading": "<h2>Our customers love our<strong> Signature Bundle!</strong></h2>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 40,
+        "heading_size_mobile": 36,
+        "heading_height": 130,
+        "heading_align": "center",
+        "heading_align_mobile": "center",
+        "animation_speed": 90,
+        "animation_speed_mobile": 96,
+        "reverse_direction": false,
+        "items_gap": 32,
+        "items_gap_mobile": 28,
+        "items_mt": 48,
+        "items_mt_mobile": 36,
+        "item_width": 320,
+        "item_width_mobile": 300,
+        "item_gap": 12,
+        "item_gap_mobile": 12,
+        "item_padding_horizontal": 16,
+        "item_padding_horizontal_mobile": 16,
+        "item_padding_vertical": 12,
+        "item_padding_vertical_mobile": 12,
+        "item_radius": 100,
+        "item_border_thickness": 0,
+        "item_use_shadow": true,
+        "image_width": 52,
+        "image_width_mobile": 52,
+        "image_radius": 100,
+        "number_custom": false,
+        "number_font": "josefin_sans_n4",
+        "number_size": 12,
+        "number_size_mobile": 12,
+        "number_height": 100,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 16,
+        "text_size_mobile": 16,
+        "text_height": 150,
+        "text_color": "#000000",
+        "item_bg_color": "#ffffff",
+        "item_border_color": "#000000",
+        "item_shadow_color": "#b8b1dc",
+        "number_color": "#ffffff",
+        "number_bg_color": "#000000",
+        "number_bg_gradient": "linear-gradient(46deg, rgba(52, 133, 236, 1) 13%, rgba(170, 248, 219, 1) 86%)",
+        "heading_color": "#000000",
+        "heading_gradient_color": "linear-gradient(46deg, rgba(52, 133, 236, 1) 13%, rgba(170, 248, 219, 1) 86%)",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 48,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 1200,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": false
+      }
+    },
+    "1734256535e8f81690": {
+      "type": "apps",
+      "blocks": {
+        "loox_reviews_loox_dynamic_section_7EMMWi": {
+          "type": "shopify://apps/loox-reviews/blocks/loox-dynamic-section/5c3b337f-fd14-4df5-b1d6-80ec13e6e28e",
+          "settings": {
+            "only_photos": false,
+            "aggregated": false,
+            "limit": 20,
+            "hide_thumbnails": false,
+            "maxwidth": 1080,
+            "is_sample": true
+          }
+        }
+      },
+      "block_order": [
+        "loox_reviews_loox_dynamic_section_7EMMWi"
+      ],
+      "settings": {
+        "include_margins": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_multicolumn_BGjGbn": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "column_AtK979": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icons8-money-back-guarantee-128.png",
+            "image_width": "extra-large",
+            "title": "30-Day Money Back Guarantee",
+            "heading_size": "h4",
+            "text": "<p>Not completely satisfied with our products or results? We're so confident in our products we provide a solid guarantee</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_pR7q9R": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icons8-return-on-investment-128.png",
+            "image_width": "medium",
+            "title": "Free & Easy Returns, Always.",
+            "heading_size": "h4",
+            "text": "<p>Our returns process is simple, just as it should be. Returns are covered by us, always</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_9Yw7AU": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icons8-cruelty-free-128.png",
+            "image_width": "medium",
+            "title": "Cruelty Free & Sustainable",
+            "heading_size": "h4",
+            "text": "<p>Our products are never tested on fluffy animals. We believe they need hugs not our products :) & we love our environment</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_NtagLx": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/auslogo-green.png",
+            "image_width": "medium",
+            "title": "Australian Made & Owned",
+            "heading_size": "h4",
+            "text": "<p>We are proudly Australian Made & Owned. We truely believe the best skincare comes from our shores</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "column_AtK979",
+        "column_pR7q9R",
+        "column_9Yw7AU",
+        "column_NtagLx"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "column_alignment": "left",
+        "columns_desktop": 4,
+        "column_gap": "none",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    }
+  },
+  "order": [
+    "1742981710f2fad5ff",
+    "main",
+    "ss_scrolling_text_4_HxKzPg",
+    "ss_feature_17_EnNray",
+    "ss_testimonial_19_rjcAdm",
+    "ss_scrolling_quotes_LVapYf",
+    "image_with_text_gDrttX",
+    "ss_product_reviews_video_i9xTi8",
+    "ss_glow_faq_HGxQzh",
+    "ss_scrolling_text_4_Mwf3J9",
+    "image_with_text_MgddA8",
+    "ss_glow_testimonial_fbz6HT",
+    "1734256535e8f81690",
+    "custom_multicolumn_BGjGbn"
+  ]
+}

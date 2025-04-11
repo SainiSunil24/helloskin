@@ -1,0 +1,58 @@
+<style>
+  .shipping_methods .custom_heading{
+    font-size:{{ block.settings.heading_size }}px;
+  }
+</style>
+<div class="shipping_methods">
+ {% if block.settings.shipping_heading != blank %} <h2 class="custom_heading">{{ block.settings.shipping_heading }}</h2>{% endif %}
+  {% if block.settings.store_shipping_method %}
+   <div class="product__payment">
+       <ul class="list list-payment" role="list">
+          {%- for type in shop.enabled_payment_types -%}
+            <li class="list-payment__item">
+              {{ type | payment_type_svg_tag: class: 'icon icon--full-color' }}
+            </li>
+          {%- endfor -%}
+        </ul>
+    </div> 
+    {% endif %}
+    {% if block.settings.custom_shipping_method %}
+     <div class="custom_payment_method">
+       {% if block.settings.icon1 != blank or block.settings.icon2 != blank or block.settings.icon3 != blank or block.settings.icon4 != blank %}
+         <div class="custom_icons">
+           {% if block.settings.icon1 != blank %}
+             <div class="payment_icon payment_icon1">
+               <img src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.icon1 | img_url:"master" }}">
+             </div>
+            {% endif %}
+            {% if block.settings.icon2 != blank %}
+             <div class="payment_icon payment_icon2">
+               <img src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.icon2 | img_url:"master" }}">
+             </div>
+            {% endif %}
+            {% if block.settings.icon3 != blank %}
+             <div class="payment_icon payment_icon3">
+               <img src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.icon3 | img_url:"master" }}">
+             </div>
+            {% endif %}
+            {% if block.settings.icon4 != blank %}
+             <div class="payment_icon payment_icon4">
+               <img src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.icon4 | img_url:"master" }}">
+             </div>
+            {% endif %}
+         </div>
+       {% endif %}
+     </div>  
+    {% endif %}
+    {% if block.settings.content != blank %}<div class="shipping_content">{{ block.settings.content | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }}</div>{% endif %}
+    {% if block.settings.shop_head != blank or block.settings.shop_image != blank %}
+      <div class="shop_heading_content">
+       {% if block.settings.shop_head != blank %} <h3>{{ block.settings.shop_head }}</h3>{% endif %}
+        {% if block.settings.shop_image != blank %}
+          <div class="shop_content">
+            <img src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.shop_image  | img_url:"master"}}">
+          </div>
+        {% endif %}
+      </div>
+     {% endif %}
+</div>

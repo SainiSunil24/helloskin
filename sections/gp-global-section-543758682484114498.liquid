@@ -1,0 +1,861 @@
+
+{% render 'gp-head', 'isThemeSection: true' %}
+<style {% if section.settings.section_preload == "false" %} class="gps-link gps-style" type="text/disabled-css" {% endif %}>.gps-543758682484114498.gps.gpsil [style*="--aspect:"]{aspect-ratio:var(--aspect)}.gps-543758682484114498.gps.gpsil [style*="--bg:"]{background:var(--bg)}.gps-543758682484114498.gps.gpsil [style*="--bga:"]{background-attachment:var(--bga)}.gps-543758682484114498.gps.gpsil [style*="--bgc:"]{background-color:var(--bgc)}.gps-543758682484114498.gps.gpsil [style*="--bgi:"]{background-image:var(--bgi)}.gps-543758682484114498.gps.gpsil [style*="--bgp:"]{background-position:var(--bgp)}.gps-543758682484114498.gps.gpsil [style*="--bgr:"]{background-repeat:var(--bgr)}.gps-543758682484114498.gps.gpsil [style*="--bgs:"]{background-size:var(--bgs)}.gps-543758682484114498.gps.gpsil [style*="--b:"]{border:var(--b)}.gps-543758682484114498.gps.gpsil [style*="--bb:"]{border-bottom:var(--bb)}.gps-543758682484114498.gps.gpsil [style*="--bc:"]{border-color:var(--bc)}.gps-543758682484114498.gps.gpsil [style*="--bblr:"]{border-bottom-left-radius:var(--bblr)}.gps-543758682484114498.gps.gpsil [style*="--bbrr:"]{border-bottom-right-radius:var(--bbrr)}.gps-543758682484114498.gps.gpsil [style*="--bs:"]{border-style:var(--bs)}.gps-543758682484114498.gps.gpsil [style*="--bt:"]{border-top:var(--bt)}.gps-543758682484114498.gps.gpsil [style*="--btlr:"]{border-top-left-radius:var(--btlr)}.gps-543758682484114498.gps.gpsil [style*="--btrr:"]{border-top-right-radius:var(--btrr)}.gps-543758682484114498.gps.gpsil [style*="--bw:"]{border-width:var(--bw)}.gps-543758682484114498.gps.gpsil [style*="--shadow:"]{box-shadow:var(--shadow)}.gps-543758682484114498.gps.gpsil [style*="--c:"]{color:var(--c)}.gps-543758682484114498.gps.gpsil [style*="--cg:"]{-moz-column-gap:var(--cg);column-gap:var(--cg)}.gps-543758682484114498.gps.gpsil [style*="--ff:"]{font-family:var(--ff)}.gps-543758682484114498.gps.gpsil [style*="--size:"]{font-size:var(--size)}.gps-543758682484114498.gps.gpsil [style*="--weight:"]{font-weight:var(--weight)}.gps-543758682484114498.gps.gpsil [style*="--fs:"]{font-style:var(--fs)}.gps-543758682484114498.gps.gpsil [style*="--gtc:"]{grid-template-columns:var(--gtc)}.gps-543758682484114498.gps.gpsil [style*="--jc:"]{justify-content:var(--jc)}.gps-543758682484114498.gps.gpsil [style*="--ls:"]{letter-spacing:var(--ls)}.gps-543758682484114498.gps.gpsil [style*="--lh:"]{line-height:var(--lh)}.gps-543758682484114498.gps.gpsil [style*="--m:"]{margin:var(--m)}.gps-543758682484114498.gps.gpsil [style*="--mb:"]{margin-bottom:var(--mb)}.gps-543758682484114498.gps.gpsil [style*="--objf:"]{-o-object-fit:var(--objf);object-fit:var(--objf)}.gps-543758682484114498.gps.gpsil [style*="--op:"]{opacity:var(--op)}.gps-543758682484114498.gps.gpsil [style*="--o:"]{order:var(--o)}.gps-543758682484114498.gps.gpsil [style*="--pc:"]{place-content:var(--pc)}.gps-543758682484114498.gps.gpsil [style*="--p:"]{padding:var(--p)}.gps-543758682484114498.gps.gpsil [style*="--pb:"]{padding-bottom:var(--pb)}.gps-543758682484114498.gps.gpsil [style*="--pl:"]{padding-left:var(--pl)}.gps-543758682484114498.gps.gpsil [style*="--pr:"]{padding-right:var(--pr)}.gps-543758682484114498.gps.gpsil [style*="--pt:"]{padding-top:var(--pt)}.gps-543758682484114498.gps.gpsil [style*="--pos:"]{position:var(--pos)}.gps-543758682484114498.gps.gpsil [style*="--ta:"]{text-align:var(--ta)}.gps-543758682484114498.gps.gpsil [style*="--t:"]{transform:var(--t)}.gps-543758682484114498.gps.gpsil [style*="--w:"]{width:var(--w)}.gps-543758682484114498.gps.gpsil [style*="--line-clamp:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp);display:-webkit-box;overflow:hidden}@media only screen and (max-width:1024px){.gps-543758682484114498.gps.gpsil [style*="--size-tablet:"]{font-size:var(--size-tablet)}.gps-543758682484114498.gps.gpsil [style*="--jc-tablet:"]{justify-content:var(--jc-tablet)}.gps-543758682484114498.gps.gpsil [style*="--lh-tablet:"]{line-height:var(--lh-tablet)}.gps-543758682484114498.gps.gpsil [style*="--pl-tablet:"]{padding-left:var(--pl-tablet)}.gps-543758682484114498.gps.gpsil [style*="--pr-tablet:"]{padding-right:var(--pr-tablet)}.gps-543758682484114498.gps.gpsil [style*="--w-tablet:"]{width:var(--w-tablet)}.gps-543758682484114498.gps.gpsil [style*="--line-clamp-tablet:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-tablet);display:-webkit-box;overflow:hidden}}@media only screen and (max-width:767px){.gps-543758682484114498.gps.gpsil [style*="--size-mobile:"]{font-size:var(--size-mobile)}.gps-543758682484114498.gps.gpsil [style*="--gtc-mobile:"]{grid-template-columns:var(--gtc-mobile)}.gps-543758682484114498.gps.gpsil [style*="--jc-mobile:"]{justify-content:var(--jc-mobile)}.gps-543758682484114498.gps.gpsil [style*="--lh-mobile:"]{line-height:var(--lh-mobile)}.gps-543758682484114498.gps.gpsil [style*="--mb-mobile:"]{margin-bottom:var(--mb-mobile)}.gps-543758682484114498.gps.gpsil [style*="--pb-mobile:"]{padding-bottom:var(--pb-mobile)}.gps-543758682484114498.gps.gpsil [style*="--pl-mobile:"]{padding-left:var(--pl-mobile)}.gps-543758682484114498.gps.gpsil [style*="--pr-mobile:"]{padding-right:var(--pr-mobile)}.gps-543758682484114498.gps.gpsil [style*="--pt-mobile:"]{padding-top:var(--pt-mobile)}.gps-543758682484114498.gps.gpsil [style*="--w-mobile:"]{width:var(--w-mobile)}.gps-543758682484114498.gps.gpsil [style*="--line-clamp-mobile:"]{-webkit-box-orient:vertical;-webkit-line-clamp:var(--line-clamp-mobile);display:-webkit-box;overflow:hidden}}.gps-543758682484114498 .gp-relative{position:relative}.gps-543758682484114498 .gp-mx-auto{margin-left:auto;margin-right:auto}.gps-543758682484114498 .gp-mb-0{margin-bottom:0}.gps-543758682484114498 .gp-flex{display:flex}.gps-543758682484114498 .gp-grid{display:grid}.gps-543758682484114498 .\!gp-hidden{display:none!important}.gps-543758682484114498 .gp-hidden{display:none}.gps-543758682484114498 .gp-w-full{width:100%}.gps-543758682484114498 .gp-max-w-full{max-width:100%}.gps-543758682484114498 .gp-flex-col{flex-direction:column}.gps-543758682484114498 .gp-gap-y-0{row-gap:0}.gps-543758682484114498 .gp-overflow-hidden{overflow:hidden}.gps-543758682484114498 .gp-transition-colors{transition-duration:.15s;transition-property:color,background-color,border-color,text-decoration-color,fill,stroke;transition-timing-function:cubic-bezier(.4,0,.2,1)}.gps-543758682484114498 .gp-duration-200{transition-duration:.2s}.gps-543758682484114498 .gp-ease-in-out{transition-timing-function:cubic-bezier(.4,0,.2,1)}@media (max-width:1024px){.gps-543758682484114498 .tablet\:\!gp-hidden{display:none!important}.gps-543758682484114498 .tablet\:gp-hidden{display:none}}@media (max-width:767px){.gps-543758682484114498 .mobile\:\!gp-hidden{display:none!important}.gps-543758682484114498 .mobile\:gp-hidden{display:none}}.gps-543758682484114498 .\[\&_\*\]\:gp-max-w-full *{max-width:100%}.gps-543758682484114498 .\[\&_p\]\:gp-inline p{display:inline}.gps-543758682484114498 .\[\&_p\]\:after\:gp-whitespace-pre-wrap p:after{content:var(--tw-content);white-space:pre-wrap}.gps-543758682484114498 .\[\&_p\]\:after\:gp-content-\[\'\\A\'\] p:after{--tw-content:"\A";content:var(--tw-content)}</style>
+
+       
+      
+            <section
+              class="gp-mx-auto gp-max-w-full {% if section.settings.section_preload == "false" %}gps-lazy {% endif %}"
+              style="--w:100%;--w-tablet:100%;--w-mobile:100%;--pl:0px;--pl-tablet:0px;--pl-mobile:0px;--pr:0px;--pr-tablet:0px;--pr-mobile:0px"
+            >
+              
+    <div
+      enableLazyloadImage id="gtK9Q4pSI5" data-id="gtK9Q4pSI5"
+        style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--pt:80px;--pl:15px;--pb:var(--g-s-2xl);--pr:15px;--pt-mobile:42px;--pl-mobile:15px;--pb-mobile:0px;--pr-mobile:15px;--cg:32px;--pc:start;--gtc:minmax(0, 12fr);--w:100%;--w-tablet:100%;--w-mobile:100%;--bgc:#FFFFFF;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gtK9Q4pSI5 gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gElBwWDCcf gp-relative gp-flex gp-flex-col"
+    >
+      
+       
+      
+    <div
+      enableLazyloadImage parentTag="Col" id="gDAU0dWOiq" data-id="gDAU0dWOiq"
+        style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--mb:32px;--mb-mobile:28px;--cg:8px;--pc:start;--gtc:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gDAU0dWOiq gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gt-WOKxPem gp-relative gp-flex gp-flex-col"
+    >
+      
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gNQ1S93bGs">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="gNQ1S93bGs "
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--mb:16px;--mb-mobile:14px"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <h2
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--fs:normal;--ff:var(--g-font-heading, heading);--weight:600;--ls:normal;--size:33px;--size-tablet:33px;--size-mobile:29px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ "sections.gp-global-section-543758682484114498.ggNQ1S93bGs_text_html" | t | replace: '$locationOrigin', locationOrigin }}</h2>
+      </div>
+    </div>
+    </gp-text>
+    
+    </div>
+    </div>
+   
+    
+       
+      
+    <div
+      enableLazyloadImage parentTag="Col" id="gNdUQL4dYU" data-id="gNdUQL4dYU"
+        style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:grid;--d-mobile:grid;--d-tablet:grid;--op:100%;--mb:16px;--mb-mobile:14px;--cg:30px;--pc:start;--gtc:minmax(0, 4fr) minmax(0, 4fr) minmax(0, 4fr);--gtc-mobile:minmax(0, 12fr);--w:var(--g-ct-w, 1200px);--w-tablet:var(--g-ct-w, 100%);--w-mobile:var(--g-ct-w, 100%);--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll"
+        class="gNdUQL4dYU gp-mx-auto gp-mb-0 gp-grid gp-max-w-full gp-gap-y-0 gp-transition-colors gp-duration-200 gp-ease-in-out [&_*]:gp-max-w-full"
+    >
+    <div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="g-wIOiDFR1 gp-relative gp-flex gp-flex-col"
+    >
+      <div gp-el-wrapper style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--mb:24px;--op:100%;--bblr:10px;--bbrr:10px;--btlr:10px;--btrr:10px;--mb-mobile:14px" class="goPMkXBiYz ">
+      
+    <div class='gp-flex gp-overflow-hidden' style="border-radius: inherit">
+      
+  <gp-image-comparison
+  data-id="goPMkXBiYz"
+    gp-data='{"aspectRatio":{"desktop":"2/2"},"defaultRatio":"1376/1600","handle":null,"handleSize":40,"hover":false,"leftImage":{"src":"https://sfycdn.speedsize.com/28b778cb-f97a-4493-94e1-2d825129ba3c/cdn.shopify.com/s/files/1/0719/8611/8943/files/gempages_541166679116219322-39a52aca-2e42-4cb0-b422-cf9d1ad84644.webp","width":1080,"height":1087,"backupFileKey":"gempages_541166679116219322-39a52aca-2e42-4cb0-b422-cf9d1ad84644.webp","storage":"FILE_CONTENT"},"leftImageCss":{},"rightImage":{"src":"https://sfycdn.speedsize.com/28b778cb-f97a-4493-94e1-2d825129ba3c/cdn.shopify.com/s/files/1/0719/8611/8943/files/gempages_541166679116219322-7ad1f15f-9add-4d27-94cf-da7333faf7bf.webp","width":1376,"height":1600,"backupFileKey":"gempages_541166679116219322-7ad1f15f-9add-4d27-94cf-da7333faf7bf.webp","storage":"FILE_CONTENT"},"rightImageCss":{},"sliderLineColor":"#ffffff","sliderLineWidth":2,"sliderPositionPercentage":0.5,"componentUid":"goPMkXBiYz","vertical":false}'
+    class="gp-w-full gp-flex "
+    style="--jc:start;--jc-tablet:start;--jc-mobile:start"
+  >
+  <div id="img-comparison-wrapper-goPMkXBiYz" style="--w:100%;--w-tablet:100%;--w-mobile:100%">
+    <div
+      style="box-sizing:border-box;position:relative;overflow:hidden;height:auto;display:block"
+      id="img-comparison-container-goPMkXBiYz"
+      data-testid="container"
+    >
+      <img
+        data-testid="temp-image"
+        alt=""
+        title=""
+        width="1080"
+        height="1087"
+        style="--pos:static;--op:0;--aspect:2/2"
+      />
+      
+  <img
+      id="right-image-goPMkXBiYz" title
+      data-testid="right-image"
+      draggable="false"
+      class="gp_lazyload"
+      data-src="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-7ad1f15f-9add-4d27-94cf-da7333faf7bf.webp" | file_url }}" data-srcset="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-7ad1f15f-9add-4d27-94cf-da7333faf7bf.webp" | file_url }} 768w,{{ "gempages_541166679116219322-7ad1f15f-9add-4d27-94cf-da7333faf7bf.webp" | file_url }} 1024w,{{ "gempages_541166679116219322-7ad1f15f-9add-4d27-94cf-da7333faf7bf.webp" | file_url }} 1440w" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZy0yMjM3LTE2NzgiPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iMjAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNTAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNzAlIiAvPgogICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjIyMzciIGhlaWdodD0iMTY3OCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiBmaWxsPSJ1cmwoI2ctMjIzNy0xNjc4KSIgLz4KICAgIDxhbmltYXRlIHhsaW5rOmhyZWY9IiNyIiBhdHRyaWJ1dGVOYW1lPSJ4IiBmcm9tPSItMjIzNyIgdG89IjIyMzciIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" width="2237" height="1678" alt
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="display:block;height:100%;position:absolute;width:100%;top:0;--objf:cover"
+    />
+  
+      
+  <img
+      id="left-image-goPMkXBiYz" title
+      data-testid="left-image"
+      draggable="false"
+      class="gp_lazyload"
+      data-src="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-39a52aca-2e42-4cb0-b422-cf9d1ad84644.webp" | file_url }}" data-srcset="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-39a52aca-2e42-4cb0-b422-cf9d1ad84644.webp" | file_url }} 768w,{{ "gempages_541166679116219322-39a52aca-2e42-4cb0-b422-cf9d1ad84644.webp" | file_url }} 1024w,{{ "gempages_541166679116219322-39a52aca-2e42-4cb0-b422-cf9d1ad84644.webp" | file_url }} 1440w" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZy0yMjM3LTE2NzgiPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iMjAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNTAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNzAlIiAvPgogICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjIyMzciIGhlaWdodD0iMTY3OCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiBmaWxsPSJ1cmwoI2ctMjIzNy0xNjc4KSIgLz4KICAgIDxhbmltYXRlIHhsaW5rOmhyZWY9IiNyIiBhdHRyaWJ1dGVOYW1lPSJ4IiBmcm9tPSItMjIzNyIgdG89IjIyMzciIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" width="2237" height="1678" alt
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="display:block;height:100%;position:absolute;width:100%;top:0;--objf:cover"
+    />
+  
+      <div id="image-comparison-slider-goPMkXBiYz" style="z-index:2;align-items:center;cursor:ew-resize;display:flex;flex-direction:column;height:100%;justify-content:center;position:absolute;width:40px">
+        <div style="display:block;background:#ffffff;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);flex:0 1 auto;height:100%;width:2px"></div>
+        <div style="align-items:center;border:2px solid #ffffff;border-radius:100%;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);box-sizing:border-box;display:flex;flex:1 0 auto;height:40px;justify-content:center;width:40px;transform:none">
+          <svg style="margin-right:2px;filter:drop-shadow(rgba(0, 0, 0, 0.4) 0px 0px 4px)" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6L6 0V12L0 6Z" fill="white"/>
+          </svg>
+          <svg style="margin-left:2px;filter:drop-shadow(rgba(0, 0, 0, 0.4) 0px 0px 4px)" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6L0 12V0L6 6Z" fill="white"/>
+          </svg>
+        </div>
+        <div style="display:block;background:#ffffff;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);flex:0 1 auto;height:100%;width:2px"></div>
+      </div>
+      
+      
+    </div></div>
+  </gp-image-comparison>
+  <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-image-comparison.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div>
+  
+      </div>
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gkLv_dnmtX">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="gkLv_dnmtX "
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--mb:8px;--mb-mobile:7px"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:600;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ "sections.gp-global-section-543758682484114498.ggkLv_dnmtX_text_html" | t | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gkLv_dnmtX">
+        .gkLv_dnmtX {
+
+}
+.gkLv_dnmtX p {
+
+}
+      </style>
+    
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gGFbDkEjPl">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="gGFbDkEjPl "
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--mb:32px"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ "sections.gp-global-section-543758682484114498.ggGFbDkEjPl_text_html" | t | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gGFbDkEjPl">
+        .gGFbDkEjPl {
+
+}
+.gGFbDkEjPl p {
+
+}
+      </style>
+    <div gp-el-wrapper style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--mb:24px;--op:100%;--bblr:10px;--bbrr:10px;--btlr:10px;--btrr:10px;--mb-mobile:14px" class="g7FelUP59Z ">
+      
+    <div class='gp-flex gp-overflow-hidden' style="border-radius: inherit">
+      
+  <gp-image-comparison
+  data-id="g7FelUP59Z"
+    gp-data='{"aspectRatio":{"desktop":"2/2"},"defaultRatio":"1080/1080","handle":null,"handleSize":40,"hover":false,"leftImage":{"src":"https://sfycdn.speedsize.com/28b778cb-f97a-4493-94e1-2d825129ba3c/cdn.shopify.com/s/files/1/0719/8611/8943/files/gempages_541166679116219322-568433d9-3571-4397-9954-dd2937174112.png","width":1080,"height":1080,"backupFileKey":"gempages_541166679116219322-568433d9-3571-4397-9954-dd2937174112.png","storage":"FILE_CONTENT"},"leftImageCss":{},"rightImage":{"src":"https://sfycdn.speedsize.com/28b778cb-f97a-4493-94e1-2d825129ba3c/cdn.shopify.com/s/files/1/0719/8611/8943/files/gempages_541166679116219322-82379f21-e4f9-4fdb-8e36-a1e71e44df7b.png","width":1080,"height":1080,"backupFileKey":"gempages_541166679116219322-82379f21-e4f9-4fdb-8e36-a1e71e44df7b.png","storage":"FILE_CONTENT"},"rightImageCss":{},"sliderLineColor":"#ffffff","sliderLineWidth":2,"sliderPositionPercentage":0.5,"componentUid":"g7FelUP59Z","vertical":false}'
+    class="gp-w-full gp-flex "
+    style="--jc:start;--jc-tablet:start;--jc-mobile:start"
+  >
+  <div id="img-comparison-wrapper-g7FelUP59Z" style="--w:100%;--w-tablet:100%;--w-mobile:100%">
+    <div
+      style="box-sizing:border-box;position:relative;overflow:hidden;height:auto;display:block"
+      id="img-comparison-container-g7FelUP59Z"
+      data-testid="container"
+    >
+      <img
+        data-testid="temp-image"
+        alt=""
+        title=""
+        width="1080"
+        height="1080"
+        style="--pos:static;--op:0;--aspect:2/2"
+      />
+      
+  <img
+      id="right-image-g7FelUP59Z" title
+      data-testid="right-image"
+      draggable="false"
+      class="gp_lazyload"
+      data-src="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-82379f21-e4f9-4fdb-8e36-a1e71e44df7b.png" | file_url }}" data-srcset="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-82379f21-e4f9-4fdb-8e36-a1e71e44df7b.png" | file_url }} 768w,{{ "gempages_541166679116219322-82379f21-e4f9-4fdb-8e36-a1e71e44df7b.png" | file_url }} 1024w,{{ "gempages_541166679116219322-82379f21-e4f9-4fdb-8e36-a1e71e44df7b.png" | file_url }} 1440w" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZy0yMjM3LTE2NzgiPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iMjAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNTAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNzAlIiAvPgogICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjIyMzciIGhlaWdodD0iMTY3OCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiBmaWxsPSJ1cmwoI2ctMjIzNy0xNjc4KSIgLz4KICAgIDxhbmltYXRlIHhsaW5rOmhyZWY9IiNyIiBhdHRyaWJ1dGVOYW1lPSJ4IiBmcm9tPSItMjIzNyIgdG89IjIyMzciIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" width="2237" height="1678" alt
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="display:block;height:100%;position:absolute;width:100%;top:0;--objf:cover"
+    />
+  
+      
+  <img
+      id="left-image-g7FelUP59Z" title
+      data-testid="left-image"
+      draggable="false"
+      class="gp_lazyload"
+      data-src="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-568433d9-3571-4397-9954-dd2937174112.png" | file_url }}" data-srcset="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-568433d9-3571-4397-9954-dd2937174112.png" | file_url }} 768w,{{ "gempages_541166679116219322-568433d9-3571-4397-9954-dd2937174112.png" | file_url }} 1024w,{{ "gempages_541166679116219322-568433d9-3571-4397-9954-dd2937174112.png" | file_url }} 1440w" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZy0yMjM3LTE2NzgiPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iMjAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNTAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNzAlIiAvPgogICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjIyMzciIGhlaWdodD0iMTY3OCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiBmaWxsPSJ1cmwoI2ctMjIzNy0xNjc4KSIgLz4KICAgIDxhbmltYXRlIHhsaW5rOmhyZWY9IiNyIiBhdHRyaWJ1dGVOYW1lPSJ4IiBmcm9tPSItMjIzNyIgdG89IjIyMzciIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" width="2237" height="1678" alt
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="display:block;height:100%;position:absolute;width:100%;top:0;--objf:cover"
+    />
+  
+      <div id="image-comparison-slider-g7FelUP59Z" style="z-index:2;align-items:center;cursor:ew-resize;display:flex;flex-direction:column;height:100%;justify-content:center;position:absolute;width:40px">
+        <div style="display:block;background:#ffffff;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);flex:0 1 auto;height:100%;width:2px"></div>
+        <div style="align-items:center;border:2px solid #ffffff;border-radius:100%;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);box-sizing:border-box;display:flex;flex:1 0 auto;height:40px;justify-content:center;width:40px;transform:none">
+          <svg style="margin-right:2px;filter:drop-shadow(rgba(0, 0, 0, 0.4) 0px 0px 4px)" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6L6 0V12L0 6Z" fill="white"/>
+          </svg>
+          <svg style="margin-left:2px;filter:drop-shadow(rgba(0, 0, 0, 0.4) 0px 0px 4px)" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6L0 12V0L6 6Z" fill="white"/>
+          </svg>
+        </div>
+        <div style="display:block;background:#ffffff;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);flex:0 1 auto;height:100%;width:2px"></div>
+      </div>
+      
+      
+    </div></div>
+  </gp-image-comparison>
+  <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-image-comparison.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div>
+  
+      </div>
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="ghJXdfsjcc">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="ghJXdfsjcc "
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--mb:8px;--mb-mobile:7px"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:600;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ "sections.gp-global-section-543758682484114498.gghJXdfsjcc_text_html" | t | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-ghJXdfsjcc">
+        .ghJXdfsjcc {
+
+}
+.ghJXdfsjcc p {
+
+}
+      </style>
+    
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gogriMc82b">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="gogriMc82b "
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--mb:32px"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ "sections.gp-global-section-543758682484114498.ggogriMc82b_text_html" | t | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gogriMc82b">
+        .gogriMc82b {
+
+}
+.gogriMc82b p {
+
+}
+      </style>
+    
+    </div><div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="g31ImAVNE0 gp-relative gp-flex gp-flex-col"
+    >
+      <div gp-el-wrapper style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--mb:24px;--op:100%;--bblr:10px;--bbrr:10px;--btlr:10px;--btrr:10px;--mb-mobile:14px" class="gzxynnLXz0 ">
+      
+    <div class='gp-flex gp-overflow-hidden' style="border-radius: inherit">
+      
+  <gp-image-comparison
+  data-id="gzxynnLXz0"
+    gp-data='{"aspectRatio":{"desktop":"2/2"},"defaultRatio":"2175/1539","handle":null,"handleSize":40,"hover":false,"leftImage":{"src":"https://sfycdn.speedsize.com/28b778cb-f97a-4493-94e1-2d825129ba3c/cdn.shopify.com/s/files/1/0719/8611/8943/files/gempages_541166679116219322-b85ca22d-7d7d-4e5d-90e8-82799ae2c738.webp","width":914,"height":565,"backupFileKey":"gempages_541166679116219322-b85ca22d-7d7d-4e5d-90e8-82799ae2c738.webp","storage":"FILE_CONTENT"},"leftImageCss":{},"rightImage":{"src":"https://sfycdn.speedsize.com/28b778cb-f97a-4493-94e1-2d825129ba3c/cdn.shopify.com/s/files/1/0719/8611/8943/files/gempages_541166679116219322-cba57034-62b8-4d92-b7c5-1c75d887a4d3.webp","width":2175,"height":1539,"backupFileKey":"gempages_541166679116219322-cba57034-62b8-4d92-b7c5-1c75d887a4d3.webp","storage":"FILE_CONTENT"},"rightImageCss":{},"sliderLineColor":"#ffffff","sliderLineWidth":2,"sliderPositionPercentage":0.55,"componentUid":"gzxynnLXz0","vertical":false}'
+    class="gp-w-full gp-flex "
+    style="--jc:start;--jc-tablet:start;--jc-mobile:start"
+  >
+  <div id="img-comparison-wrapper-gzxynnLXz0" style="--w:100%;--w-tablet:100%;--w-mobile:100%">
+    <div
+      style="box-sizing:border-box;position:relative;overflow:hidden;height:auto;display:block"
+      id="img-comparison-container-gzxynnLXz0"
+      data-testid="container"
+    >
+      <img
+        data-testid="temp-image"
+        alt=""
+        title=""
+        width="914"
+        height="565"
+        style="--pos:static;--op:0;--aspect:2/2"
+      />
+      
+  <img
+      id="right-image-gzxynnLXz0" title
+      data-testid="right-image"
+      draggable="false"
+      class="gp_lazyload"
+      data-src="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-cba57034-62b8-4d92-b7c5-1c75d887a4d3.webp" | file_url }}" data-srcset="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-cba57034-62b8-4d92-b7c5-1c75d887a4d3.webp" | file_url }} 768w,{{ "gempages_541166679116219322-cba57034-62b8-4d92-b7c5-1c75d887a4d3.webp" | file_url }} 1024w,{{ "gempages_541166679116219322-cba57034-62b8-4d92-b7c5-1c75d887a4d3.webp" | file_url }} 1440w" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZy0yMjM3LTE2NzgiPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iMjAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNTAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNzAlIiAvPgogICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjIyMzciIGhlaWdodD0iMTY3OCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiBmaWxsPSJ1cmwoI2ctMjIzNy0xNjc4KSIgLz4KICAgIDxhbmltYXRlIHhsaW5rOmhyZWY9IiNyIiBhdHRyaWJ1dGVOYW1lPSJ4IiBmcm9tPSItMjIzNyIgdG89IjIyMzciIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" width="2237" height="1678" alt
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="display:block;height:100%;position:absolute;width:100%;top:0;--objf:fill"
+    />
+  
+      
+  <img
+      id="left-image-gzxynnLXz0" title
+      data-testid="left-image"
+      draggable="false"
+      class="gp_lazyload"
+      data-src="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-b85ca22d-7d7d-4e5d-90e8-82799ae2c738.webp" | file_url }}" data-srcset="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-b85ca22d-7d7d-4e5d-90e8-82799ae2c738.webp" | file_url }} 768w,{{ "gempages_541166679116219322-b85ca22d-7d7d-4e5d-90e8-82799ae2c738.webp" | file_url }} 1024w,{{ "gempages_541166679116219322-b85ca22d-7d7d-4e5d-90e8-82799ae2c738.webp" | file_url }} 1440w" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZy0yMjM3LTE2NzgiPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iMjAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNTAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNzAlIiAvPgogICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjIyMzciIGhlaWdodD0iMTY3OCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiBmaWxsPSJ1cmwoI2ctMjIzNy0xNjc4KSIgLz4KICAgIDxhbmltYXRlIHhsaW5rOmhyZWY9IiNyIiBhdHRyaWJ1dGVOYW1lPSJ4IiBmcm9tPSItMjIzNyIgdG89IjIyMzciIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" width="2237" height="1678" alt
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="display:block;height:100%;position:absolute;width:100%;top:0;--objf:fill"
+    />
+  
+      <div id="image-comparison-slider-gzxynnLXz0" style="z-index:2;align-items:center;cursor:ew-resize;display:flex;flex-direction:column;height:100%;justify-content:center;position:absolute;width:40px">
+        <div style="display:block;background:#ffffff;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);flex:0 1 auto;height:100%;width:2px"></div>
+        <div style="align-items:center;border:2px solid #ffffff;border-radius:100%;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);box-sizing:border-box;display:flex;flex:1 0 auto;height:40px;justify-content:center;width:40px;transform:none">
+          <svg style="margin-right:2px;filter:drop-shadow(rgba(0, 0, 0, 0.4) 0px 0px 4px)" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6L6 0V12L0 6Z" fill="white"/>
+          </svg>
+          <svg style="margin-left:2px;filter:drop-shadow(rgba(0, 0, 0, 0.4) 0px 0px 4px)" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6L0 12V0L6 6Z" fill="white"/>
+          </svg>
+        </div>
+        <div style="display:block;background:#ffffff;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);flex:0 1 auto;height:100%;width:2px"></div>
+      </div>
+      
+      
+    </div></div>
+  </gp-image-comparison>
+  <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-image-comparison.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div>
+  
+      </div>
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gkSDC1Btqa">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="gkSDC1Btqa "
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--mb:8px;--mb-mobile:7px"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:600;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ "sections.gp-global-section-543758682484114498.ggkSDC1Btqa_text_html" | t | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gkSDC1Btqa">
+        .gkSDC1Btqa {
+
+}
+.gkSDC1Btqa p {
+
+}
+      </style>
+    
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gXkfS5bngE">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="gXkfS5bngE "
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--mb:32px;--mb-mobile:28px"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ "sections.gp-global-section-543758682484114498.ggXkfS5bngE_text_html" | t | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gXkfS5bngE">
+        .gXkfS5bngE {
+
+}
+.gXkfS5bngE p {
+
+}
+      </style>
+    <div gp-el-wrapper style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--mb:24px;--op:100%;--bblr:10px;--bbrr:10px;--btlr:10px;--btrr:10px;--mb-mobile:14px" class="gNz2KxYjKs ">
+      
+    <div class='gp-flex gp-overflow-hidden' style="border-radius: inherit">
+      
+  <gp-image-comparison
+  data-id="gNz2KxYjKs"
+    gp-data='{"aspectRatio":{"desktop":"2/2"},"defaultRatio":"1080/1080","handle":null,"handleSize":40,"hover":false,"leftImage":{"src":"https://sfycdn.speedsize.com/28b778cb-f97a-4493-94e1-2d825129ba3c/cdn.shopify.com/s/files/1/0719/8611/8943/files/gempages_541166679116219322-b6cff2c0-9d6d-47b2-8539-5b0989217835.png","width":1080,"height":1080,"backupFileKey":"gempages_541166679116219322-b6cff2c0-9d6d-47b2-8539-5b0989217835.png","storage":"FILE_CONTENT"},"leftImageCss":{},"rightImage":{"src":"https://sfycdn.speedsize.com/28b778cb-f97a-4493-94e1-2d825129ba3c/cdn.shopify.com/s/files/1/0719/8611/8943/files/gempages_541166679116219322-01892c4b-cf17-4d6a-bd6d-e2f4a1f5ca5b.png","width":1080,"height":1080,"backupFileKey":"gempages_541166679116219322-01892c4b-cf17-4d6a-bd6d-e2f4a1f5ca5b.png","storage":"FILE_CONTENT"},"rightImageCss":{},"sliderLineColor":"#ffffff","sliderLineWidth":2,"sliderPositionPercentage":0.55,"componentUid":"gNz2KxYjKs","vertical":false}'
+    class="gp-w-full gp-flex "
+    style="--jc:start;--jc-tablet:start;--jc-mobile:start"
+  >
+  <div id="img-comparison-wrapper-gNz2KxYjKs" style="--w:100%;--w-tablet:100%;--w-mobile:100%">
+    <div
+      style="box-sizing:border-box;position:relative;overflow:hidden;height:auto;display:block"
+      id="img-comparison-container-gNz2KxYjKs"
+      data-testid="container"
+    >
+      <img
+        data-testid="temp-image"
+        alt=""
+        title=""
+        width="1080"
+        height="1080"
+        style="--pos:static;--op:0;--aspect:2/2"
+      />
+      
+  <img
+      id="right-image-gNz2KxYjKs" title
+      data-testid="right-image"
+      draggable="false"
+      class="gp_lazyload"
+      data-src="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-01892c4b-cf17-4d6a-bd6d-e2f4a1f5ca5b.png" | file_url }}" data-srcset="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-01892c4b-cf17-4d6a-bd6d-e2f4a1f5ca5b.png" | file_url }} 768w,{{ "gempages_541166679116219322-01892c4b-cf17-4d6a-bd6d-e2f4a1f5ca5b.png" | file_url }} 1024w,{{ "gempages_541166679116219322-01892c4b-cf17-4d6a-bd6d-e2f4a1f5ca5b.png" | file_url }} 1440w" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZy0yMjM3LTE2NzgiPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iMjAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNTAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNzAlIiAvPgogICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjIyMzciIGhlaWdodD0iMTY3OCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiBmaWxsPSJ1cmwoI2ctMjIzNy0xNjc4KSIgLz4KICAgIDxhbmltYXRlIHhsaW5rOmhyZWY9IiNyIiBhdHRyaWJ1dGVOYW1lPSJ4IiBmcm9tPSItMjIzNyIgdG89IjIyMzciIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" width="2237" height="1678" alt
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="display:block;height:100%;position:absolute;width:100%;top:0;--objf:fill"
+    />
+  
+      
+  <img
+      id="left-image-gNz2KxYjKs" title
+      data-testid="left-image"
+      draggable="false"
+      class="gp_lazyload"
+      data-src="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-b6cff2c0-9d6d-47b2-8539-5b0989217835.png" | file_url }}" data-srcset="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-b6cff2c0-9d6d-47b2-8539-5b0989217835.png" | file_url }} 768w,{{ "gempages_541166679116219322-b6cff2c0-9d6d-47b2-8539-5b0989217835.png" | file_url }} 1024w,{{ "gempages_541166679116219322-b6cff2c0-9d6d-47b2-8539-5b0989217835.png" | file_url }} 1440w" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZy0yMjM3LTE2NzgiPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iMjAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNTAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNzAlIiAvPgogICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjIyMzciIGhlaWdodD0iMTY3OCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiBmaWxsPSJ1cmwoI2ctMjIzNy0xNjc4KSIgLz4KICAgIDxhbmltYXRlIHhsaW5rOmhyZWY9IiNyIiBhdHRyaWJ1dGVOYW1lPSJ4IiBmcm9tPSItMjIzNyIgdG89IjIyMzciIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" width="2237" height="1678" alt
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="display:block;height:100%;position:absolute;width:100%;top:0;--objf:fill"
+    />
+  
+      <div id="image-comparison-slider-gNz2KxYjKs" style="z-index:2;align-items:center;cursor:ew-resize;display:flex;flex-direction:column;height:100%;justify-content:center;position:absolute;width:40px">
+        <div style="display:block;background:#ffffff;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);flex:0 1 auto;height:100%;width:2px"></div>
+        <div style="align-items:center;border:2px solid #ffffff;border-radius:100%;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);box-sizing:border-box;display:flex;flex:1 0 auto;height:40px;justify-content:center;width:40px;transform:none">
+          <svg style="margin-right:2px;filter:drop-shadow(rgba(0, 0, 0, 0.4) 0px 0px 4px)" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6L6 0V12L0 6Z" fill="white"/>
+          </svg>
+          <svg style="margin-left:2px;filter:drop-shadow(rgba(0, 0, 0, 0.4) 0px 0px 4px)" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6L0 12V0L6 6Z" fill="white"/>
+          </svg>
+        </div>
+        <div style="display:block;background:#ffffff;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);flex:0 1 auto;height:100%;width:2px"></div>
+      </div>
+      
+      
+    </div></div>
+  </gp-image-comparison>
+  <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-image-comparison.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div>
+  
+      </div>
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gIuIFRf7du">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="gIuIFRf7du "
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--mb:8px;--mb-mobile:7px"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:600;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ "sections.gp-global-section-543758682484114498.ggIuIFRf7du_text_html" | t | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gIuIFRf7du">
+        .gIuIFRf7du {
+
+}
+.gIuIFRf7du p {
+
+}
+      </style>
+    
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gILAH-Ajbb">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="gILAH-Ajbb "
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--mb:32px;--mb-mobile:28px"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ "sections.gp-global-section-543758682484114498.ggILAH-Ajbb_text_html" | t | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gILAH-Ajbb">
+        .gILAH-Ajbb {
+
+}
+.gILAH-Ajbb p {
+
+}
+      </style>
+    
+    </div><div
+      enableLazyloadImage label="Block" tag="Col" type="component"
+      style="--jc:start"
+      class="gG5dot_o2E gp-relative gp-flex gp-flex-col"
+    >
+      <div gp-el-wrapper style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--mb:24px;--op:100%;--bblr:10px;--bbrr:10px;--btlr:10px;--btrr:10px;--mb-mobile:14px" class="g8uIQang_y ">
+      
+    <div class='gp-flex gp-overflow-hidden' style="border-radius: inherit">
+      
+  <gp-image-comparison
+  data-id="g8uIQang_y"
+    gp-data='{"aspectRatio":{"desktop":"1080/1080"},"defaultRatio":"1080/1080","handle":null,"handleSize":40,"hover":false,"leftImage":{"src":"https://sfycdn.speedsize.com/28b778cb-f97a-4493-94e1-2d825129ba3c/cdn.shopify.com/s/files/1/0719/8611/8943/files/gempages_541166679116219322-2b37c946-82c9-43f6-b8a0-09d66d074b6a.png","width":1080,"height":1080,"backupFileKey":"gempages_541166679116219322-2b37c946-82c9-43f6-b8a0-09d66d074b6a.png","storage":"FILE_CONTENT"},"leftImageCss":{},"rightImage":{"src":"https://sfycdn.speedsize.com/28b778cb-f97a-4493-94e1-2d825129ba3c/cdn.shopify.com/s/files/1/0719/8611/8943/files/gempages_541166679116219322-996aad01-6171-4b78-9235-6364be1abd1f.png","width":1080,"height":1080,"backupFileKey":"gempages_541166679116219322-996aad01-6171-4b78-9235-6364be1abd1f.png","storage":"FILE_CONTENT"},"rightImageCss":{},"sliderLineColor":"#ffffff","sliderLineWidth":2,"sliderPositionPercentage":0.5,"componentUid":"g8uIQang_y","vertical":false}'
+    class="gp-w-full gp-flex "
+    style="--jc:start;--jc-tablet:start;--jc-mobile:start"
+  >
+  <div id="img-comparison-wrapper-g8uIQang_y" style="--w:100%;--w-tablet:100%;--w-mobile:100%">
+    <div
+      style="box-sizing:border-box;position:relative;overflow:hidden;height:auto;display:block"
+      id="img-comparison-container-g8uIQang_y"
+      data-testid="container"
+    >
+      <img
+        data-testid="temp-image"
+        alt=""
+        title=""
+        width="1080"
+        height="1080"
+        style="--pos:static;--op:0;--aspect:1080/1080"
+      />
+      
+  <img
+      id="right-image-g8uIQang_y" title
+      data-testid="right-image"
+      draggable="false"
+      class="gp_lazyload"
+      data-src="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-996aad01-6171-4b78-9235-6364be1abd1f.png" | file_url }}" data-srcset="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-996aad01-6171-4b78-9235-6364be1abd1f.png" | file_url }} 768w,{{ "gempages_541166679116219322-996aad01-6171-4b78-9235-6364be1abd1f.png" | file_url }} 1024w,{{ "gempages_541166679116219322-996aad01-6171-4b78-9235-6364be1abd1f.png" | file_url }} 1440w" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZy0yMjM3LTE2NzgiPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iMjAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNTAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNzAlIiAvPgogICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjIyMzciIGhlaWdodD0iMTY3OCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiBmaWxsPSJ1cmwoI2ctMjIzNy0xNjc4KSIgLz4KICAgIDxhbmltYXRlIHhsaW5rOmhyZWY9IiNyIiBhdHRyaWJ1dGVOYW1lPSJ4IiBmcm9tPSItMjIzNyIgdG89IjIyMzciIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" width="2237" height="1678" alt
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="display:block;height:100%;position:absolute;width:100%;top:0;--objf:cover"
+    />
+  
+      
+  <img
+      id="left-image-g8uIQang_y" title
+      data-testid="left-image"
+      draggable="false"
+      class="gp_lazyload"
+      data-src="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-2b37c946-82c9-43f6-b8a0-09d66d074b6a.png" | file_url }}" data-srcset="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-2b37c946-82c9-43f6-b8a0-09d66d074b6a.png" | file_url }} 768w,{{ "gempages_541166679116219322-2b37c946-82c9-43f6-b8a0-09d66d074b6a.png" | file_url }} 1024w,{{ "gempages_541166679116219322-2b37c946-82c9-43f6-b8a0-09d66d074b6a.png" | file_url }} 1440w" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZy0yMjM3LTE2NzgiPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iMjAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNTAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNzAlIiAvPgogICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjIyMzciIGhlaWdodD0iMTY3OCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiBmaWxsPSJ1cmwoI2ctMjIzNy0xNjc4KSIgLz4KICAgIDxhbmltYXRlIHhsaW5rOmhyZWY9IiNyIiBhdHRyaWJ1dGVOYW1lPSJ4IiBmcm9tPSItMjIzNyIgdG89IjIyMzciIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" width="2237" height="1678" alt
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="display:block;height:100%;position:absolute;width:100%;top:0;--objf:cover"
+    />
+  
+      <div id="image-comparison-slider-g8uIQang_y" style="z-index:2;align-items:center;cursor:ew-resize;display:flex;flex-direction:column;height:100%;justify-content:center;position:absolute;width:40px">
+        <div style="display:block;background:#ffffff;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);flex:0 1 auto;height:100%;width:2px"></div>
+        <div style="align-items:center;border:2px solid #ffffff;border-radius:100%;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);box-sizing:border-box;display:flex;flex:1 0 auto;height:40px;justify-content:center;width:40px;transform:none">
+          <svg style="margin-right:2px;filter:drop-shadow(rgba(0, 0, 0, 0.4) 0px 0px 4px)" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6L6 0V12L0 6Z" fill="white"/>
+          </svg>
+          <svg style="margin-left:2px;filter:drop-shadow(rgba(0, 0, 0, 0.4) 0px 0px 4px)" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6L0 12V0L6 6Z" fill="white"/>
+          </svg>
+        </div>
+        <div style="display:block;background:#ffffff;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);flex:0 1 auto;height:100%;width:2px"></div>
+      </div>
+      
+      
+    </div></div>
+  </gp-image-comparison>
+  <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-image-comparison.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div>
+  
+      </div>
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="geaT26Bn6Y">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="geaT26Bn6Y "
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--mb:8px;--mb-mobile:7px"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:600;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ "sections.gp-global-section-543758682484114498.ggeaT26Bn6Y_text_html" | t | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-geaT26Bn6Y">
+        .geaT26Bn6Y {
+
+}
+.geaT26Bn6Y p {
+
+}
+      </style>
+    
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gWY8sdJmKr">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="gWY8sdJmKr "
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--mb:32px;--mb-mobile:28px"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ "sections.gp-global-section-543758682484114498.ggWY8sdJmKr_text_html" | t | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gWY8sdJmKr">
+        .gWY8sdJmKr {
+
+}
+.gWY8sdJmKr p {
+
+}
+      </style>
+    <div gp-el-wrapper style="--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--mb:24px;--op:100%;--bblr:10px;--bbrr:10px;--btlr:10px;--btrr:10px;--mb-mobile:14px" class="g8Sc0tIHZa ">
+      
+    <div class='gp-flex gp-overflow-hidden' style="border-radius: inherit">
+      
+  <gp-image-comparison
+  data-id="g8Sc0tIHZa"
+    gp-data='{"aspectRatio":{"desktop":"1080/1080"},"defaultRatio":"1080/1080","handle":null,"handleSize":40,"hover":false,"leftImage":{"src":"https://sfycdn.speedsize.com/28b778cb-f97a-4493-94e1-2d825129ba3c/cdn.shopify.com/s/files/1/0719/8611/8943/files/gempages_541166679116219322-84454fdd-ba4e-4c84-be55-cc1616d3ed84.png","width":1080,"height":1080,"backupFileKey":"gempages_541166679116219322-84454fdd-ba4e-4c84-be55-cc1616d3ed84.png","storage":"FILE_CONTENT"},"leftImageCss":{},"rightImage":{"src":"https://sfycdn.speedsize.com/28b778cb-f97a-4493-94e1-2d825129ba3c/cdn.shopify.com/s/files/1/0719/8611/8943/files/gempages_541166679116219322-72edfee0-3abb-426c-a9cf-d4d164183470.png","width":1080,"height":1080,"backupFileKey":"gempages_541166679116219322-72edfee0-3abb-426c-a9cf-d4d164183470.png","storage":"FILE_CONTENT"},"rightImageCss":{},"sliderLineColor":"#ffffff","sliderLineWidth":2,"sliderPositionPercentage":0.5,"componentUid":"g8Sc0tIHZa","vertical":false}'
+    class="gp-w-full gp-flex "
+    style="--jc:start;--jc-tablet:start;--jc-mobile:start"
+  >
+  <div id="img-comparison-wrapper-g8Sc0tIHZa" style="--w:100%;--w-tablet:100%;--w-mobile:100%">
+    <div
+      style="box-sizing:border-box;position:relative;overflow:hidden;height:auto;display:block"
+      id="img-comparison-container-g8Sc0tIHZa"
+      data-testid="container"
+    >
+      <img
+        data-testid="temp-image"
+        alt=""
+        title=""
+        width="1080"
+        height="1080"
+        style="--pos:static;--op:0;--aspect:1080/1080"
+      />
+      
+  <img
+      id="right-image-g8Sc0tIHZa" title
+      data-testid="right-image"
+      draggable="false"
+      class="gp_lazyload"
+      data-src="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-72edfee0-3abb-426c-a9cf-d4d164183470.png" | file_url }}" data-srcset="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-72edfee0-3abb-426c-a9cf-d4d164183470.png" | file_url }} 768w,{{ "gempages_541166679116219322-72edfee0-3abb-426c-a9cf-d4d164183470.png" | file_url }} 1024w,{{ "gempages_541166679116219322-72edfee0-3abb-426c-a9cf-d4d164183470.png" | file_url }} 1440w" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZy0yMjM3LTE2NzgiPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iMjAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNTAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNzAlIiAvPgogICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjIyMzciIGhlaWdodD0iMTY3OCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiBmaWxsPSJ1cmwoI2ctMjIzNy0xNjc4KSIgLz4KICAgIDxhbmltYXRlIHhsaW5rOmhyZWY9IiNyIiBhdHRyaWJ1dGVOYW1lPSJ4IiBmcm9tPSItMjIzNyIgdG89IjIyMzciIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" width="2237" height="1678" alt
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="display:block;height:100%;position:absolute;width:100%;top:0;--objf:cover"
+    />
+  
+      
+  <img
+      id="left-image-g8Sc0tIHZa" title
+      data-testid="left-image"
+      draggable="false"
+      class="gp_lazyload"
+      data-src="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-84454fdd-ba4e-4c84-be55-cc1616d3ed84.png" | file_url }}" data-srcset="{{- settings.speedsize_url_pfx_https -}}{{ "gempages_541166679116219322-84454fdd-ba4e-4c84-be55-cc1616d3ed84.png" | file_url }} 768w,{{ "gempages_541166679116219322-84454fdd-ba4e-4c84-be55-cc1616d3ed84.png" | file_url }} 1024w,{{ "gempages_541166679116219322-84454fdd-ba4e-4c84-be55-cc1616d3ed84.png" | file_url }} 1440w" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPGRlZnM+CiAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iZy0yMjM3LTE2NzgiPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iMjAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNTAlIiAvPgogICAgICAgIDxzdG9wIHN0b3AtY29sb3I9InJnYmEoNTEsIDUxLCA1MSwgMCkiIG9mZnNldD0iNzAlIiAvPgogICAgICA8L2xpbmVhckdyYWRpZW50PgogICAgPC9kZWZzPgogICAgPHJlY3Qgd2lkdGg9IjIyMzciIGhlaWdodD0iMTY3OCIgZmlsbD0icmdiYSg1MSwgNTEsIDUxLCAwKSIgLz4KICAgIDxyZWN0IGlkPSJyIiB3aWR0aD0iMjIzNyIgaGVpZ2h0PSIxNjc4IiBmaWxsPSJ1cmwoI2ctMjIzNy0xNjc4KSIgLz4KICAgIDxhbmltYXRlIHhsaW5rOmhyZWY9IiNyIiBhdHRyaWJ1dGVOYW1lPSJ4IiBmcm9tPSItMjIzNyIgdG89IjIyMzciIGR1cj0iMXMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAgLz4KICA8L3N2Zz4=" width="2237" height="1678" alt
+      quality-type={}
+      quality-percent={}
+      data-sizes="auto"
+      sizes="100vw"
+      style="display:block;height:100%;position:absolute;width:100%;top:0;--objf:cover"
+    />
+  
+      <div id="image-comparison-slider-g8Sc0tIHZa" style="z-index:2;align-items:center;cursor:ew-resize;display:flex;flex-direction:column;height:100%;justify-content:center;position:absolute;width:40px">
+        <div style="display:block;background:#ffffff;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);flex:0 1 auto;height:100%;width:2px"></div>
+        <div style="align-items:center;border:2px solid #ffffff;border-radius:100%;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);box-sizing:border-box;display:flex;flex:1 0 auto;height:40px;justify-content:center;width:40px;transform:none">
+          <svg style="margin-right:2px;filter:drop-shadow(rgba(0, 0, 0, 0.4) 0px 0px 4px)" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 6L6 0V12L0 6Z" fill="white"/>
+          </svg>
+          <svg style="margin-left:2px;filter:drop-shadow(rgba(0, 0, 0, 0.4) 0px 0px 4px)" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6 6L0 12V0L6 6Z" fill="white"/>
+          </svg>
+        </div>
+        <div style="display:block;background:#ffffff;box-shadow:0px 0px 4px 0px rgba(0, 0, 0, 0.40);flex:0 1 auto;height:100%;width:2px"></div>
+      </div>
+      
+      
+    </div></div>
+  </gp-image-comparison>
+  <script {% if section.settings.section_preload == "false" %}class="gps-link" delay {% else %}src{% endif %}="https://d2ls1pfffhvy22.cloudfront.net/assets-v2/gp-image-comparison.js?v={{ shop.metafields.GEMPAGES.ASSETS_VERSION }}" defer="defer"></script>
+  
+    </div>
+  
+      </div>
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gYDwgyYCFt">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="gYDwgyYCFt "
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--mb:8px;--mb-mobile:7px"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:600;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ "sections.gp-global-section-543758682484114498.ggYDwgyYCFt_text_html" | t | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gYDwgyYCFt">
+        .gYDwgyYCFt {
+
+}
+.gYDwgyYCFt p {
+
+}
+      </style>
+    
+  {% assign locationOrigin = request.origin | append: routes.root_url | split: '/' | join: '/' %}
+  <gp-text data-id="gIbLbGqLxj">
+    <div
+      enableLazyloadImage parentTag="Col"
+        class="gIbLbGqLxj "
+        style="--ta:left;--bs:none;--bw:1px 1px 1px 1px;--bc:#121212;--shadow:none;--d:block;--d-mobile:block;--d-tablet:block;--op:100%;--mb:32px;--mb-mobile:28px"
+      >
+      <div class="gp-flex" style="--jc:left">
+        <div
+          
+          data-gp-text
+          class="[&_p]:gp-inline [&_p]:after:gp-whitespace-pre-wrap [&_p]:after:gp-content-['\A'] gp-text"
+          style="--w:100%;--w-tablet:100%;--w-mobile:100%;--ta:left;--line-clamp:unset;--line-clamp-tablet:unset;--line-clamp-mobile:unset;--fs:normal;--ff:var(--g-font-body, body);--weight:400;--ls:normal;--size:16px;--size-tablet:16px;--size-mobile:14px;--lh:130%;--lh-tablet:130%;--lh-mobile:130%;--c:#242424;word-break:break-word;--bgc:transparent;--bgi:url();--bgp:50% 50%;--bgs:cover;--bgr:no-repeat;--bga:scroll;overflow:hidden"
+        >{{ "sections.gp-global-section-543758682484114498.ggIbLbGqLxj_text_html" | t | replace: '$locationOrigin', locationOrigin }}</div>
+      </div>
+    </div>
+    </gp-text>
+    
+      <style id="custom-css-gIbLbGqLxj">
+        .gIbLbGqLxj {
+
+}
+.gIbLbGqLxj p {
+
+}
+      </style>
+    
+    </div>
+    </div>
+   
+    
+    </div>
+    </div>
+  
+            </section>
+           
+    
+
+
+{% schema %}
+  {
+    "presets": [{ "name": "Customer-Reviews" }],
+    "name": "Customer-Reviews",
+    "tag": "section",
+    "class": "gps-543758682484114498 gps gpsil",
+    "settings": [{"type":"paragraph","content":"Section design by GemPages. [Click here to start design](https://admin.shopify.com/store/helloskin-com-au/apps/gempages-cro/app/shopify/edit?pageType=THEME_SECTION&editorId=543758682484114498)"},{"type":"select","label":"Section Preload","id":"section_preload","options":[{"label":"On","value":"true"},{"label":"Off","value":"false"},{"label":"Off Lazy Script","value":"off_lazy_script"}],"default":"off_lazy_script"},{"type":"text","label":"Checksum","id":"checksum"}],
+    "blocks": [{"type": "@app"}],
+    "locales": {"en":{"ggNQ1S93bGs_text_html":"Compare results from customers <a href=\"https://emojipedia.org/red-heart\">❤️</a>","ggoPMkXBiYz_leftImageLabel_html":"Before","ggoPMkXBiYz_rightImageLabel_html":"After","ggkLv_dnmtX_text_html":"<p>Augusta</p>","ggGFbDkEjPl_text_html":"<p>Suffered from severe hormonal acne, 8 weeks before and after, using helloskin cleanser, handset, anti acne serum and moisturiser</p>","gg7FelUP59Z_leftImageLabel_html":"Before","gg7FelUP59Z_rightImageLabel_html":"After","gghJXdfsjcc_text_html":"<p>Lisa</p>","ggogriMc82b_text_html":"<p>Lisa suffered from severe acne around her cheeks and especially her chin. With the help of the Anti acne kit and handset she reduced her acne by 95%</p>","ggzxynnLXz0_leftImageLabel_html":"Before","ggzxynnLXz0_rightImageLabel_html":"After","ggkSDC1Btqa_text_html":"<p>Sofia</p>","ggXkfS5bngE_text_html":"<p>Constant breakouts over the last 5 years, currently sticks to the day/night routine of handset, cleanser, anti acne and moisturiser.</p>","ggNz2KxYjKs_leftImageLabel_html":"Before","ggNz2KxYjKs_rightImageLabel_html":"After","ggIuIFRf7du_text_html":"<p>Yana</p>","ggILAH-Ajbb_text_html":"<p>Yana had aging signs on her forehead and around her eyes. With Just the handset and Retinol she was able to reduce her fine lines significantly</p>","gg8uIQang_y_leftImageLabel_html":"Before","gg8uIQang_y_rightImageLabel_html":"After","ggeaT26Bn6Y_text_html":"<p>Anna</p>","ggWY8sdJmKr_text_html":"<p>Anna also suffers from hormonal acne and has never been able to control it. Using the handset twice daily she has been able to practically eliminate her acne.</p>","gg8Sc0tIHZa_leftImageLabel_html":"Before","gg8Sc0tIHZa_rightImageLabel_html":"After","ggYDwgyYCFt_text_html":"<p>Emma</p>","ggIbLbGqLxj_text_html":"<p>Emma suffers from acne and has some scarring that she has been able to reduce significantly with the help of the handset</p>"}}
+  }
+{% endschema %}

@@ -1,0 +1,172 @@
+<section class="image-with-text banner-iwt-section coll-iwt-section" style="background-color:{{ section.settings.bg_color }}">
+  {% unless section.settings.full_width %}<div class="page-width">{% endunless %}
+  <div class="wrap">
+  {% capture image_layout %}
+    <div class="image-with-text__image">
+      {% if collection.image != blank %}
+        <img src="{{- settings.speedsize_url_pfx_https -}}{{ collection.image | img_url:'master' }}">
+       {% elsif section.settings.video !=  blank %}
+           {{ section.settings.video | video_tag: image_size: 'master',autoplay: true, loop: true, muted: true, controls: false | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }} 
+       {% else %}
+          {% if section.settings.image != blank %}
+              <img src="{{- settings.speedsize_url_pfx_https -}}{{ section.settings.image | img_url:'master' }}">
+           {% endif %}   
+       {% endif %}
+    </div>
+  {% endcapture %}
+
+  {% if section.settings.layout == 'left' %}
+    {{ image_layout }}
+  {% endif %}
+
+  <div class="image-with-text__text"> 
+      <h1>{{ collection.title }}</h1> 
+    {% if collection.metafields.custom.collection_subtext != blank %}
+      <div><p>{{ collection.metafields.custom.collection_subtext }}</p></div>   
+    {% endif %}
+    {% if section.settings.button_label != blank and section.settings.button_link != blank %}
+      <a href="{{ section.settings.button_link }}">
+        {{ section.settings.button_label | escape }}
+      </a>
+    {% endif %}  
+      {% if section.settings.review-image != blank %}
+    <div class="review-image coll-review-image">       
+      <img src="{{- settings.speedsize_url_pfx_https -}}{{ section.settings.review-image | img_url:'master' }}">       
+    </div>     
+      {% endif %}   
+  </div>  
+
+  {% if section.settings.layout == 'right' %}
+    {{ image_layout }}
+  {% endif %}
+  </div> 
+   
+  {% unless section.settings.full_width %}</div>  {% endunless %}
+</section>
+<style>
+section.image-with-text {
+     padding: 32px 0px 32px 0px;
+}
+.image-with-text .wrap {
+    display: flex;
+    align-items: center;
+    gap:80px;
+  }
+  .image-with-text .image-with-text__text p {
+    font-size: 16px;
+    color: #636366;
+    line-height: 24px;
+}
+  .image-with-text .image-with-text__text h2 {
+    color: #1c1c1e;
+    margin-bottom:24px;
+    line-height: 1.25;
+  }
+  .image-with-text .image-with-text__image {
+    width: 50%;
+}
+  .image-with-text .image-with-text__image img {
+    width: 100%;
+}
+  .image-with-text .image-with-text__text {
+    width: 50%;
+}
+  @media(max-width:767px){
+  .image-with-text .wrap {
+    flex-wrap: wrap;
+    gap: 24px;
+}
+    .image-with-text .page-width {
+    max-width: 100%;
+}
+  .image-with-text .image-with-text__image {
+    width: 100%;
+}
+  .image-with-text .image-with-text__text {
+    width: 100%;
+    padding:0px 20px;
+}
+  .image-with-text .page-width {
+    padding: 0;
+}
+  .text-with-content .content {
+    padding: 64px 10px;
+  }
+</style>
+
+{% schema %}
+  {
+    "name": "Collection Banner",
+    "settings": [
+       {
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Full width of section",
+         "default":false 
+      },
+      {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color of section"
+      },
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Image"
+      },
+      {
+        "type": "video",
+        "id": "video",
+        "label": "Video"
+      },
+      {
+        "type": "select",
+        "id": "layout",
+        "label": "Image alignment",
+        "default": "left",
+        "options": [
+          {
+            "value": "left",
+            "label": "Left"
+          },
+          {
+            "value": "right",
+            "label": "Right"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Image with text"
+      },
+      {
+        "type": "richtext",
+        "id": "text",
+        "label": "Text",
+        "default": "<p>Pair large text with an image to give focus to your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "label": "Button label"
+      },
+      {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button link"
+      }, 
+       {
+        "type": "image_picker",
+        "id": "review-image",
+        "label": "Coll review image"                             
+      }
+    ],
+    "presets": [
+      {
+        "name": "Collection Banner"
+      }
+    ]
+  }
+{% endschema %}  

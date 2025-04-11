@@ -1,0 +1,84 @@
+<div
+  class="section section-{{ section.id }} section--padding color-{{ section.settings.color_scheme }}"
+  style="--section-padding-top: {{ section.settings.padding_top }}px;--section-padding-bottom: {{ section.settings.padding_bottom }}px;"
+  data-id="{{ section.id }}"
+>
+  <div class="custom-collection-list">
+    <div class="page-width">
+      <div class="main-list-content">
+      <div class="collection-list-container">
+        {% for block in section.blocks %}
+          <div class="collection-list-item {% if block.settings.collection_link == collection.url %}active{% endif %}">
+            <a class="collection_title" href ="{{ block.settings.collection_link }}">
+            {{ block.settings.collection_title }}
+           </a>
+          </div>
+        {% endfor %}
+       </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+    {
+      "name": "Collection link list",
+      "class": "collection_link_list",
+      "settings": [
+          {
+            "type": "color_scheme",
+            "id": "color_scheme",
+            "label": "t:sections.all.colors.label",
+            "default": "scheme-1"
+          },
+           {
+            "type": "header",
+            "content": "t:sections.all.padding.section_padding_heading"
+           },
+           {
+            "type": "range",
+            "id": "padding_top",
+            "label": "t:sections.all.padding.padding_top",
+            "default": 50,
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px"
+          },
+          {
+            "type": "range",
+            "id": "padding_bottom",
+            "label": "t:sections.all.padding.padding_bottom",
+            "default": 50,
+            "min": 0,
+            "max": 100,
+            "step": 2,
+            "unit": "px"
+          }
+        ],
+        "blocks": [
+          {
+            "type": "text_with_link",
+            "name":"Link Item",
+            "settings": [
+              {
+                "type": "text",
+                "id": "collection_title",
+                "label":"Title"
+              },
+              {
+                "type": "url",
+                "id": "collection_link",
+                "label": "Link"
+              }
+            ]
+          }
+        ],
+        "presets": [
+          {
+            "name": "Collection link list"
+          }
+      ]
+    }
+  
+{% endschema %}

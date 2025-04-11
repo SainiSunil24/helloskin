@@ -1,0 +1,68 @@
+<section class="press-slider-block">
+  <div class="page-width">
+    <div class="block-title">
+      <h4 class="section__heading h4">
+          <motion-element class="block" data-motion="fade-up" data-motion-delay="100">
+            {{ section.settings.heading }}
+          </motion-element>
+        </h4>
+    </div>
+    <div class="press-slider-main">
+      <div class="press-slider">
+        {% for block in section.blocks %}
+         <div class="slide-item">
+          <div class="slide-text">
+            {{ block.settings.content | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }}
+           </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <div class="press-slider-thumb">
+        {% for block in section.blocks %}
+          <div class="slide-item">
+          <div class="slide-thumb">
+            <img src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.thumb_logo | img_url:"master" }}" alt="" />
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Press Slider",
+    "settings": [
+      {
+        "type": "text",
+        "id":"heading",
+        "label": "Heading"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "text-image",
+        "name":"content",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Content"
+          },
+          {
+            "type": "image_picker",
+            "id": "thumb_logo",
+            "label": "Logo"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+         "name": "Press Slider",
+      }
+    ]
+  }
+{% endschema %}

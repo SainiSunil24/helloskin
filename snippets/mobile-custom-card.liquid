@@ -1,0 +1,25 @@
+<div class="custom-card custom-card--small blocks-radius">
+  <a href="{{ link }}" class="custom-card__wrapper">
+    {% if image != blank %}
+    <div class="custom-card__media media-wrapper hover-wrapper">
+      {{
+        image
+        | image_url: width: 1100
+        | image_tag:
+          class: 'motion-reduce hover-scale-up',
+          widths: '165, 360, 535, 750, 940, 1100',
+          is: 'image-lazy' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   
+      }}
+    </div>
+    {% endif %}
+    {%- if heading != blank or description != blank or budge != blank -%}
+      <div class="custom-card__info">
+        <div class="custom-card__summary flex-1">
+          <h3 class="custom-card__title {{ heading_size }}">{{ heading }}</h3>
+           {% if description != blank %} <div class="text-subtext rte">{{ description | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}</div>{% endif %}
+        </div>
+       {% if budge != blank %} <div class="custom_card_budge">{{ budge }}</div>{% endif %}
+      </div>
+    {%- endif -%}
+  </a>
+</div>

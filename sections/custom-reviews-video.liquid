@@ -1,0 +1,310 @@
+
+<section class="product-video_review">
+<div class="review-content-item" id="video_review">
+  <div class="page-width">
+    <div class="upper_portion">
+     {% if section.settings.review_image != blank %} <div class="section_review"><img src="{{- settings.speedsize_url_pfx_https -}}{{ section.settings.review_image | img_url:"master" }}" alt="review star" width="auto" height="auto"><span>{{ section.settings.review_txt }}</span></div>{% endif %}
+     {% if section.settings.heading != blank %}<div class="heading SectionHeader__Heading Heading u-h3">{{ section.settings.heading }}</div>{% endif %}
+     {% if section.settings.content != blank %} <div class="content">{{ section.settings.content | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}</div>{% endif %}
+    </div>
+      <div class="review-tab-inner">
+        {% for block in section.blocks %}
+         
+            <div class="real-review-item">
+                <div class="video-item">
+                  <div class="show">
+                    <div class="popup-video">
+                      <div class="icon-controls">
+                        <div class="icon-close">
+                           <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z" fill="#fff"></path>
+                            </svg>
+                        </div>
+                          <!-- <div class="icon-volume">
+                              <div class="video-mute">
+                               <svg version="1.1" id="Uploaded to svgrepo.com" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewBox="0 0 32 32" xml:space="preserve">
+                                <style type="text/css">
+                                    .linesandangles_een{fill:#fff;}
+                                </style>
+                                <path class="linesandangles_een" d="M21,15.242l2-2V27l-8.598-5.159l1.458-1.458L21,23.468V15.242z M27.707,5.707l-22,22
+                                    l-1.414-1.414L9.586,21H8V11h5l10-6v2.586l3.293-3.293L27.707,5.707z M21,9.586V8.532L13.554,13H10v6h1.586L21,9.586z"></path>
+                                </svg>
+                               </div>
+                                <div class="video-unmute">
+                                <svg fill="#fff" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M11.553 3.064A.75.75 0 0112 3.75v16.5a.75.75 0 01-1.255.555L5.46 16H2.75A1.75 1.75 0 011 14.25v-4.5C1 8.784 1.784 8 2.75 8h2.71l5.285-4.805a.75.75 0 01.808-.13zM10.5 5.445l-4.245 3.86a.75.75 0 01-.505.195h-3a.25.25 0 00-.25.25v4.5c0 .138.112.25.25.25h3a.75.75 0 01.505.195l4.245 3.86V5.445z"></path><path d="M18.718 4.222a.75.75 0 011.06 0c4.296 4.296 4.296 11.26 0 15.556a.75.75 0 01-1.06-1.06 9.5 9.5 0 000-13.436.75.75 0 010-1.06z"></path><path d="M16.243 7.757a.75.75 0 10-1.061 1.061 4.5 4.5 0 010 6.364.75.75 0 001.06 1.06 6 6 0 000-8.485z"></path></svg>
+                              </div>
+                            </div> -->
+                      </div>
+                     {% if block.settings.video != blank %}
+                        <div class="popup-video-inner">
+                          {% assign ids = "video-"| append : forloop.index %}
+                            {{ block.settings.video | video_tag: image_size: '500px', class : "video lazy" ,id : ids, preload:"none" , autoplay: false  , controls: false, loop:true , muted:true | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}
+                           <div id="p-btn-1" class="video-control">
+                            <img width="70" height="70" class="playbtn playicon" src="https://cdn.shopify.com/s/files/1/0719/8611/8943/files/play-pink.svg?v=1742382722" alt="">
+                           <!--  <img loading="lazy" width="70" height="70" class="playbtn pauseicon" src="https://sfycdn.speedsize.com/28b778cb-f97a-4493-94e1-2d825129ba3c/cdn.shopify.com/s/files/1/0616/9146/1853/files/icon--pause.webp?v=1735216575" alt=""> -->
+                          </div>
+                        </div>
+                       {% if block.settings.custom_txt != blank %} <div class="custom-video-text">{{ block.settings.custom_txt }}</div>{% endif %}
+                      {% endif %}
+                    </div>
+                  </div>
+               
+                </div>
+              </div>
+        {% endfor %}
+        </div>
+    <div class="popup__overlay"></div>
+      <div class="review-main-popup">
+      </div>
+  </div>
+</div>
+</section>
+<style>
+.product-video_review .show,video {
+  margin: auto;
+  width: 100%;
+  height: auto;
+  position: relative;
+  border-radius: 20px;
+}
+.product-video_review .video-control {
+  padding: 6px 6px 3px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+.product-video_review i.fa-solid {
+  color: white;
+}
+.product-video_review .btnhide {
+  opacity: 0;
+}
+
+.product-video_review .playbtn {
+  max-width: 99px;
+}
+.product-video_review .popup-video {
+  position: absolute;
+  top: 0;
+}
+.product-video_review .video-item .show {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.product-video_review .btnhide .pauseicon {
+  display: none !important;
+}
+
+.product-video_review .video-text {
+  margin-top: 10px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 15px;
+}
+.product-video_review .video-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-video_review .video-text {
+  color: #000;
+}
+.product-video_review .show video {
+  border-radius: 8px;
+}
+.product-video_review .video-item .show {
+  position: relative;
+}
+.product-video_review .playbtn {
+  height: 40px;
+  width: 40px;
+}
+
+.product-video_review .video-active .popup-video-inner {
+  width: fit-content;
+  margin: auto;
+  display: flex;
+}
+
+.product-video_review .video-active .popup-video-inner video {
+  max-width: 700px;
+  max-height: 800px;
+}
+
+
+.product-video_review .video-popup-active {
+  overflow: hidden;
+}
+.product-video_review .video-popup-active .header-section,
+.video-popup-active{
+  z-index: 9;
+  position: relative;
+}
+.product-video_review .popup-video .icon-controls {
+  display: none;
+}
+.product-video_review .video-active .icon-controls {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 9;
+  align-items: center;
+}
+.product-video_review .icon-volume {
+  display: flex;
+  align-items: center;
+}
+.product-video_review .icon-volume > * {
+  width: 30px;
+  height: 30px;
+}
+.product-video_review .popup-video svg {
+  height: 30px;
+  width: 30px;
+}
+.product-video_review .icon-close {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.product-video_review .video-mute {
+  display: none;
+}
+.product-video_review .volume-muted .video-unmute {
+  display: none;
+}
+.product-video_review .volume-muted .video-mute {
+  display: block;
+}
+.product-video_review .video-active .icon-controls {
+  gap: 10px;
+  width: 100%;
+  justify-content: space-between;
+  left: 0;
+  padding-inline: 20px;
+}
+.product-video_review .video-popup-active .sticky_cart {
+  z-index: 1;
+}
+.product-video_review .video-banner {
+  border-radius: 8px;
+  margin-top: -18px;
+}
+.product-video_review .review-tab-inner .video-banner {
+    margin-top: 0;
+}
+  .product-video_review .review-tab-inner .popup-video {
+    position: static;
+}
+  .product-video_review .review-main-popup.video-active {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(0 0 0 / 80%);
+}
+ .product-video_review .video-active .popup-video-inner {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+}
+.product-video_review  .popup-video-inner {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+ .product-video_review  .review-main-popup.video-active .show {
+    height: 100% !important;
+}
+.product-video_review .review-main-popup.video-active .popup-video {
+    width: 100%;
+    position: static;
+    margin: 0 auto;
+}
+.product-video_review .review-main-popup.video-active .popup-video {
+    height: 100%;
+    overflow: hidden;
+}
+.video-popup-active {
+    overflow: hidden;
+}
+</style>
+<script>
+   let videos = document.querySelectorAll('.popup-video-inner video')
+        videos.forEach(item=>{
+            let newThumbnail = item.getAttribute('poster'); 
+            if (newThumbnail.includes('_small')){ 
+                newThumbnail = newThumbnail.replace('_small',''); 
+                item.setAttribute('poster', newThumbnail)
+            }
+        })
+</script>
+{% schema %}
+  {
+    "name": "custom videos",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "review_image",
+        "label":"Review Image"
+      },
+      {
+        "type":"text",
+        "id": "review_txt",
+        "label":"Review text"
+      },
+      {
+        "type": "richtext",
+        "id": "heading",
+        "label": "Heading"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Content"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "review_video",
+        "name":"Video",
+        "settings": [
+          
+          {
+            "type": "video",
+            "id": "video",
+            "label": "Video"
+          },
+          {
+            "type": "richtext",
+            "id": "custom_txt",
+            "label": "Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "custom videos"
+      }
+    ]
+    
+  }
+{% endschema %}

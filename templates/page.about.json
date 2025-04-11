@@ -1,0 +1,535 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 28,
+        "padding_bottom": 28
+      }
+    },
+    "ss_image_with_text_14_RG89WC": {
+      "type": "ss-image-with-text-14",
+      "blocks": {
+        "heading_c4z6q6": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Our Mission: To Set New Heights for Skin Care Excellence</p>",
+            "heading_custom": false,
+            "heading_font": "josefin_sans_n4",
+            "heading_size": 36,
+            "heading_size_mobile": 26,
+            "heading_height": 130,
+            "heading_mt": 0,
+            "heading_mt_mobile": 0,
+            "heading_color": "#000000"
+          }
+        },
+        "text_XjMVHA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Helloskin, we're not just creating skin care products; we're revolutionising how you nurture your skin. Driven by a passion for innovation and a commitment to sustainability, our products blend cutting-edge science with nature's most potent ingredients to deliver unparalleled results. We're Redefining Skin Care: The Pursuit of Perfection. We delved deep, consulting with dermatologists and harnessing breakthroughs in biochemistry to unveil the secret to powerful, yet gentle, skin care.</p>",
+            "text_custom": false,
+            "text_font": "josefin_sans_n4",
+            "text_size": 16,
+            "text_size_mobile": 14,
+            "text_mt": 24,
+            "text_mt_mobile": 16,
+            "text_color": "#000000"
+          }
+        },
+        "scrolling_qEQDXg": {
+          "type": "scrolling",
+          "settings": {
+            "scrolling_velocity": 20,
+            "scrolling_velocity_mobile": 32,
+            "scrolling_gap": 16,
+            "scrolling_gap_mobile": 16,
+            "scrolling_mt": 16,
+            "scrolling_mt_mobile": 16,
+            "scrolling_mb": 12,
+            "scrolling_type": "vertical",
+            "reverse_direction": false,
+            "text": "about us",
+            "text_custom": false,
+            "text_font": "josefin_sans_n4",
+            "text_size": 60,
+            "text_size_mobile": 40,
+            "text_mr": 16,
+            "text_mr_mobile": 16,
+            "icon_size": 32,
+            "icon_size_mobile": 32,
+            "animate_icon": true,
+            "hide_icon": false,
+            "text_color": "#121212",
+            "icon_color": "#121212"
+          }
+        }
+      },
+      "block_order": [
+        "heading_c4z6q6",
+        "text_XjMVHA",
+        "scrolling_qEQDXg"
+      ],
+      "settings": {
+        "body_gap": 48,
+        "body_gap_mobile": 0,
+        "content_horizontal_align": "start",
+        "content_horizontal_align_mobile": "start",
+        "content_vertical_align": "end",
+        "content_padding_vertical": 32,
+        "content_padding_vertical_mobile": 16,
+        "content_padding_horizontal": 32,
+        "content_padding_horizontal_mobile": 16,
+        "image": "shopify://shop_images/shop-all-mobile-menu.png",
+        "image_position": "right",
+        "image_position_mobile": "top",
+        "image_ratio": "square",
+        "image_ratio_mobile": "square",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 20,
+        "margin_horizontal": 0,
+        "margin_horizontal_mobile": 0,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": false,
+        "content_width": 140,
+        "border_thickness": 0,
+        "section_radius": 0,
+        "lazy": false
+      }
+    },
+    "image_with_text_kMMJwz": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_BQa7ME": {
+          "type": "heading",
+          "settings": {
+            "heading": "Crafted with Precision: Our Formulation Journey",
+            "heading_size": "hd2",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_hrhxcb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Behind every Helloskin product lies a journey of innovation and dedication. Over the course of an intensive nine months, our team of experts embarked on a rigorous formulation process, blending science with nature to create something truly exceptional.</p><p>Each product is the result of countless hours of research, where over 300 participants helped us refine our formulas to perfection. We didn't want to just create skincare; we wanted to craft experiences designed to rejuvenate, restore, and transform your skin.\"</p><p>\"In this pursuit of excellence, every ingredient is carefully selected for its efficacy, safety, and ability to harmonise with your skin. Our extensive testing phase ensures that when a Helloskin product reaches you, it's not only effective but also a delight to use. This unwavering commitment to quality is our promise to you: skincare solutions that are as trustworthy as they are luxurious, setting new standards for beauty and wellness</p>",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BQa7ME",
+        "text_hrhxcb"
+      ],
+      "settings": {
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
+        "image": "shopify://shop_images/hello-skin-lab.png",
+        "image_height": "adapt",
+        "layout": "image_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "feature_list_cW3d9c": {
+      "type": "feature-list",
+      "blocks": {
+        "feature_item_VbCwL3": {
+          "type": "feature_item",
+          "settings": {
+            "color_scheme": "",
+            "icon": "check",
+            "icon_style": "btn--secondary",
+            "text": "Made with Love"
+          }
+        },
+        "feature_item_NzxQGa": {
+          "type": "feature_item",
+          "settings": {
+            "color_scheme": "",
+            "icon": "check",
+            "icon_style": "btn--secondary",
+            "text": "Australian Made Skincare"
+          }
+        },
+        "feature_item_yyNV9A": {
+          "type": "feature_item",
+          "settings": {
+            "color_scheme": "",
+            "icon": "check",
+            "icon_style": "btn--secondary",
+            "text": "Tested for Performance"
+          }
+        },
+        "feature_item_gBgLft": {
+          "type": "feature_item",
+          "settings": {
+            "color_scheme": "",
+            "icon": "check",
+            "icon_style": "btn--secondary",
+            "text": "Trusted by 40,000+ Customers"
+          }
+        }
+      },
+      "block_order": [
+        "feature_item_VbCwL3",
+        "feature_item_NzxQGa",
+        "feature_item_yyNV9A",
+        "feature_item_gBgLft"
+      ],
+      "settings": {
+        "color_scheme": "scheme-7",
+        "subheading": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "description": "",
+        "text_size": "text-base",
+        "item_alignment": "center",
+        "icon_size": "extra-medium",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "image_with_text_tMKwUE": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_k8NG7L": {
+          "type": "heading",
+          "settings": {
+            "heading": "From Global Wholesaling to Breakthrough Innovation",
+            "heading_size": "hd2",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_9cFF7B": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our journey at Helloskin began with a vision to elevate skin care standards globally. Starting as wholesalers, we supplied high-quality products to a range of skin care brands around the world, gaining invaluable insights into the beauty industry's inner workings. This experience laid the foundation for our unwavering commitment to excellence and sparked the ambition to directly impact consumers' skincare routines.\"</p><p>\"As we evolved, our passion for innovation led us to a groundbreaking discovery: the power of LED light therapy. Harnessing this technology, we developed our flagship LED handset, a pinnacle of skincare technology designed to bring professional-grade treatments to the comfort of your home. This transition marks a significant milestone in our mission, transforming Helloskin from a trusted supplier to a frontrunner in skincare innovation. Today, our LED handset stands as a testament to our dedication to providing advanced, effective, and accessible skin care solutions.</p>",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_k8NG7L",
+        "text_9cFF7B"
+      ],
+      "settings": {
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
+        "image": "shopify://shop_images/Hello_Skin_21_June_2535-Edit_4dbb2d41-61b6-4684-a987-812381c109b7.jpg",
+        "image_height": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "double_image_with_text_FRnyT8": {
+      "type": "double-image-with-text",
+      "blocks": {
+        "heading_W9eGfR": {
+          "type": "heading",
+          "settings": {
+            "heading": "Founders Story: A Journey from Breakouts to Breakthroughs",
+            "heading_size": "hd3",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_MqgQeF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A Journey from Breakouts to Breakthroughs reflects the real story behind Helloskin. Born from personal battles with acne and the frustration of ineffective products, we set out to create a skincare line that truly works. Our mission is to empower everyone to feel confident in their skin, no matter their journey.</p>",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_W9eGfR",
+        "text_MqgQeF"
+      ],
+      "settings": {
+        "section_color_scheme": "scheme-2",
+        "color_scheme": "scheme-2",
+        "image": "shopify://shop_images/468451842_10160798777382400_6517012998476901570_n.jpg",
+        "image_second": "shopify://shop_images/souraya-new.png",
+        "image_height": "adapt",
+        "layout": "image_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 52,
+        "padding_bottom": 52,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "image_with_text_YcfhKN": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_nHFmHe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Customer Experience Focus: Your Skin, Your Voice",
+            "heading_size": "hd2",
+            "heading_highlight_style": "none"
+          }
+        },
+        "text_49mPM3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Helloskin, we treasure your skincare journey, ensuring it's met with unparalleled customer service and robust after-purchase support. Your satisfaction is paramount, inspiring our satisfaction guarantees and personalised guidance. Your feedback shapes our innovation, making you a fundamental part of our skincare family.</p>",
+            "text_size": "text-base"
+          }
+        }
+      },
+      "block_order": [
+        "heading_nHFmHe",
+        "text_49mPM3"
+      ],
+      "settings": {
+        "section_color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
+        "image": "shopify://shop_images/happy-helloskin-customers.png",
+        "image_height": "extra-medium",
+        "layout": "image_first",
+        "desktop_content_position": "center",
+        "desktop_content_alignment": "left",
+        "enable_parallax": false,
+        "parallax_direction": "vertical",
+        "mobile_content_alignment": "left",
+        "padding_top": 34,
+        "padding_bottom": 22,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "custom_multicolumn_YXKBwW": {
+      "type": "custom-multicolumn",
+      "blocks": {
+        "column_RJKcrN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icons8-money-back-guarantee-128.png",
+            "image_width": "medium",
+            "title": "30-Day Money Back Guarantee",
+            "heading_size": "h4",
+            "text": "<p>Not completely satisfied with our products or results? We're so confident in our products we provide a solid guarantee</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_FejMgB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icons8-return-on-investment-128.png",
+            "image_width": "medium",
+            "title": "Free & Easy Returns.",
+            "heading_size": "h4",
+            "text": "<p>Our returns process is simple, just as it should be. Returns are covered by us, always</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_iijnbi": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icons8-cruelty-free-128.png",
+            "image_width": "medium",
+            "title": "Cruelty Free & Sustainable",
+            "heading_size": "h4",
+            "text": "<p>Our products are never tested on fluffy animals. We believe they need hugs not our products :) & we love our environment</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        },
+        "column_A6DHFN": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/auslogo-green.png",
+            "image_width": "medium",
+            "title": "Australian Made & Owned",
+            "heading_size": "h4",
+            "text": "<p>We are proudly Australian Made & Owned. We truely believe the best skincare comes from our shores</p>",
+            "text_size": "text-base",
+            "button_label": "",
+            "button_style": "btn--underline",
+            "button_link": "",
+            "mobile_layout": "inherit"
+          }
+        }
+      },
+      "block_order": [
+        "column_RJKcrN",
+        "column_FejMgB",
+        "column_iijnbi",
+        "column_A6DHFN"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "heading": "",
+        "heading_size": "h1",
+        "heading_highlight_style": "none",
+        "subheading": "",
+        "description": "",
+        "text_size": "text-base",
+        "column_alignment": "left",
+        "columns_desktop": 4,
+        "column_gap": "large",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 22,
+        "padding_bottom": 22,
+        "show_section_divider": false,
+        "divider_width": "fixed"
+      }
+    },
+    "ss_scrolling_logo_cloud_2_MDXiR8": {
+      "type": "ss-scrolling-logo-cloud-2",
+      "blocks": {
+        "slide_nGpGwt": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/daily-mail_a1b3d6ca-8432-419b-9382-21ab4f18dea5.png",
+            "link": ""
+          }
+        },
+        "slide_GU6DJA": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/marie-claire-logo.png",
+            "link": ""
+          }
+        },
+        "slide_TDUmTC": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/news.com.au-logo.png",
+            "link": ""
+          }
+        },
+        "slide_GUtyg3": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/womens-health-logo.png",
+            "link": ""
+          }
+        },
+        "slide_EKdHh7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/elle-logo.png",
+            "link": ""
+          }
+        },
+        "slide_JfawVf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/instyle.png",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_nGpGwt",
+        "slide_GU6DJA",
+        "slide_TDUmTC",
+        "slide_GUtyg3",
+        "slide_EKdHh7",
+        "slide_JfawVf"
+      ],
+      "settings": {
+        "ss-title": "As seen in",
+        "heading_custom": false,
+        "heading_font": "assistant_n4",
+        "header_size": 30,
+        "header_align": "center",
+        "scrolling_velocity": 55,
+        "pause_hover": false,
+        "shadow": false,
+        "sliders_mt": 20,
+        "logo_padding_top": 18,
+        "logo_padding_bottom": 18,
+        "slider_gap": 30,
+        "slider_gap_mobile": 30,
+        "slider_direction": "left",
+        "slider_rotate": 5,
+        "slider_rotate_mobile": 15,
+        "slider_mb": -92,
+        "slider_mb_mobile": -72,
+        "second_slider": true,
+        "second_slider_direction": "right",
+        "second_slider_rotate": -5,
+        "second_slider_rotate_mobile": -15,
+        "second_slider_mt": -32,
+        "second_slider_mt_mobile": -32,
+        "icon_width": 200,
+        "header_color": "#121212",
+        "border_color": "#ffffff",
+        "background_color": "#ffffff",
+        "slider_background_color": "#e4e4e4",
+        "second_slider_background_color": "#ffabfb",
+        "margin_top": 0,
+        "margin_bottom": 16,
+        "padding_top": 0,
+        "padding_bottom": 48,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ss_image_with_text_14_RG89WC",
+    "image_with_text_kMMJwz",
+    "feature_list_cW3d9c",
+    "image_with_text_tMKwUE",
+    "double_image_with_text_FRnyT8",
+    "image_with_text_YcfhKN",
+    "custom_multicolumn_YXKBwW",
+    "ss_scrolling_logo_cloud_2_MDXiR8"
+  ]
+}

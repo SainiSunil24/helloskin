@@ -1,0 +1,27 @@
+  <div class="different-ways">
+    {% for title in product.metafields.custom.product_how_to_use_titles.value %}
+       {% assign subtitle = product.metafields.custom.product_how_to_use_subtitles.value %}
+        <div class="info">
+         {% if title != blank %} <h1>{{ title }}</h1>{% endif %} 
+         {% if subtitle != blank %} <p>{{ subtitle[forloop.index0] }}</p>{% endif %} 
+        </div>
+     {% endfor %}
+  </div>
+
+  <div class="am-pm-steps">
+    {% for step_image in product.metafields.custom.product_how_to_use_step_images.value %}
+      {% assign step_title = product.metafields.custom.product_how_to_use_step_tiltes.value %}
+      {% assign step_text = product.metafields.custom.product_how_to_use_step_texts.value %}
+      <div class="step-with-img">
+        {% if step_image != blank %}
+          <div class="image">
+            <img src="{{- settings.speedsize_url_pfx_https -}}{{ step_image | img_url:'master' }}">
+          </div>
+        {% endif %} 
+        <div class="s-content">
+          {% if step_title != blank %}<h1>{{ step_title[forloop.index0] }}</h1>{% endif %} 
+          {% if step_text != blank %}{{ step_text[forloop.index0] }}{% endif %} 
+        </div>
+      </div>
+    {% endfor %}
+  </div>

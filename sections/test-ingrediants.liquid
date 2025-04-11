@@ -1,0 +1,76 @@
+<section class="ingredients-sec">
+    <div class="page-width">
+      <div class="ingredientsMain">
+        <div class="headingBox">
+          {% if section.settings.heading != blank %}
+            <div class="heading">
+              {{ section.settings.heading }}
+            </div>
+          {% endif %}
+        </div>
+        <div class="ingredientsListBox">
+            <ul class="ingredientsList">
+              {% for block in section.blocks %}
+                <li class="list-item">
+                    <div class="contentBox">
+                        <div class="textBox">
+                         {% if block.settings.subHeading != blank %} <span>{{ block.settings.subHeading }}</span>{% endif %}
+                          {{ block.settings.content }}
+                        </div>
+                        {% if block.settings.icon != blank %}
+                          <div class="iconBox">
+                            <img src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.icon | img_url:"master" }}">
+                          </div>
+                        {% endif %}
+                    </div>
+                </li>
+              {% endfor %}
+             </ul>
+        </div>
+      </div>
+    </div>
+</section>
+
+
+
+
+{% schema %}
+  {
+    "name": "test Custom Ingrediants",
+    "settings": [
+      {
+        "type":"richtext",
+        "id":"heading",
+        "label":"Heading"
+      }
+    ],
+    "blocks":[
+      {
+        "type":"icon_with_text",
+        "name":"block",
+        "settings":[
+          {
+            "type":"text",
+            "id":"subHeading",
+            "label":"Heading"
+          },
+          {
+            "type":"richtext",
+            "id":"content",
+            "label":"Content"
+          },
+          {
+            "type":"image_picker",
+            "id":"icon",
+            "label":"Logo"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "test Custom Ingrediants"
+      }
+    ]
+  }
+{% endschema %}

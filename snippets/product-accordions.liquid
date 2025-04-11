@@ -1,0 +1,196 @@
+{% if product.metafields.custom._product_care_instrucations_heading != blank %}
+   <div class="product__block">
+    <details
+      id="Details-{{ block.id }}-{{ section.id }}"
+      class="accordion-details"
+      is="accordion-group"
+      {% if block.settings.default_open_care %}
+        open
+        aria-expanded="true"
+      {% else %}
+        aria-expanded="false"
+      {% endif %}
+    >
+      <summary class="accordion-details__summary flex items-center justify-between">
+        <div class="flex items-center gap-2">
+        <h2 class="h4 inline-richtext">
+           {{ product.metafields.custom._product_care_instrucations_heading }}
+        </h2>
+        </div>
+      <div class="accordion_icon"> {%- render 'icon-plus-toggle' -%}</div>
+      </summary>
+      <div class="accordion-details__content rte">
+       <div class="accodions_content">
+          {% render 'care_instructions' %}
+       </div>
+      </div>
+    </details>
+   </div>
+{% endif %}
+{% if  product.metafields.custom.product_how_to_use_heading  %}
+   <div class="product__block">
+    <details
+      id="Details-{{ block.id }}-{{ section.id }}"
+      class="accordion-details"
+      is="accordion-group"
+      {% if block.settings.default_open_use %}
+        open
+        aria-expanded="true"
+      {% else %}
+        aria-expanded="false"
+      {% endif %}
+    >
+      <summary class="accordion-details__summary flex items-center justify-between">
+        <div class="flex items-center gap-2">
+        <h2 class="h4 inline-richtext">
+           {{ product.metafields.custom.product_how_to_use_heading }}
+          </h2>
+        </div>
+        <div class="accordion_icon"> {%- render 'icon-plus-toggle' -%}</div>
+      </summary>
+      <div class="accordion-details__content rte">
+       <div class="accodions_content">
+           {% render 'how_to_use' %}
+       </div>
+      </div>
+    </details>
+   </div>
+{% endif %}
+{% if product.metafields.custom.product_accordion_1_title != blank and product.metafields.custom.product_accordion_1_content != blank %}
+  <div class="product__block">
+    <details
+      id="Details-{{ block.id }}-{{ section.id }}"
+      class="accordion-details"
+      is="accordion-group"
+      {% if block.settings.default_open %}
+        open
+        aria-expanded="true"
+      {% else %}
+        aria-expanded="false"
+      {% endif %}
+    >
+      <summary class="accordion-details__summary flex items-center justify-between">
+        <div class="flex items-center gap-2">
+       
+          <h2 class="h4 inline-richtext">
+         {{ product.metafields.custom.product_accordion_1_title }}
+          </h2>
+        </div>
+       <div class="accordion_icon"> {%- render 'icon-plus-toggle' -%}</div>
+      </summary>
+      <div class="accordion-details__content rte">
+       <div class="accodions_content">
+          {% if product.metafields.custom.product_accordion_1_images.value != blank %}
+                {% for images_1 in product.metafields.custom.product_accordion_1_images.value %}
+                  <div class="images_blocks"><img src="{{- settings.speedsize_url_pfx_https -}}{{ images_1 | img_url:'master' }}"></div>
+                {% endfor %}  
+              {% endif %}
+              {% if product.metafields.custom.product_accordion_1_content != blank %}{{ product.metafields.custom.product_accordion_1_content | metafield_text }}{% endif %}
+        </div>
+      </div>
+    </details>
+  </div>
+{% endif %}
+{% if product.metafields.custom.product_accordion_2_title != blank and product.metafields.custom.product_accordion_2_content != blank %}
+ <div class="product__block">
+    <details
+      id="Details-{{ block.id }}-{{ section.id }}"
+      class="accordion-details"
+      is="accordion-group"
+      {% if block.settings.default_open %}
+        open
+        aria-expanded="true"
+      {% else %}
+        aria-expanded="false"
+      {% endif %}
+    >
+      <summary class="accordion-details__summary flex items-center justify-between">
+        <div class="flex items-center gap-2">
+      
+          <h2 class="h4 inline-richtext">
+            {{  product.metafields.custom.product_accordion_2_title }}
+          </h2>
+        </div>
+        <div class="accordion_icon"> {%- render 'icon-plus-toggle' -%}</div>
+      </summary>
+      <div class="accordion-details__content rte">
+        {% if product.metafields.custom.product_accordion_2_images.value != blank %}
+          {% for images_2 in product.metafields.custom.product_accordion_2_images.value %}
+            <div class="images_blocks"><img src="{{- settings.speedsize_url_pfx_https -}}{{ images_2 | img_url:'master' }}"></div>
+          {% endfor %}  
+          {% endif %}  
+          {% if product.metafields.custom.product_accordion_2_content != blank %}{{ product.metafields.custom.product_accordion_2_content | metafield_text }}{% endif %}
+      </div>
+    </details>
+  </div>
+{% endif %}
+{% if product.metafields.custom.product_accordion_3_title != blank and product.metafields.custom.product_accordion_3_content != blank %}
+   <div class="product__block">
+      <details
+        id="Details-{{ block.id }}-{{ section.id }}"
+        class="accordion-details"
+        is="accordion-group"
+        {% if block.settings.default_open %}
+          open
+          aria-expanded="true"
+        {% else %}
+          aria-expanded="false"
+        {% endif %}
+      >
+        <summary class="accordion-details__summary flex items-center justify-between">
+          <div class="flex items-center gap-2">
+         
+            <h2 class="h4 inline-richtext">
+              {{ product.metafields.custom.product_accordion_3_title }}
+            </h2>
+          </div>
+          <div class="accordion_icon"> {%- render 'icon-plus-toggle' -%}</div>
+        </summary>
+        <div class="accordion-details__content rte">
+          {% if product.metafields.custom.product_accordion_3_images.value != blank %}
+            {% for images_3 in product.metafields.custom.product_accordion_3_images.value %}
+              <div class="images_blocks"><img src="{{- settings.speedsize_url_pfx_https -}}{{ images_3 | img_url:'master' }}"></div>
+            {% endfor %}
+           {% endif %}  
+            {% if product.metafields.custom.product_accordion_3_content != blank %}{{ product.metafields.custom.product_accordion_3_content | metafield_text }}{% endif %}
+        </div>
+      </details>
+   </div>
+{% endif %}
+ 
+{% if product.metafields.custom.product_accordion_4_title != blank and product.metafields.custom.product_content_4_accordions != blank %}
+   <div class="product__block">
+      <details
+        id="Details-{{ block.id }}-{{ section.id }}"
+        class="accordion-details"
+        is="accordion-group"
+        {% if block.settings.default_open_care %}
+          open
+          aria-expanded="true"
+        {% else %}
+          aria-expanded="false"
+        {% endif %}
+      >
+        <summary class="accordion-details__summary flex items-center justify-between">
+          <div class="flex items-center gap-2">
+          
+            <h2 class="h4 inline-richtext">
+              {{ product.metafields.custom.product_accordion_4_title  }}
+            </h2>
+          </div>
+         <div class="accordion_icon"> {%- render 'icon-plus-toggle' -%}</div>
+        </summary>
+        <div class="accordion-details__content rte">
+          {% if product.metafields.custom.product_accordion_4_images.value != blank %}
+            {% for images_4 in product.metafields.custom.product_accordion_4_images.value %}
+              <div class="images_blocks"><img src="{{- settings.speedsize_url_pfx_https -}}{{ images_4 | img_url:'master' }}"></div>
+            {% endfor %}
+           {% endif %}  
+            {% if product.metafields.custom.product_content_4_accordions != blank %}{{ product.metafields.custom.product_content_4_accordions | metafield_text }}{% endif %}
+        </div>
+      </details>
+   </div>
+{% endif %}
+ 
+
+

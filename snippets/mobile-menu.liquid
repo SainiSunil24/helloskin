@@ -1,0 +1,39 @@
+<div class="menu-with-images">
+   {%- case block.type -%}
+    {% when 'mobile_menu' %}
+     <div class="mobile_menu_items">
+       {%- for i in (1..5) -%}
+                {%- liquid
+                  assign __promo_image = 'promo_image_' | append: i
+                  assign __heading = 'heading_' | append: i
+                  assign __heading_size = 'heading_size_' | append: i
+                  assign __description = 'description_' | append: i
+                  assign __button_style = 'button_style_' | append: i
+                  assign __promotion_link = 'promotion_link_' | append: i
+                  assign __budge_text = 'budge_text_' | append: i
+
+                  assign promo_image = block.settings[__promo_image]
+                  assign heading = block.settings[__heading]
+                  assign heading_size = block.settings[__heading_size]
+                  assign description = block.settings[__description]
+                  assign promotion_link = block.settings[__promotion_link]
+                  assign budge_txt = block.settings[__budge_text]
+
+                  if promo_image == blank
+                    continue
+                  endif
+                -%}
+                <div class="promotion-item">
+                  {% render 'mobile-custom-card',
+                    heading: heading,
+                    heading_size: heading_size,
+                    description: description,
+                    image: promo_image,
+                    link: promotion_link,
+                    budge:budge_txt
+                  %}
+                </div>
+         {% endfor %}
+     </div>
+  {% endcase %}
+</div>

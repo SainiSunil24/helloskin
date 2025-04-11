@@ -1,0 +1,21 @@
+{% if product.metafields.custom.info_icon_with_text != blank %}
+  <div class="custom_meta_icon_text">
+    <div class="icon_text_content">
+        {% for icontext in product.metafields.custom.info_icon_with_text.value %}
+          <div class="icon_with_text">
+            {% if icontext.icon.value != blank %}
+              <div class="icon">
+                <img src= "{{- settings.speedsize_url_pfx_https -}}{{ icontext.icon.value | img_url:master }}">
+              </div>
+            {% endif %}
+            {% if icontext.text.value != blank %}
+              <div class="text">
+                {{ icontext.text.value }}
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
