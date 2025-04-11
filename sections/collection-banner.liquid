@@ -6,7 +6,7 @@
       {% if collection.image != blank %}
         <img src="{{- settings.speedsize_url_pfx_https -}}{{ collection.image | img_url:'master' }}">
        {% elsif section.settings.video !=  blank %}
-           {{ section.settings.video | video_tag: image_size: 'master',autoplay: true, loop: true, muted: true, controls: false | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }} 
+           {{ section.settings.video | video_tag: image_size: 'master',autoplay: true, loop: true, muted: true, controls: false | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }} 
        {% else %}
           {% if section.settings.image != blank %}
               <img src="{{- settings.speedsize_url_pfx_https -}}{{ section.settings.image | img_url:'master' }}">

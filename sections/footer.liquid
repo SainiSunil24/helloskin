@@ -213,7 +213,7 @@
                                   loading: 'lazy',
                                   class: 'motion-reduce',
                                   widths: '165, 360, 535, 750, 940, 1100',
-                                  is: 'image-lazy' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
+                                  is: 'image-lazy' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   
                               }}
                             </div>
                           {% endif %}
@@ -242,7 +242,7 @@
                     {%- when 'newsletter' -%}
                       <div class="footer-newsletter text-{{ block.settings.newsletter_text_alignment }}">
                            {% if block.settings.footer-logo != blank %}
-                            <a href="{{ routes.root_url }}">  
+                            <a href="{{ routes.root_url }}" aria-label="footer logo">  
                             <div
                               class="footer-image-box__image media-wrapper footer_contact_logo"
                               style="width: {{ block.settings.logo_width }}px"
@@ -254,7 +254,7 @@
                                   loading: 'lazy',
                                   class: 'motion-reduce',
                                   widths: '165, 360, 535, 750, 940, 1100',
-                                  is: 'image-lazy' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
+                                  is: 'image-lazy' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   
                               }}
                             </div>
                             </a>
@@ -266,7 +266,7 @@
                         {%- endif -%}
                         {%- if block.settings.newsletter_description != blank -%}
                           <div class="footer-newsletter__description rte">
-                            {{ block.settings.newsletter_description | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }}
+                            {{ block.settings.newsletter_description | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}
                           </div>
                         {%- endif -%}
                         <div class="footer-newsletter__form">

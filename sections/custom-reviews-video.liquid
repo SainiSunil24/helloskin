@@ -38,9 +38,9 @@
                      {% if block.settings.video != blank %}
                         <div class="popup-video-inner">
                           {% assign ids = "video-"| append : forloop.index %}
-                            {{ block.settings.video | video_tag: image_size: '500px', class : "video lazy" ,id : ids, preload:"none" , autoplay: false  , controls: false, loop:true , muted:true | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}
+                            {{ block.settings.video | video_tag: image_size: '500px', class : "video lazy" ,id : ids, preload:"none" , autoplay: false  , controls: false, loop:true , muted:true  | replace: 'poster','data-poster' | replace: '<img src="' , '<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-li="st" d-src="' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}
                            <div id="p-btn-1" class="video-control">
-                            <img width="70" height="70" class="playbtn playicon" src="https://cdn.shopify.com/s/files/1/0719/8611/8943/files/play-pink.svg?v=1742382722" alt="">
+                            <img width="70" height="70" class="playbtn playicon" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-li="st" d-src="https://cdn.shopify.com/s/files/1/0719/8611/8943/files/play-pink.svg?v=1742382722" alt="">
                            <!--  <img loading="lazy" width="70" height="70" class="playbtn pauseicon" src="https://sfycdn.speedsize.com/28b778cb-f97a-4493-94e1-2d825129ba3c/cdn.shopify.com/s/files/1/0616/9146/1853/files/icon--pause.webp?v=1735216575" alt=""> -->
                           </div>
                         </div>

@@ -227,11 +227,6 @@
         </div>
       </div>
     {%- endpaginate -%}
-
-    {%- if collection.handle contains 'hs-' -%}
-      <div id="a10_kronos"></div>
-      <script src="http://limitless.cmax.ai/helloskin.com.au/kronos/js/article_{{ collection.handle | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }}.js?{{ 'now' | date: '%Y%m%d' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }}" async></script>
-    {%- endif -%}
   </div>
 </div>
 

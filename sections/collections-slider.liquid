@@ -84,7 +84,7 @@
               is: 'image-lazy',
               sizes: image_sizes,
               widths: '375, 460, 550, 705, 750, 920, 1100, 1410, 1500, 1620, 1720',
-              alt: alt | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
+              alt: alt | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   
           }}
         {%- else -%}
           {% capture current %}{% cycle 1, 2, 3 %}{% endcapture %}
@@ -113,7 +113,7 @@
             is: 'image-lazy',
             sizes: image_sizes,
             widths: '375, 460, 550, 705, 750, 920, 1100, 1410, 1500, 1620, 1720',
-            alt: alt | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
+            alt: alt | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   
         }}
         </motion-element>
       </div>
@@ -145,7 +145,7 @@
         class="block"
       >
         <div class="collection-media__desc rich-text__text rte {{ block.settings.text_size }}">
-          {{ block.settings.description | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }}
+          {{ block.settings.description | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}
         </div>
       </motion-element>
     {%- endif -%}

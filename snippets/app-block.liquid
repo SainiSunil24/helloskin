@@ -1,0 +1,116 @@
+  <!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
+
+  <script type="load" d-src="https://static.klaviyo.com/onsite/js/UrMrvK/klaviyo.js?company_id=UrMrvK"></script>
+  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
+
+  {% if template contains 'product' %}
+  <script type="load" id="viewed_product">
+      if (item == null) {
+          var _learnq = _learnq || [];
+          var item = {
+              Name: {{ product.title | json }},
+              ProductID: {{ product.id | json }},            
+              Categories: {{ product.collections | map: 'title' | json }},
+              ImageURL: "{{- settings.speedsize_url_pfx -}}https:{{ product.featured_image.src | img_url: 'grande' }}",
+              URL: "{{ shop.secure_url }}{{ product.url }}",
+              Brand: {{ product.vendor | json }},
+              Price: {{ product.price | money | json }},
+              Value: {{ product.price | money_without_currency | json }},
+              CompareAtPrice: {{ product.compare_at_price_max | money | json }}
+          };
+          _learnq.push(['track', 'Viewed Product', item]);
+          _learnq.push(['trackViewedItem', {
+              Title: item.Name,
+              ItemId: item.ProductID,
+              Categories: item.Categories,
+              ImageUrl: item.ImageURL,
+              Url: item.URL,
+              Metadata: {
+                  Brand: item.Brand,
+                  Price: item.Price,
+                  Value: item.Value,
+                  CompareAtPrice: item.CompareAtPrice
+              }
+          }]);
+      }
+  </script>
+  {% endif %}
+
+  <script>
+    window.klaviyoReviewsProductDesignMode = false
+  </script>
+<!-- END app block -->
+
+  <!-- BEGIN app block: shopify://apps/stape-server-gtm/blocks/gtm/7e13c847-7971-409d-8fe0-29ec14d5f048 --><script>
+  window.lsData = {};
+</script>
+<script type="load" d-src="https://sp.stapecdn.com/widget/script?shop=helloskin.com.au&shop_id=71986118943"></script>
+<!-- END app block -->
+
+<!-- BEGIN app block: shopify://apps/tolstoy-shoppable-video-quiz/blocks/widget-block/06fa8282-42ff-403e-b67c-1936776aed11 -->
+{% capture get_code %}
+<script
+  type="module"
+  async
+  src="https://widget.gotolstoy.com/we/widget.js"
+  data-shop=helloskin-com-au.myshopify.com
+  data-app-key=19bc180f-ad43-4b07-9db6-baac4601c0bc
+  data-should-use-cache=true
+  data-cache-version=194690df7db
+  data-product-gallery-projects="[]"
+  data-collection-gallery-projects="[]"
+  data-product-id={{ product.id | default: '""' }}
+>
+</script>
+<script
+  type="text/javascript"
+  nomodule
+  async
+  src="https://widget.gotolstoy.com/widget/widget.js"
+  data-shop=helloskin-com-au.myshopify.com
+  data-app-key={{ shop.metafields.tolstoySettings.app-key.value }}
+  data-should-use-cache=true
+  data-cache-version=194690df7db
+  data-product-gallery-projects="[]"
+  data-collection-gallery-projects="[]"
+  data-product-id={{ product.id | default: '""' }}
+  data-collection-id={{ collection.id | default: '""' }}
+></script>
+<script
+  type="module"
+  async
+  src="https://play.gotolstoy.com/widget-v2/widget.js"
+  id="tolstoy-widget-script"
+  data-shop=helloskin-com-au.myshopify.com
+  data-app-key={{ shop.metafields.tolstoySettings.app-key.value }}
+  data-should-use-cache=true
+  data-cache-version=194690df7db
+  data-product-gallery-projects="[]"
+  data-collection-gallery-projects="[]"
+  data-product-id={{ product.id | default: '""' }}
+></script>
+<script>
+  window.tolstoyCurrencySymbol = '₹';
+  window.tolstoyMoneyFormat = '{{ shop.money_format }}';
+</script>
+{%endcapture%}
+<script>if (!window.mainopt) {document.write({{ get_code | json }});}document.close();</script>
+<!-- END app block -->
+
+
+
+
+
+
+
+
+<script type="load">
+    document.addEventListener('DOMContentLoaded', function () {
+        var videos = document.querySelectorAll('video[data-poster]');
+        videos.forEach(function (video) {
+            var dataPosterValue = video.getAttribute('data-poster');
+            video.setAttribute('poster', dataPosterValue);
+            video.removeAttribute('data-poster');
+        });
+    });
+</script>

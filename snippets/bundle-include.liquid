@@ -8,11 +8,11 @@
             <a href="{{ metadata.bundle_product.value.url }}">
               {% if metadata.custom_product_image.value != blank %}
                 <div class="included-image">
-                    <img src="{{- settings.speedsize_url_pfx_https -}}{{ metadata.custom_product_image.value | img_url:"master" }}">
+                    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-li="st" d-src="{{- settings.speedsize_url_pfx_https -}}{{ metadata.custom_product_image.value | img_url:"master" }}">
                 </div>
                 {% else %}
                  <div class="included-image">
-                  <img src="{{- settings.speedsize_url_pfx_https -}}{{ metadata.bundle_product.value.featured_image | img_url:"master" }}">
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-li="st" d-src="{{- settings.speedsize_url_pfx_https -}}{{ metadata.bundle_product.value.featured_image | img_url:"master" }}">
                  </div>
               {% endif %}
               

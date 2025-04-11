@@ -9,8 +9,7 @@ For inquiries or permissions, contact daniel@section.store
 {% endcomment %}
 
 <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 />
 
 {%- liquid 
@@ -844,7 +843,7 @@ For inquiries or permissions, contact daniel@section.store
                 <div class="testimonials-slide-{{ section.id }} swiper-slide">
                   <div class="testimonials-image-{{ block.id }}">
                     {% if block.settings.image != blank %}
-                      <img src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" {% if lazy %}loading="lazy"{% endif %}>      
+                      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-li="st" d-src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" {% if lazy %}loading="lazy"{% endif %}>      
                     {% else %}
                       {{ 'image' | placeholder_svg_tag }}
                     {% endif %} 
@@ -860,7 +859,7 @@ For inquiries or permissions, contact daniel@section.store
                         {% if stars_icon != blank %}
                           {% assign stars_count_round = block.settings.stars_count | round: 0 %}
                           {% for item in (1..stars_count_round) %}
-                            <img src="{{- settings.speedsize_url_pfx_https -}}{{ stars_icon | image_url }}" alt="{{ stars_icon.alt }}">
+                            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-li="st" d-src="{{- settings.speedsize_url_pfx_https -}}{{ stars_icon | image_url }}" alt="{{ stars_icon.alt }}">
                           {% endfor %}
                         {% else %}
                           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="19" viewBox="0 0 20 19" fill="none">
@@ -936,7 +935,7 @@ For inquiries or permissions, contact daniel@section.store
                     {% endif %}
                     <div class="testimonials-author-image-{{ block.id }} testimonials-author-image-{{ section.id }}">
                       {% if block.settings.image != blank %}
-                        <img src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" {% if lazy %}loading="lazy"{% endif %}>      
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-li="st" d-src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt }}" {% if lazy %}loading="lazy"{% endif %}>      
                       {% else %}
                         {{ 'image' | placeholder_svg_tag }}
                       {% endif %} 
@@ -958,7 +957,7 @@ For inquiries or permissions, contact daniel@section.store
                     {% endif %}                    
                     <div class="testimonials-logo-{{ block.id }}">
                       {% if block.settings.logo != blank %}
-                        <img src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.logo | image_url }}" alt="{{ block.settings.logo.alt }}" {% if lazy %}loading="lazy"{% endif %}>      
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" data-li="st" d-src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.logo | image_url }}" alt="{{ block.settings.logo.alt }}" {% if lazy %}loading="lazy"{% endif %}>      
                       {% else %}
                         {{ 'image' | placeholder_svg_tag }}
                       {% endif %} 
@@ -981,9 +980,9 @@ For inquiries or permissions, contact daniel@section.store
     </div>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script type="load" d-src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-<script>
+<script type="load">
   function initTestimonials19() {
     document.querySelector('.testimonials-slider-{{ section.id }}').classList.remove('preview');
     const slider = new Swiper(".testimonials-slider-{{ section.id }}", {

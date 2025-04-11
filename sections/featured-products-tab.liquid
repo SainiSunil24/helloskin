@@ -39,7 +39,7 @@
                   <div class="tabs__tab-heading h4 text-current">{{- tab_name -}}</div>
                   {%- if block.settings.description != blank -%}
                     <div class="tabs__tab-description font-body text-base text-current rte">
-                      {{- block.settings.description | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  -}}
+                      {{- block.settings.description | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   -}}
                     </div>
                   {%- endif -%}
                 </button>
@@ -107,7 +107,7 @@
             {%- endif -%}
             {%- if block.settings.description != blank -%}
               <div class="tabs__content_description block lg:hidden rte">
-                {{- block.settings.description | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  -}}
+                {{- block.settings.description | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   -}}
               </div>
             {%- endif -%}
             <div class="block{% if enable_swipe_mobile %} swipe-mobile swipe-mobile--1-cols{% endif %}">

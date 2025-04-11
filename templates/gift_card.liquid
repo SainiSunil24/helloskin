@@ -69,7 +69,7 @@
       <div class="gift-card__image-wrapper flex items-center justify-center h-full">
         {%- if settings.logo != blank -%}
           {%- assign logo_alt = settings.logo.alt | default: shop.name | escape -%}
-          {{ settings.logo | image_url: width: 570 | image_tag: class: 'gift-card__image', alt: logo_alt | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }}
+          {{ settings.logo | image_url: width: 570 | image_tag: class: 'gift-card__image', alt: logo_alt | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}
         {%- else %}
           <img
             class="gift-card__image"

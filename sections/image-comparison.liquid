@@ -83,7 +83,7 @@
                     class: 'motion-reduce image-comparison--image-desktop',
                     widths: '375, 550, 750, 1100, 1170, 1410, 1500, 2340, 2820',
                     sizes: image_desktop_sizes,
-                    is: 'image-lazy' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
+                    is: 'image-lazy' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   
                 }}
               {%- else -%}
                 {{
@@ -101,7 +101,7 @@
                     class: 'motion-reduce image-comparison--image-mobile',
                     widths: '375, 550, 750, 1500',
                     sizes: 'calc(100vw - 30px)',
-                    is: 'image-lazy' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
+                    is: 'image-lazy' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   
                 }}
               {%- endif -%}
             </div>

@@ -68,7 +68,7 @@
               style="--aspect-ratio: {{ aspect_ratio }};--aspect-ratio-mobile: {{ aspect_ratio_mobile }};"
             {% endif %}
           >
-           <a href="{{ block.settings.image_url | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }}" class="slide_show_link">
+           <a href="{{ block.settings.image_url | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}" class="slide_show_link">
             
             <div
               class="slideshow__bg bg-image overflow-hidden{% if slider_layout == 'centered' %} blocks-radius{% endif %}"
@@ -151,7 +151,7 @@
                               fetchpriority: fetchpriority,
                               sizes: sizes,
                               widths: '300,400,500,600,700,800,900,1000,1200,1300,1400,1600,1800,2000,2200,2400,2600,2800,3000,3200',
-                              is: 'image-lazy' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
+                              is: 'image-lazy' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   
                           -}}
                         </picture>
                       </motion-element>

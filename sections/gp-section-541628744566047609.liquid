@@ -145,7 +145,7 @@
           {% render 'gp-section-541628744566047609-0', product: product, variant: variant, product_form_id: product_form_id, productSelectedVariant: productSelectedVariant, form: form %}
     <div
       media-type="{{media.media_type}}"
-      media-poster="{{media.preview_image.src | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx }}"
+      media-poster="{{media.preview_image.src | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}"
       media-source-url="{{media.sources.first.url}}"
       media-last-source-url="{{mediaSourceUrl}}"
       external-id="{{media.external_id}}"
@@ -622,12 +622,12 @@
       
     
       {% when 'external_video' %}
-        {% assign mediaSourceVideo = featureMedia | external_video_url | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  %}
+        {% assign mediaSourceVideo = featureMedia | external_video_url | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   %}
         
     <iframe
       width="100%" height="100%"
       class="feature-video gp-w-full gp-h-full gp-relative"
-      src="{{mediaSourceVideo | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx }}"
+      src="{{mediaSourceVideo | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}"
       controls="true"
       allowfullscreen="true"
       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -653,7 +653,7 @@
       
       title="{{featureMedia.alt}}"
       preload="none"
-      data-src="{{mediaSourceVideo | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx }}"
+      data-src="{{mediaSourceVideo | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}"
       src=""
       poster=""
       playsinline
@@ -699,10 +699,10 @@
       
       
       
-      src="{% if featureMedia.sources.first.url contains '.glb' %}{{ featureMedia.sources.first.url | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }}{% else %}{{featureMedia.sources.last.url | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx }}{% endif %}"
+      src="{% if featureMedia.sources.first.url contains '.glb' %}{{ featureMedia.sources.first.url | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}{% else %}{{featureMedia.sources.last.url | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}{% endif %}"
       alt="{{featureMedia.preview_image.alt}}"
       camera-controls="true"
-      poster="{{featureMedia.preview_image.src | product_img_url: '1024x1024' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx }}"
+      poster="{{featureMedia.preview_image.src | product_img_url: '1024x1024' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}"
       data-js-focus-visible=""
       data-shopify-feature="1.12"
       ar-status="not-presenting"

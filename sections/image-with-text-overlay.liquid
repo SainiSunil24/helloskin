@@ -81,9 +81,9 @@
                   {%- assign motion_delay = motion_delay | plus: 50 -%}
                 {% when 'reviews' %}
                 <div class="review_wrapper">
-                 {% if block.settings.review_img != blank %}<div class="review_img"> <img src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.review_img | img_url:"master" }}"></div>{% endif %}
+                 {% if block.settings.review_img != blank %}<div class="review_img"> <img alt="stars" src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.review_img | img_url:"master" }}"></div>{% endif %}
                   {% if block.settings.review_text != blank %} <div class="review_text">{{ block.settings.review_text }}</div>{% endif %}
-                 {% if block.settings.trust_img != blank %} <div class="trust_img"><img src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.trust_img | img_url:"master" }}"></div>{% endif %}
+                 {% if block.settings.trust_img != blank %} <div class="trust_img"><img alt="loox" src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.trust_img | img_url:"master" }}"></div>{% endif %}
                 </div>
                 {% when 'heading' %}
                   <h2 class="rich-text__heading {{ block.settings.heading_size }}" {{ block.shopify_attributes }}>

@@ -2,15 +2,15 @@
 <div class="glow-faq-section {{ section.settings.addClass }}">
   <div class="heading-box">
      <h2 class="grodas-accordion-section__title">{{ section.settings.title }}</h2>
-     <div class="description_box">{{ section.settings.description | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }}</div>
+     <div class="description_box">{{ section.settings.description | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}</div>
   </div>
   <div class="grodas-ac-cards js-grodas-ac-cards" data-collapse="{{ section.settings.collapse_other }}">
     {% for card in cards %}
       <div class="grodas-ac-card js-grodas-ac-card {% if forloop.first %}{% if section.settings.open_first %}grodas-ac-card--active{% endif %}{% endif %}">
         <div class="grodas-ac-card__wrapper js-grodas-ac-card-wrapper">
-          <button class="grodas-ac-card__button js-grodas-ac-card-button" type="button"></button>
+          <button class="grodas-ac-card__button js-grodas-ac-card-button" type="button" aria-label="plus"></button>
           <h3 class="grodas-ac-card__title">{{ card.settings.title }}</h3>
-          <p class="grodas-ac-card__content">{{ card.settings.content | newline_to_br | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }}</p>
+          <p class="grodas-ac-card__content">{{ card.settings.content | newline_to_br | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}</p>
         </div>
       </div>
     {% endfor %}

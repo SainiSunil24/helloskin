@@ -2,9 +2,9 @@
   <a href="#looxReviews">
     {% if block.settings.review_icons != blank %}
       <div class="review_img">
-        <img src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.review_icons | img_url:"master" }}">
+        <img alt="stars" src="{{- settings.speedsize_url_pfx_https -}}{{ block.settings.review_icons | img_url:"master" }}">
        </div>
     {% endif %}
-   {% if block.settings.review_content != blank %} <div class="review_content">{{ block.settings.review_content | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }}</div>{% endif %}
+   {% if block.settings.review_content != blank %} <div class="review_content">{{ block.settings.review_content | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}</div>{% endif %}
   </a>
 </div>

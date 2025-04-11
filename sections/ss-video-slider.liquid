@@ -9,8 +9,7 @@
 {% endcomment %}
 
 <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
 >
 
 {%- liquid
@@ -794,7 +793,7 @@
                   {%- if block.settings.video == null and block.settings.video_url != null -%}
                     {%- if block.settings.video_url.type == 'youtube' -%}
                       <iframe
-                        data-src="https://www.youtube.com/embed/{{ video_id | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }}?enablejsapi=1&mute=1&autoplay={% if forloop.first %}1{% else %}0{% endif %}&controls=0&showinfo=0{{ loop | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }}"
+                        data-src="https://www.youtube.com/embed/{{ video_id | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}?enablejsapi=1&mute=1&autoplay={% if forloop.first %}1{% else %}0{% endif %}&controls=0&showinfo=0{{ loop | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}"
                         data-src1="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&mute=1&autoplay=1&controls=0&showinfo=0{{ loop }}"
                         data-src2="https://www.youtube.com/embed/{{ video_id }}?enablejsapi=1&mute=1&autoplay=0&controls=0&showinfo=0{{ loop }}"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -803,7 +802,7 @@
                       ></iframe>
                     {%- else -%}
                       <iframe
-                        data-src="https://player.vimeo.com/video/{{ video_id | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }}?enablejsapi=1&mute=1&autoplay={% if forloop.first %}1{% else %}0{% endif %}&controls=0&showinfo=0{{ loop | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }}"
+                        data-src="https://player.vimeo.com/video/{{ video_id | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}?enablejsapi=1&mute=1&autoplay={% if forloop.first %}1{% else %}0{% endif %}&controls=0&showinfo=0{{ loop | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}"
                         data-src1="https://player.vimeo.com/video/{{ video_id }}?enablejsapi=1&mute=1&autoplay=1&controls=0&showinfo=0{{ loop }}"
                         data-src2="https://player.vimeo.com/video/{{ video_id }}?enablejsapi=1&mute=1&autoplay=0&controls=0&showinfo=0{{ loop }}"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
@@ -814,7 +813,7 @@
 
                   {% else %}
                     <video
-                      data-src="{{ block.settings.video.sources[1].url | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }}"
+                      data-src="{{ block.settings.video.sources[1].url | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }}"
                       {% if forloop.first %}
                         autoplay
                       {% endif %}
@@ -973,7 +972,7 @@
 {% assign slider_view_tablet = slider_view | times: 0.5 %}
 {% assign slider_view_tablet = slider_view | round: 0 %}
 
-<script>
+<script type="load">
   function loadSwiper(callback) {
     if (window.Swiper) {
       callback();

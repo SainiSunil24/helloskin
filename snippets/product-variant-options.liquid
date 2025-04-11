@@ -30,8 +30,8 @@
 
     assign swatch_focal_point = null
     if value.swatch.image and picker_type == 'swatch'
-      assign image_url = value.swatch.image | image_url: width: image_size | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
-      assign swatch_value = 'url(' | append: image_url | append: ')' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
+      assign image_url = value.swatch.image | image_url: width: image_size   | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
+      assign swatch_value = 'url(' | append: image_url | append: ')'   | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
       assign swatch_focal_point = value.swatch.image.presentation.focal_point
     elsif value.swatch.color and picker_type == 'swatch'
       assign swatch_value = 'rgb(' | append: value.swatch.color.rgb | append: ')'
@@ -81,8 +81,8 @@
   {%- elsif picker_type == 'color' -%}
     {%- liquid
       if block.settings.swatch_type == 'variant_image' and value.variant.image != blank
-        assign image_url = value.variant.image | image_url: width: image_size | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
-        assign swatch_value = 'url(' | append: image_url | append: ')' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
+        assign image_url = value.variant.image | image_url: width: image_size   | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
+        assign swatch_value = 'url(' | append: image_url | append: ')'   | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
       elsif swatch_value == blank
         assign file_extension = file_extension | default: 'png'
         assign file_name = value | handle | append: '.' | append: file_extension
@@ -109,7 +109,7 @@
 
         assign swatch_image = blank
         if images[file_name] != blank
-          assign swatch_image = images[file_name] | image_url: width: image_size | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
+          assign swatch_image = images[file_name] | image_url: width: image_size   | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
         elsif file_name contains '//cdn.shopify.com/'
           assign swatch_image = file_name
         endif

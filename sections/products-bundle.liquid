@@ -36,7 +36,7 @@
                 fetchpriority: fetchpriority,
                 sizes: sizes,
                 widths: '165, 360, 535, 750, 1100, 1500',
-                is: 'image-lazy' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
+                is: 'image-lazy' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   
             }}
           {%- else -%}
             {{- 'collection-1' | placeholder_svg_tag: 'placeholder-svg' -}}
@@ -108,7 +108,7 @@
                           loading: 'lazy',
                           widths: '80, 90, 160, 180',
                           is: 'image-lazy',
-                          sizes: '(max-width: 767px) 80px, 90px' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
+                          sizes: '(max-width: 767px) 80px, 90px' | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   
                       }}
                     </motion-element>
                   </a>

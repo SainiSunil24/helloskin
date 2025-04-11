@@ -129,7 +129,7 @@
                       assign swatch_fallback = filter_value.value | split: ' ' | last | handle
                       assign swatch_focal_point = null
                       if filter_value.image
-                        assign swatch_image = filter_value.image | image_url: width: 144 | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
+                        assign swatch_image = filter_value.image | image_url: width: 144   | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx 
                         assign swatch_focal_point = filter_value.image.presentation.focal_point
                       endif
                     -%}
@@ -153,7 +153,7 @@
                       <label
                         class="swatch-color swatch-image block relative{% if class != blank %} {{ class }}{% endif %}"
                         for="{{ filter_value_id | escape }}"
-                        style="--swatch-background: {{ swatch_fallback }};{% if swatch_image != blank %} background-image: url({{ swatch_image | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx  }});{% endif %}{% if swatch_focal_point %} --swatch-focal-point: {{ swatch_focal_point }}{% endif %}"
+                        style="--swatch-background: {{ swatch_fallback }};{% if swatch_image != blank %} background-image: url({{ swatch_image | replace: '//cdn.shopify.com/', settings.speedsize_url_pfx_shopify_cdn | replace: settings.speedsize_shop_domain_cdn, settings.speedsize_url_pfx_shop_domain_cdn | replace: 'https:https:', 'https:' | replace: settings.speedsize_url_pfx_duplicated, settings.speedsize_url_pfx   }});{% endif %}{% if swatch_focal_point %} --swatch-focal-point: {{ swatch_focal_point }}{% endif %}"
                       >
                         <span class="tooltip">{{ filter_value.label | escape }} ({{ filter_value.count }})</span>
                       </label>

@@ -1,7 +1,4 @@
-<link
-  rel="stylesheet"
-  href="{{ 'component-custom-card.css' | asset_url }}"
-  media="print"
+<link rel="stylesheet" href="{{ 'component-custom-card.css' | asset_url }}" media="print"
   fetchpriority="low"
   onload="this.media='all'"
 >
@@ -244,7 +241,6 @@
       <a
         href="{{ routes.cart_url }}"
         class="cart-drawer-button flex items-center justify-center relative"
-        aria-controls="CartDrawer"
       >
         {%- render 'icon-cart', size: 'large', name: settings.cart_icon -%}
         <span class="">{{ 'templates.cart.cart' | t }}</span>

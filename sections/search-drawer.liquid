@@ -1,10 +1,4 @@
-<link
-  rel="stylesheet"
-  href="{{ 'search.css' | asset_url }}"
-  media="print"
-  fetchpriority="low"
-  onload="this.media='all'"
->
+<link rel="stylesheet" href="{{ 'search.css' | asset_url }}" media="print" fetchpriority="low" onload="this.media='all'">
 {%- if request.page_type != 'search' -%}
   <script src="{{ 'search.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
